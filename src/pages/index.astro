@@ -6,6 +6,8 @@ import Layout from "../layouts/Layout.astro";
 
 import data from "../../data.json";
 
+console.log({ loadedData: Object.keys(data).length });
+
 function getWeekNumber(d: string | Date) {
   const date = new Date(+d);
   return [date.getFullYear(), moment(d).isoWeek()];
@@ -40,6 +42,8 @@ for (
   }
 }
 const weeksArray = Object.values(weeks);
+
+console.log({ weeksArray });
 
 const processedData: { [key: string]: any } = {};
 for (let version in data) {
