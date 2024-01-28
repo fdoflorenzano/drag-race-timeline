@@ -43,7 +43,7 @@ for (
 }
 const weeksArray = Object.values(weeks);
 
-console.log({ weeksArray });
+// console.log({ weeksArray });
 
 const processedData: { [key: string]: any } = {};
 for (let version in data) {
@@ -54,8 +54,14 @@ for (let version in data) {
     for (let episode of season.episodes) {
       const date = parseTime(episode.date) as Date;
 
-      const week =
-        weeks[`${getWeekNumber(date)[1]}-${date.getFullYear()}`].weekIndex;
+      const weekObject =
+        weeks[`${getWeekNumber(date)[1]}-${date.getFullYear()}`];
+      console.log({
+        weekObject,
+        key: `${getWeekNumber(date)[1]}-${date.getFullYear()}`,
+        date,
+      });
+      const week = weekObject.weekIndex;
 
       const ep = { ...episode, date, week };
       seas.episodes.push(ep);
@@ -220,8 +226,8 @@ for (let streak of aux) {
   }
 }
 
-console.log({ data });
-console.log({ streaks });
+// console.log({ data });
+// console.log({ streaks });
 
 const rectHeight = 20;
 const width = 420;
