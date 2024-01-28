@@ -1,0 +1,400 @@
+---
+import * as d3 from "d3";
+import moment from "moment";
+
+import Layout from "../layouts/Layout.astro";
+
+import data from "../../data.json";
+
+function getWeekNumber(d: string | Date) {
+  const date = new Date(+d);
+  return [date.getFullYear(), moment(d).isoWeek()];
+}
+
+function weeksInYear(year: number) {
+  const d = new Date(year, 11, 31);
+  const week = getWeekNumber(d)[1];
+  return week == 1 ? 52 : week;
+}
+
+const parseTime = d3.utcParse("%b %e, %Y");
+
+const startDate = new Date(2009, 0, 1);
+const endDate = new Date(2024, 1, 16);
+
+const weeks: {
+  [key: string]: { year: number; week: number; weekIndex: number };
+} = {};
+let weekIndex = 0;
+for (
+  let year = startDate.getFullYear();
+  year <= endDate.getFullYear();
+  year++
+) {
+  for (let week = 1; week <= weeksInYear(year); week++) {
+    weekIndex += 1;
+    weeks[`${week}-${year}`] = { year, week, weekIndex };
+    if (year === endDate.getFullYear() && week === getWeekNumber(endDate)[1]) {
+      break;
+    }
+  }
+}
+const weeksArray = Object.values(weeks);
+
+const processedData: { [key: string]: any } = {};
+for (let version in data) {
+  const versionData = (data as { [key: string]: any })[version];
+  const seasons = [];
+  for (let season of versionData) {
+    const seas = { ...season, episodes: [] };
+    for (let episode of season.episodes) {
+      const date = parseTime(episode.date) as Date;
+
+      const week =
+        weeks[`${getWeekNumber(date)[1]}-${date.getFullYear()}`].weekIndex;
+
+      const ep = { ...episode, date, week };
+      seas.episodes.push(ep);
+    }
+    seasons.push(seas);
+  }
+  processedData[version] = seasons;
+}
+
+const seasons = [];
+for (let version in processedData) {
+  const versionData = processedData[version];
+  for (let season of versionData) {
+    const premierDate = season.episodes[0].date;
+    const weekStart =
+      weeks[`${getWeekNumber(premierDate)[1]}-${premierDate.getFullYear()}`]
+        .weekIndex;
+    const finaleDate = season.episodes[season.episodes.length - 1].date;
+    const weekEnd =
+      weeks[`${getWeekNumber(finaleDate)[1]}-${finaleDate.getFullYear()}`]
+        .weekIndex;
+    seasons.push({
+      ...season,
+      weekStart,
+      weekEnd,
+      xOffset: season.xOffset ?? null,
+    });
+  }
+}
+
+let currentSeasons: any[] = [];
+for (let week of weeksArray) {
+  const { weekIndex } = week;
+
+  currentSeasons = currentSeasons.filter((s) => s.weekEnd >= weekIndex);
+
+  for (let season of seasons) {
+    if (
+      season.weekStart <= weekIndex &&
+      season.weekEnd >= weekIndex &&
+      season.xOffset == null
+    ) {
+      currentSeasons.push(season);
+    }
+  }
+
+  let nextOffSet = 0;
+  const updateOffset = () => {
+    let shouldContinue = false;
+    let first = true;
+    while (shouldContinue || first) {
+      shouldContinue = false;
+      first = false;
+      for (let index = 0; index < currentSeasons.length; index++) {
+        const season = currentSeasons[index];
+        if (season.xOffset === nextOffSet) {
+          nextOffSet += 1;
+          shouldContinue = true;
+          break;
+        }
+      }
+    }
+  };
+
+  updateOffset();
+
+  for (let season of currentSeasons) {
+    if (season.xOffset == null) {
+      season.xOffset = nextOffSet;
+      updateOffset();
+    }
+  }
+
+  // console.log({ weekIndex, currentSeasons: [...currentSeasons] });
+}
+
+const episodes = [];
+let streaks: any[] = [];
+
+const usedWeeks: { [key: string]: any } = {};
+
+// console.log({ data });
+for (let season of seasons) {
+  const seasonStreaks = [];
+  let lastSeasonWeek = null;
+  for (let episode of season.episodes) {
+    episode.season = season.shortTitle;
+    episode.xOffset = season.xOffset;
+    episodes.push(episode);
+
+    const week =
+      weeks[`${getWeekNumber(episode.date)[1]}-${episode.date.getFullYear()}`]
+        .weekIndex;
+
+    usedWeeks[week] = true;
+
+    if (lastSeasonWeek == null) {
+      lastSeasonWeek = week;
+      seasonStreaks.push({
+        start: week,
+        end: week,
+        episodes: [episode],
+        unfinished: !!season.unfinished,
+        season: episode.season,
+      });
+    } else {
+      if (lastSeasonWeek + 1 === week || lastSeasonWeek === week) {
+        const streak = seasonStreaks[seasonStreaks.length - 1];
+        streak.end = week;
+        streak.episodes.push(episode);
+      } else {
+        seasonStreaks.push({
+          start: week,
+          end: week,
+          episodes: [episode],
+          unfinished: !!season.unfinished,
+          season: episode.season,
+        });
+      }
+      lastSeasonWeek = week;
+    }
+  }
+  streaks = [...streaks, ...seasonStreaks];
+}
+
+const usedWeeksArray = Object.keys(usedWeeks).map((k) => parseInt(k));
+usedWeeksArray.sort((a, b) => a - b);
+
+let generalStreaks = [];
+let lastWeek = null;
+for (let week of usedWeeksArray) {
+  if (lastWeek == null) {
+    lastWeek = week;
+    generalStreaks.push({
+      start: week,
+      end: week,
+    });
+  } else {
+    if (lastWeek + 1 === week || lastWeek === week) {
+      const streak = generalStreaks[generalStreaks.length - 1];
+      streak.end = week;
+    } else {
+      generalStreaks.push({
+        start: week,
+        end: week,
+      });
+    }
+    lastWeek = week;
+  }
+}
+
+const aux = [...generalStreaks];
+generalStreaks = [];
+for (let streak of aux) {
+  if (generalStreaks.length === 0 || streak.end - streak.start > 30)
+    generalStreaks.push(streak);
+  else {
+    const lastStreak = generalStreaks[generalStreaks.length - 1];
+    if (lastStreak.end - lastStreak.start < streak.end - streak.start) {
+      generalStreaks.push(streak);
+    }
+  }
+}
+
+console.log({ data });
+console.log({ streaks });
+
+const rectHeight = 20;
+const width = 420;
+const marginTop = 20;
+const marginRight = 20;
+const marginBottom = 20;
+const marginLeft = 20;
+
+const height = rectHeight * weeksArray.length + marginTop + marginBottom;
+---
+
+<Layout title="Drag Race Calendar">
+  <main>
+    <h1>Drag Race Calendar</h1>
+
+    <p>Last updated: 28/01/2024</p>
+
+    <div
+      class="calendar"
+      style={{ height: `${height}px`, width: `${width}px` }}
+    >
+      {
+        weeksArray.map((d, i) => {
+          const initial = moment().year(d.year).isoWeek(d.week).isoWeekday(1);
+          const last = moment().year(d.year).isoWeek(d.week).isoWeekday(7);
+          return (
+            <div
+              style={{
+                position: "absolute",
+                left: `${marginLeft}px`,
+                top: `${height - marginBottom - rectHeight * (i + 1)}px`,
+                height: `${rectHeight}px`,
+                width: `${width - marginLeft - marginRight}px`,
+                color: "white",
+                borderStyle: "solid",
+                borderWidth: "1px 1px 0 1px",
+                borderColor: "rgba(255, 255, 255, 0.1)",
+                fontSize: "0.4em",
+              }}
+            >
+              <span>
+                {initial.format("DD MMM YY")} - {last.format("DD MMM YY")}
+              </span>
+            </div>
+          );
+        })
+      }
+
+      {
+        streaks.map((d, i) => (
+          <div
+            style={{
+              position: "absolute",
+              left: `${150 + d.episodes[0].xOffset * 50}px`,
+              top: `${height - marginBottom - rectHeight * d.end + 2}px`,
+            }}
+          >
+            <div
+              style={{
+                height: `${rectHeight * (d.end - d.start + 1) - 4}px`,
+                width: `${rectHeight - 4}px`,
+                borderRadius: d.unfinished
+                  ? `0 0 ${rectHeight}px ${rectHeight}px`
+                  : `${rectHeight}px`,
+                background: "magenta",
+                borderColor: "white",
+                borderWidth: "1px",
+                borderStyle: "solid",
+              }}
+            />
+            <p
+              style={{
+                position: "absolute",
+                left: 0,
+                top: 0,
+                margin: 0,
+                fontSize: "0.4em",
+                transformOrigin: "0 0",
+                transform: `translateX(${1.6 * rectHeight}px) translateY(3px) rotate(90deg)`,
+                minWidth: "50px",
+              }}
+            >
+              {d.season}
+            </p>
+          </div>
+        ))
+      }
+
+      {
+        generalStreaks.map((d, i) => (
+          <div
+            style={{
+              position: "absolute",
+              right: `${-rectHeight}px`,
+              top: `${height - marginBottom - rectHeight * d.end + 2}px`,
+            }}
+          >
+            <div
+              style={{
+                height: `${rectHeight * (d.end - d.start + 1) - 4}px`,
+                width: `${rectHeight - 4}px`,
+                borderRadius: `${rectHeight}px`,
+                background: "orange",
+                borderColor: "white",
+                borderWidth: "1px",
+                borderStyle: "solid",
+              }}
+            />
+            <p
+              style={{
+                position: "absolute",
+                left: 0,
+                top: 0,
+                margin: 0,
+                fontSize: "0.4em",
+                transformOrigin: "0 0",
+                transform: `translateX(${1.6 * rectHeight}px) translateY(3px) rotate(90deg)`,
+                minWidth: "50px",
+              }}
+            >
+              {1 + d.end - d.start} weeks
+            </p>
+          </div>
+        ))
+      }
+
+      <!-- const lines2 = root.append("g");
+lines2
+  .selectAll("line")
+  .data(generalStreaks)
+  .join("line")
+  .attr("stroke", "orange")
+  .attr("stroke-width", rectHeight / 2)
+  .attr("stroke-linecap", "round")
+  .attr("x1", width - marginRight - rectHeight / 2)
+  .attr("x2", width - marginRight - rectHeight / 2)
+  .attr(
+    "y1",
+    (d, i) =>
+      height - marginBottom - rectHeight * (d.start - 1) + rectHeight / 2,
+  )
+  .attr(
+    "y2",
+    (d, i) =>
+      height - marginBottom - rectHeight * (d.end - 1) + rectHeight / 2,
+  );
+
+const lines2labels = root.append("g");
+lines2labels
+  .selectAll("text")
+  .data(generalStreaks)
+  .join("text")
+  .attr("x", width - marginRight - rectHeight / 2)
+  .attr(
+    "y",
+    (d, i) =>
+      height - marginBottom - rectHeight * (d.end - 1) + rectHeight / 2,
+  )
+  .text((d) => 1 + d.end - d.start); -->
+    </div>
+
+    <p>By <a href="https://github.com/fdoflorenzano">@fdoflorenzano</a></p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 500px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .calendar {
+    position: relative;
+  }
+</style>

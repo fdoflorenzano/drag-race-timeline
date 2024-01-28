@@ -1,0 +1,2941 @@
+{
+  "RuPaul's Drag Race": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "US 1",
+      "year": 2009,
+      "episodes": [
+        {
+          "title": "Drag on a Dime",
+          "date": "Feb 2, 2009"
+        },
+        {
+          "title": "Girl Group Challenge",
+          "date": "Feb 9, 2009"
+        },
+        {
+          "title": "Queens of all Media",
+          "date": "Feb 16, 2009"
+        },
+        {
+          "title": "M.A.C/Viva Glam Challenge",
+          "date": "Feb 23, 2009"
+        },
+        {
+          "title": "Drag School of Charm",
+          "date": "Mar 2, 2009"
+        },
+        {
+          "title": "Absolut Drag Ball",
+          "date": "Mar 9, 2009"
+        },
+        {
+          "title": "Extra Special Edition",
+          "date": "Mar 16, 2009"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 23, 2009"
+        },
+        {
+          "title": "Re-United!",
+          "date": "Mar 23, 2009"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "US 2",
+      "year": 2010,
+      "episodes": [
+        {
+          "title": "Gone with the Window",
+          "date": "Feb 1, 2010"
+        },
+        {
+          "title": "Starrbootylicious",
+          "date": "Feb 8, 2010"
+        },
+        {
+          "title": "Country Queens",
+          "date": "Feb 15, 2010"
+        },
+        {
+          "title": "The Snatch Game",
+          "date": "Feb 22, 2010"
+        },
+        {
+          "title": "Here Comes the Bride",
+          "date": "Mar 1, 2010"
+        },
+        {
+          "title": "Rocker Chick",
+          "date": "Mar 8, 2010"
+        },
+        {
+          "title": "Once Upon a Queen",
+          "date": "Mar 22, 2010"
+        },
+        {
+          "title": "Golden Gals",
+          "date": "Mar 29, 2010"
+        },
+        {
+          "title": "The Diva Awards",
+          "date": "Apr 5, 2010"
+        },
+        {
+          "title": "The Main Event Clip Show",
+          "date": "Apr 19, 2010"
+        },
+        {
+          "title": "Music Video Finale",
+          "date": "Apr 26, 2010"
+        },
+        {
+          "title": "Reunion",
+          "date": "Apr 26, 2010"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "US 3",
+      "year": 2011,
+      "episodes": [
+        {
+          "title": "Casting Extravaganza",
+          "date": "Jan 24, 2011"
+        },
+        {
+          "title": "The Queen Who Mopped X-Mas",
+          "date": "Jan 24, 2011"
+        },
+        {
+          "title": "Queens in Space",
+          "date": "Jan 31, 2011"
+        },
+        {
+          "title": "Totally Leotarded",
+          "date": "Feb 7, 2011"
+        },
+        {
+          "title": "QNN News",
+          "date": "Feb 14, 2011"
+        },
+        {
+          "title": "The Snatch Game",
+          "date": "Feb 21, 2011"
+        },
+        {
+          "title": "Face, Face, Face of Cakes",
+          "date": "Feb 28, 2011"
+        },
+        {
+          "title": "Ru Ha Ha",
+          "date": "Mar 7, 2011"
+        },
+        {
+          "title": "Life, Liberty & the Pursuit of Style",
+          "date": "Mar 14, 2011"
+        },
+        {
+          "title": "RuPaul-a-Palooza",
+          "date": "Mar 21, 2011"
+        },
+        {
+          "title": "RuPaul's Hair Extravaganza",
+          "date": "Mar 28, 2011"
+        },
+        {
+          "title": "Jocks in Frocks",
+          "date": "Apr 4, 2011"
+        },
+        {
+          "title": "Make Dat Money",
+          "date": "Apr 11, 2011"
+        },
+        {
+          "title": "RuPaul Rewind",
+          "date": "Apr 18, 2011"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 25, 2011"
+        },
+        {
+          "title": "Reunited!",
+          "date": "May 2, 2011"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "US 4",
+      "year": 2012,
+      "episodes": [
+        {
+          "title": "RuPocalypse Now!",
+          "date": "Jan 30, 2012"
+        },
+        {
+          "title": "WTF!: Wrestling's Trashiest Fighters",
+          "date": "Feb 6, 2012"
+        },
+        {
+          "title": "Glamazons vs. Champions",
+          "date": "Feb 13, 2012"
+        },
+        {
+          "title": "Queens Behind Bars",
+          "date": "Feb 20, 2012"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Feb 27, 2012"
+        },
+        {
+          "title": "Float Your Boat",
+          "date": "Mar 5, 2012"
+        },
+        {
+          "title": "Dragazines",
+          "date": "Mar 12, 2012"
+        },
+        {
+          "title": "Frenemies",
+          "date": "Mar 19, 2012"
+        },
+        {
+          "title": "Frock the Vote!",
+          "date": "Mar 26, 2012"
+        },
+        {
+          "title": "DILFs: Dads I'd Like to Frock",
+          "date": "Apr 2, 2012"
+        },
+        {
+          "title": "The Fabulous B*tch Ball",
+          "date": "Apr 9, 2012"
+        },
+        {
+          "title": "RuPaul Rewind",
+          "date": "Apr 16, 2012"
+        },
+        {
+          "title": "The Final Three",
+          "date": "Apr 23, 2012"
+        },
+        {
+          "title": "Reunion",
+          "date": "Apr 30, 2012"
+        }
+      ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "US 5",
+      "year": 2013,
+      "episodes": [
+        {
+          "title": "RuPaullywood or Bust",
+          "date": "Jan 28, 2013"
+        },
+        {
+          "title": "Lip Synch Extravaganza Eleganza",
+          "date": "Feb 4, 2013"
+        },
+        {
+          "title": "Draggle Rock",
+          "date": "Feb 11, 2013"
+        },
+        {
+          "title": "Black Swan: Why It Gotta Be Black?",
+          "date": "Feb 18, 2013"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Feb 25, 2013"
+        },
+        {
+          "title": "Can I Get an Amen?",
+          "date": "Mar 4, 2013"
+        },
+        {
+          "title": "RuPaul Roast",
+          "date": "Mar 11, 2013"
+        },
+        {
+          "title": "Scent of a Drag Queen",
+          "date": "Mar 18, 2013"
+        },
+        {
+          "title": "Drama Queens",
+          "date": "Apr 1, 2013"
+        },
+        {
+          "title": "Super Troopers",
+          "date": "Apr 8, 2013"
+        },
+        {
+          "title": "Sugar Ball",
+          "date": "Apr 15, 2013"
+        },
+        {
+          "title": "The Final Three, Hunty",
+          "date": "Apr 22, 2013"
+        },
+        {
+          "title": "Countdown to the Crown",
+          "date": "Apr 29, 2013"
+        },
+        {
+          "title": "Reunited!",
+          "date": "May 6, 2013"
+        }
+      ]
+    },
+    {
+      "season": "Season 6",
+      "shortSeason": "S6",
+      "shortTitle": "US 6",
+      "year": 2014,
+      "episodes": [
+        {
+          "title": "RuPaul's Big Opening: Part 1",
+          "date": "Feb 24, 2014"
+        },
+        {
+          "title": "RuPaul's Big Opening: Part 2",
+          "date": "Mar 3, 2014"
+        },
+        {
+          "title": "Scream Queens",
+          "date": "Mar 10, 2014"
+        },
+        {
+          "title": "Shade: The Rusical",
+          "date": "Mar 17, 2014"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 24, 2014"
+        },
+        {
+          "title": "Oh No She Betta Don't!",
+          "date": "Mar 31, 2014"
+        },
+        {
+          "title": "Glamazon by Colorevolution",
+          "date": "Apr 7, 2014"
+        },
+        {
+          "title": "Drag Queens of Comedy",
+          "date": "Apr 7, 2014"
+        },
+        {
+          "title": "Queens of Talk",
+          "date": "Apr 14, 2014"
+        },
+        {
+          "title": "Drag My Wedding",
+          "date": "Apr 21, 2014"
+        },
+        {
+          "title": "Glitter Ball",
+          "date": "Apr 28, 2014"
+        },
+        {
+          "title": "Sissy That Walk!",
+          "date": "May 5, 2014"
+        },
+        {
+          "title": "Countdown to the Crown",
+          "date": "May 12, 2014"
+        },
+        {
+          "title": "The Finale",
+          "date": "May 19, 2014"
+        }
+      ]
+    },
+    {
+      "season": "Season 7",
+      "shortSeason": "S7",
+      "shortTitle": "US 7",
+      "year": 2015,
+      "episodes": [
+        {
+          "title": "Born Naked",
+          "date": "Mar 2, 2015"
+        },
+        {
+          "title": "Glamazonian Airways",
+          "date": "Mar 9, 2015"
+        },
+        {
+          "title": "ShakesQueer",
+          "date": "Mar 16, 2015"
+        },
+        {
+          "title": "Spoof! (There It Is)",
+          "date": "Mar 23, 2015"
+        },
+        {
+          "title": "The DESPY Awards",
+          "date": "Mar 30, 2015"
+        },
+        {
+          "title": "Ru Hollywood Stories",
+          "date": "Apr 6, 2015"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Apr 13, 2015"
+        },
+        {
+          "title": "Conjoined Queens",
+          "date": "Apr 20, 2015"
+        },
+        {
+          "title": "Divine Inspiration",
+          "date": "Apr 27, 2015"
+        },
+        {
+          "title": "Prancing Queens",
+          "date": "May 4, 2015"
+        },
+        {
+          "title": "Hello, Kitty Girls!",
+          "date": "May 11, 2015"
+        },
+        {
+          "title": "And the Rest Is a Drag",
+          "date": "May 18, 2015"
+        },
+        {
+          "title": "Countdown to the Crown",
+          "date": "May 25, 2015"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jun 1, 2015"
+        }
+      ]
+    },
+    {
+      "season": "Season 8",
+      "shortSeason": "S8",
+      "shortTitle": "US 8",
+      "year": 2016,
+      "episodes": [
+        {
+          "title": "Keeping It 100",
+          "date": "Mar 7, 2016"
+        },
+        {
+          "title": "Bitch Perfect",
+          "date": "Mar 14, 2016"
+        },
+        {
+          "title": "RuCo's Empire",
+          "date": "Mar 21, 2016"
+        },
+        {
+          "title": "New Wave Queens",
+          "date": "Mar 28, 2016"
+        },
+        {
+          "title": "Supermodel Snatch Game",
+          "date": "Apr 4, 2016"
+        },
+        {
+          "title": "Wizards of Drag",
+          "date": "Apr 11, 2016"
+        },
+        {
+          "title": "Shady Politics",
+          "date": "Apr 18, 2016"
+        },
+        {
+          "title": "RuPaul Book Ball",
+          "date": "Apr 25, 2016"
+        },
+        {
+          "title": "The Realness",
+          "date": "May 2, 2016"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "May 16, 2016"
+        }
+      ]
+    },
+    {
+      "season": "Season 9",
+      "shortSeason": "S9",
+      "shortTitle": "US 9",
+      "year": 2017,
+      "episodes": [
+        {
+          "title": "Oh. My. Gaga!",
+          "date": "Mar 24, 2017"
+        },
+        {
+          "title": "She Done Already Done Brought It On",
+          "date": "Mar 31, 2017"
+        },
+        {
+          "title": "Draggily Ever After",
+          "date": "Apr 7, 2017"
+        },
+        {
+          "title": "Good Morning Bitches",
+          "date": "Apr 14, 2017"
+        },
+        {
+          "title": "Reality Stars: The Musical",
+          "date": "Apr 21, 2017"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Apr 29, 2017"
+        },
+        {
+          "title": "9021-HO",
+          "date": "May 6, 2017"
+        },
+        {
+          "title": "RuPaul Roast",
+          "date": "May 12, 2017"
+        },
+        {
+          "title": "Your Pilot's on Fire",
+          "date": "May 19, 2017"
+        },
+        {
+          "title": "Makeovers: Crew Better Work",
+          "date": "May 26, 2017"
+        },
+        {
+          "title": "Gayest Ball Ever",
+          "date": "Jun 2, 2017"
+        },
+        {
+          "title": "Category Is",
+          "date": "Jun 9, 2017"
+        },
+        {
+          "title": "Reunited",
+          "date": "Jun 16, 2017"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jun 23, 2017"
+        }
+      ]
+    },
+    {
+      "season": "Season 10",
+      "shortSeason": "S10",
+      "shortTitle": "US 10",
+      "year": 2018,
+      "episodes": [
+        {
+          "title": "10s Across the Board",
+          "date": "Mar 22, 2018"
+        },
+        {
+          "title": "PharmaRusical",
+          "date": "Mar 29, 2018"
+        },
+        {
+          "title": "Tap That App",
+          "date": "Apr 5, 2018"
+        },
+        {
+          "title": "The Last Ball on Earth",
+          "date": "Apr 12, 2018"
+        },
+        {
+          "title": "The Bossy Rossy Show",
+          "date": "Apr 19, 2018"
+        },
+        {
+          "title": "DragCon Panel Extravaganza",
+          "date": "Apr 26, 2018"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 3, 2018"
+        },
+        {
+          "title": "Cher: The Unauthorized Rusical",
+          "date": "May 10, 2018"
+        },
+        {
+          "title": "Breastworld",
+          "date": "May 17, 2018"
+        },
+        {
+          "title": "Social Media Kings Into Queens",
+          "date": "May 24, 2018"
+        },
+        {
+          "title": "Evil Twins",
+          "date": "Jun 7, 2018"
+        },
+        {
+          "title": "American",
+          "date": "Jun 14, 2018"
+        },
+        {
+          "title": "Reunited",
+          "date": "Jun 21, 2018"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jun 28, 2018"
+        }
+      ]
+    },
+    {
+      "season": "Season 11",
+      "shortSeason": "S11",
+      "shortTitle": "US 11",
+      "year": 2019,
+      "episodes": [
+        {
+          "title": "Whatcha Unpackin?",
+          "date": "Feb 28, 2019"
+        },
+        {
+          "title": "Good God Girl, Get Out",
+          "date": "Mar 7, 2019"
+        },
+        {
+          "title": "Diva Worship",
+          "date": "Mar 14, 2019"
+        },
+        {
+          "title": "Trump: The Rusical",
+          "date": "Mar 21, 2019"
+        },
+        {
+          "title": "Monster Ball",
+          "date": "Mar 28, 2019"
+        },
+        {
+          "title": "The Draglympics",
+          "date": "Apr 4, 2019"
+        },
+        {
+          "title": "From Farm to Runway",
+          "date": "Apr 11, 2019"
+        },
+        {
+          "title": "Snatch Game at Sea",
+          "date": "Apr 18, 2019"
+        },
+        {
+          "title": "L.A.D.P.!",
+          "date": "Apr 25, 2019"
+        },
+        {
+          "title": "Dragracadabra",
+          "date": "May 2, 2019"
+        },
+        {
+          "title": "Bring Back My Queens!",
+          "date": "May 9, 2019"
+        },
+        {
+          "title": "Queens Everywhere",
+          "date": "May 16, 2019"
+        },
+        {
+          "title": "Reunited",
+          "date": "May 23, 2019"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "May 30, 2019"
+        }
+      ]
+    },
+    {
+      "season": "Season 12",
+      "shortSeason": "S12",
+      "shortTitle": "US 12",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "I'm That Bitch",
+          "date": "Feb 28, 2020"
+        },
+        {
+          "title": "You Don't Know Me",
+          "date": "Mar 6, 2020"
+        },
+        {
+          "title": "World's Worst",
+          "date": "Mar 13, 2020"
+        },
+        {
+          "title": "The Ball Ball",
+          "date": "Mar 20, 2020"
+        },
+        {
+          "title": "Gay's Anatomy",
+          "date": "Mar 27, 2020"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Apr 3, 2020"
+        },
+        {
+          "title": "Madonna: The Unauthorized Rusical",
+          "date": "Apr 10, 2020"
+        },
+        {
+          "title": "Droop",
+          "date": "Apr 17, 2020"
+        },
+        {
+          "title": "Choices 2020",
+          "date": "Apr 24, 2020"
+        },
+        {
+          "title": "Superfan Makeover",
+          "date": "May 1, 2020"
+        },
+        {
+          "title": "One-Queen Show",
+          "date": "May 8, 2020"
+        },
+        {
+          "title": "Viva Drag Vegas",
+          "date": "May 15, 2020"
+        },
+        {
+          "title": "Reunited: Alone Together",
+          "date": "May 22, 2020"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "May 29, 2020"
+        }
+      ]
+    },
+    {
+      "season": "Season 13",
+      "shortSeason": "S13",
+      "shortTitle": "US 13",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "The Pork Chop",
+          "date": "Jan 1, 2021"
+        },
+        {
+          "title": "Condragulations",
+          "date": "Jan 8, 2021"
+        },
+        {
+          "title": "Phenomenon",
+          "date": "Jan 15, 2021"
+        },
+        {
+          "title": "RuPaulmark Channel",
+          "date": "Jan 22, 2021"
+        },
+        {
+          "title": "The Bag Ball",
+          "date": "Jan 29, 2021"
+        },
+        {
+          "title": "Disco-Mentary",
+          "date": "Feb 5, 2021"
+        },
+        {
+          "title": "Bossy Rossy Ruboot",
+          "date": "Feb 12, 2021"
+        },
+        {
+          "title": "Social Media: The Unverified Rusical",
+          "date": "Feb 19, 2021"
+        },
+        {
+          "title": "Corona Can't Keep a Good Queen Down",
+          "date": "Feb 26, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 5, 2021"
+        },
+        {
+          "title": "Freaky Friday Queens",
+          "date": "Mar 12, 2021"
+        },
+        {
+          "title": "Pop! Goes the Queens",
+          "date": "Mar 19, 2021"
+        },
+        {
+          "title": "Nice Girls Roast",
+          "date": "Mar 26, 2021"
+        },
+        {
+          "title": "Henny, I Shrunk The Drag Queens!",
+          "date": "Apr 2, 2021"
+        },
+        {
+          "title": "Gettin' Lucky",
+          "date": "Apr 6, 2021"
+        },
+        {
+          "title": "RPDR Reunited",
+          "date": "Apr 16, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 23, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 14",
+      "shortSeason": "S14",
+      "shortTitle": "US 14",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Big Opening No. 1",
+          "date": "Jan 7, 2022"
+        },
+        {
+          "title": "Big Opening No. 2",
+          "date": "Jan 14, 2022"
+        },
+        {
+          "title": "A Pair of Balls",
+          "date": "Jan 21, 2022"
+        },
+        {
+          "title": "She's a Super Tease",
+          "date": "Jan 28, 2022"
+        },
+        {
+          "title": "Save a Queen",
+          "date": "Feb 4, 2022"
+        },
+        {
+          "title": "Glamazon Prime",
+          "date": "Feb 11, 2022"
+        },
+        {
+          "title": "The Daytona Wind",
+          "date": "Feb 18, 2022"
+        },
+        {
+          "title": "60s Girl Groups",
+          "date": "Feb 25, 2022"
+        },
+        {
+          "title": "Menzeses",
+          "date": "Mar 4, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 11, 2022"
+        },
+        {
+          "title": "An Extra Special Episode",
+          "date": "Mar 18, 2022"
+        },
+        {
+          "title": "Moulin Ru: The Rusical",
+          "date": "Mar 25, 2022"
+        },
+        {
+          "title": "The Ross Mathews Roast",
+          "date": "Apr 1, 2022"
+        },
+        {
+          "title": "Catwalk",
+          "date": "Apr 8, 2022"
+        },
+        {
+          "title": "Reunited",
+          "date": "Apr 15, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 22, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 15",
+      "shortSeason": "S15",
+      "shortTitle": "US 15",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "One Night Only, Pt. 1",
+          "date": "Jan 6, 2023"
+        },
+        {
+          "title": "One Night Only, Pt. 2",
+          "date": "Jan 6, 2023"
+        },
+        {
+          "title": "All Queens Go to Heaven",
+          "date": "Jan 13, 2023"
+        },
+        {
+          "title": "Supersized Snatch Game",
+          "date": "Jan 20, 2023"
+        },
+        {
+          "title": "House of Fashion",
+          "date": "Jan 27, 2023"
+        },
+        {
+          "title": "Old Friends Gold",
+          "date": "Feb 3, 2023"
+        },
+        {
+          "title": "The Daytona Wind 2",
+          "date": "Feb 10, 2023"
+        },
+        {
+          "title": "LipSync Lalaparuza Smackdown",
+          "date": "Feb 17, 2023"
+        },
+        {
+          "title": "The Crystal Ball: Episode 200",
+          "date": "Feb 24, 2023"
+        },
+        {
+          "title": "50/50's Most Gagworthy Stars",
+          "date": "Mar 3, 2023"
+        },
+        {
+          "title": "Two Queens, One Joke",
+          "date": "Mar 10, 2023"
+        },
+        {
+          "title": "Wigloose: The Rusical!",
+          "date": "Mar 17, 2023"
+        },
+        {
+          "title": "Teacher Makeovers",
+          "date": "Mar 24, 2023"
+        },
+        {
+          "title": "Blame It on the Edit",
+          "date": "Mar 31, 2023"
+        },
+        {
+          "title": "Reunited",
+          "date": "Apr 7, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 14, 2023"
+        }
+      ]
+    },
+    {
+      "season": "Season 16",
+      "shortSeason": "S16",
+      "shortTitle": "US 16",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Rate-a-Queen",
+          "date": "Jan 5, 2024"
+        },
+        {
+          "title": "Queen Choice Awards",
+          "date": "Jan 12, 2024"
+        },
+        {
+          "title": "Episode #16.3",
+          "date": "Jan 19, 2024"
+        },
+        {
+          "title": "Episode #16.4",
+          "date": "Jan 26, 2024"
+        },
+        {
+          "title": "Episode #16.5",
+          "date": "Feb 2, 2024"
+        }
+      ]
+    }
+  ],
+  "RuPaul's Drag Race All Stars": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "US AS 1",
+      "year": 2012,
+      "episodes": [
+        {
+          "title": "It Takes Two",
+          "date": "Oct 22, 2012"
+        },
+        {
+          "title": "RuPaul's Gaff-In",
+          "date": "Oct 29, 2012"
+        },
+        {
+          "title": "Queens Behaving Badly",
+          "date": "Nov 5, 2012"
+        },
+        {
+          "title": "All Star Girl Groups",
+          "date": "Nov 12, 2012"
+        },
+        {
+          "title": "Dynamic Drag Duos",
+          "date": "Nov 19, 2012"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Nov 26, 2012"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "US AS 2",
+      "year": 2016,
+      "episodes": [
+        {
+          "title": "All Star Talent Show Extravaganza",
+          "date": "Aug 25, 2016"
+        },
+        {
+          "title": "All Stars Snatch Game",
+          "date": "Sep 1, 2016"
+        },
+        {
+          "title": "HERstory of the World",
+          "date": "Sep 8, 2016"
+        },
+        {
+          "title": "Drag Movie Shequels",
+          "date": "Sep 15, 2016"
+        },
+        {
+          "title": "Revenge of the Queens",
+          "date": "Sep 22, 2016"
+        },
+        {
+          "title": "Drag Fish Tank",
+          "date": "Sep 29, 2016"
+        },
+        {
+          "title": "Family That Drags Together",
+          "date": "Oct 6, 2016"
+        },
+        {
+          "title": "All Stars Supergroup",
+          "date": "Oct 13, 2016"
+        },
+        {
+          "title": "Reunited!",
+          "date": "Oct 27, 2016"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "US AS 3",
+      "year": 2017,
+      "episodes": [
+        {
+          "title": "All Star Variety Show",
+          "date": "Jan 25, 2018"
+        },
+        {
+          "title": "Drag Divas Live",
+          "date": "Feb 1, 2018"
+        },
+        {
+          "title": "The Bitchelor",
+          "date": "Feb 8, 2018"
+        },
+        {
+          "title": "Snatch Game: All Stars Edition",
+          "date": "Feb 15, 2018"
+        },
+        {
+          "title": "Pop Art Ball",
+          "date": "Feb 22, 2018"
+        },
+        {
+          "title": "Handmaids to Kitty Girls",
+          "date": "Mar 1, 2018"
+        },
+        {
+          "title": "My Best Squirrelfriend's Dragsmaids Wedding Trip",
+          "date": "Mar 8, 2018"
+        },
+        {
+          "title": "A Jury of Their Queers",
+          "date": "Mar 15, 2018"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "US AS 4",
+      "year": 2018,
+      "episodes": [
+        {
+          "title": "All Star Super Queen Variety Show",
+          "date": "Dec 14, 2018"
+        },
+        {
+          "title": "Super Girl Groups, Henny",
+          "date": "Dec 21, 2018"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Dec 28, 2018"
+        },
+        {
+          "title": "Jersey Justice",
+          "date": "Jan 4, 2019"
+        },
+        {
+          "title": "Roast in Peace",
+          "date": "Jan 11, 2019"
+        },
+        {
+          "title": "LaLaPaRUza",
+          "date": "Jan 18, 2019"
+        },
+        {
+          "title": "Queens of Clubs",
+          "date": "Jan 25, 2019"
+        },
+        {
+          "title": "RuPaul's Best Judy's Race",
+          "date": "Feb 1, 2019"
+        },
+        {
+          "title": "Sex and the Kitty Girl",
+          "date": "Feb 8, 2019"
+        },
+        {
+          "title": "Super Queen Grand Finale",
+          "date": "Feb 15, 2019"
+        }
+      ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "US AS 5",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "All Star Variety Extravaganza",
+          "date": "Jun 5, 2020"
+        },
+        {
+          "title": "I'm in Love!",
+          "date": "Jun 12, 2020"
+        },
+        {
+          "title": "Get a Room!",
+          "date": "Jun 19, 2020"
+        },
+        {
+          "title": "She-MZ",
+          "date": "Jun 26, 2020"
+        },
+        {
+          "title": "Snatch Game of Love (2020)",
+          "date": "Jul 3, 2020"
+        },
+        {
+          "title": "The Charles Family Backyard Ball",
+          "date": "Jul 10, 2020"
+        },
+        {
+          "title": "Stand-Up Smackdown",
+          "date": "Jul 17, 2020"
+        },
+        {
+          "title": "Clap Back!",
+          "date": "Jul 24, 2020"
+        }
+      ]
+    },
+    {
+      "season": "Season 6",
+      "shortSeason": "S6",
+      "shortTitle": "US AS 6",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "All Star Variety Extravaganza",
+          "date": "Jun 24, 2021"
+        },
+        {
+          "title": "The Blue Ball",
+          "date": "Jun 24, 2021"
+        },
+        {
+          "title": "Side Hustles",
+          "date": "Jul 1, 2021"
+        },
+        {
+          "title": "Halftime Headliners",
+          "date": "Jul 8, 2021"
+        },
+        {
+          "title": "Pink Table Talk",
+          "date": "Jul 15, 2021"
+        },
+        {
+          "title": "Rumerican Horror Story: Coven Girls",
+          "date": "Jul 22, 2021"
+        },
+        {
+          "title": "Show Up Queen",
+          "date": "Jul 29, 2021"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Aug 5, 2021"
+        },
+        {
+          "title": "Drag Tots",
+          "date": "Aug 12, 2021"
+        },
+        {
+          "title": "Rudemption Lip-Sync Smackdown",
+          "date": "Aug 19, 2021"
+        },
+        {
+          "title": "The Charisma, Uniqueness, Nerve and Talent Monologues",
+          "date": "Aug 26, 2021"
+        },
+        {
+          "title": "This Is Our Country",
+          "date": "Sep 2, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 7",
+      "shortSeason": "S7",
+      "shortTitle": "US AS 7",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Legends",
+          "date": "May 20, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 20, 2022"
+        },
+        {
+          "title": "The Realness of Fortune Ball",
+          "date": "May 27, 2022"
+        },
+        {
+          "title": "Fairytale Justice",
+          "date": "Jun 3, 2022"
+        },
+        {
+          "title": "Draguation Speeches",
+          "date": "Jun 10, 2022"
+        },
+        {
+          "title": "Total Ru-quest Live",
+          "date": "Jun 17, 2022"
+        },
+        {
+          "title": "Legendary Legend Looks",
+          "date": "Jun 24, 2022"
+        },
+        {
+          "title": "Santa's School for Girls",
+          "date": "Jul 1, 2022"
+        },
+        {
+          "title": "Dance Like Drag Queen",
+          "date": "Jul 8, 2022"
+        },
+        {
+          "title": "The Kennedy Davenport Center Honors Hall of Shade",
+          "date": "Jul 15, 2022"
+        },
+        {
+          "title": "Drag Race Gives Back Variety Extravaganza",
+          "date": "Jul 22, 2022"
+        },
+        {
+          "title": "Lip Sync LaLaPaRuza Smackdown",
+          "date": "Jul 29, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 8",
+      "shortSeason": "S8",
+      "shortTitle": "US AS 8",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "The Fame Games",
+          "date": "May 12, 2023"
+        },
+        {
+          "title": "'It's RDR Live!'",
+          "date": "May 12, 2023"
+        },
+        {
+          "title": "The Supermarket Ball",
+          "date": "May 19, 2023"
+        },
+        {
+          "title": "Screen Queens",
+          "date": "May 26, 2023"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Jun 2, 2023"
+        },
+        {
+          "title": "JOAN: The Unauthorized Rusical!",
+          "date": "Jun 9, 2023"
+        },
+        {
+          "title": "Forensic Queens",
+          "date": "Jun 16, 2023"
+        },
+        {
+          "title": "You're a Winner Baby!",
+          "date": "Jun 23, 2023"
+        },
+        {
+          "title": "Carson Kressley, This Is Your Gay Life",
+          "date": "Jun 30, 2023"
+        },
+        {
+          "title": "The Letter \"L\"",
+          "date": "Jul 7, 2023"
+        },
+        {
+          "title": "The Fame Games Variety Extravaganza",
+          "date": "Jul 14, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jul 21, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race Thailand": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Th 1",
+      "year": 2018,
+      "episodes": [
+        {
+          "title": "Contestant's Story",
+          "date": "Feb 15, 2018"
+        },
+        {
+          "title": "Power of Love",
+          "date": "Feb 22, 2018"
+        },
+        {
+          "title": "Curtain to Couture",
+          "date": "Mar 1, 2018"
+        },
+        {
+          "title": "Beloved Thai Movies",
+          "date": "Mar 8, 2018"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 15, 2018"
+        },
+        {
+          "title": "Commercial, Commercial",
+          "date": "Mar 22, 2018"
+        },
+        {
+          "title": "Twins",
+          "date": "Mar 29, 2018"
+        },
+        {
+          "title": "Final Runway",
+          "date": "Apr 5, 2018"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Th 2",
+      "year": 2019,
+      "episodes": [
+        {
+          "title": "Re-Born This Way",
+          "date": "Jan 11, 2019"
+        },
+        {
+          "title": "Under The Rainbow",
+          "date": "Jan 18, 2019"
+        },
+        {
+          "title": "Thai Beauty",
+          "date": "Jan 25, 2019"
+        },
+        {
+          "title": "Mother and Daughter",
+          "date": "Feb 1, 2019"
+        },
+        {
+          "title": "Hollywood Inspirations",
+          "date": "Feb 8, 2019"
+        },
+        {
+          "title": "Power of Speech",
+          "date": "Feb 15, 2019"
+        },
+        {
+          "title": "Food Lover",
+          "date": "Feb 22, 2019"
+        },
+        {
+          "title": "Heavenly Snatch",
+          "date": "Mar 1, 2019"
+        },
+        {
+          "title": "Thai Musical",
+          "date": "Mar 8, 2019"
+        },
+        {
+          "title": "Family Superheroes",
+          "date": "Mar 15, 2019"
+        },
+        {
+          "title": "White Elephant",
+          "date": "Mar 22, 2019"
+        },
+        {
+          "title": "Queen's Reunited",
+          "date": "Mar 29, 2019"
+        },
+        {
+          "title": "Final Runway",
+          "date": "Apr 5, 2019"
+        }
+      ]
+    }
+  ],
+  "RuPaul's Drag Race UK": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "UK 1",
+      "year": 2019,
+      "episodes": [
+        {
+          "title": "The Royal Queens",
+          "date": "Oct 3, 2019"
+        },
+        {
+          "title": "Downton Draggy",
+          "date": "Oct 10, 2019"
+        },
+        {
+          "title": "Posh on a Penny",
+          "date": "Oct 17, 2019"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 24, 2019"
+        },
+        {
+          "title": "Girl Group Battle Royale",
+          "date": "Oct 31, 2019"
+        },
+        {
+          "title": "Thirsty Werk",
+          "date": "Nov 7, 2019"
+        },
+        {
+          "title": "Family That Drags Together",
+          "date": "Nov 14, 2019"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 21, 2019"
+        },
+        {
+          "title": "It's a Wrap!",
+          "date": "Nov 29, 2019"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "UK 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Bring Back My Queens",
+          "date": "Jan 14, 2021"
+        },
+        {
+          "title": "Rats: The Rusical",
+          "date": "Jan 21, 2021"
+        },
+        {
+          "title": "Who Wore It Best?",
+          "date": "Jan 28, 2021"
+        },
+        {
+          "title": "Morning Glory",
+          "date": "Feb 4, 2021"
+        },
+        {
+          "title": "The RuRuvision Song Contest",
+          "date": "Feb 11, 2021"
+        },
+        {
+          "title": "Queens on Lockdown",
+          "date": "Feb 12, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Feb 18, 2021"
+        },
+        {
+          "title": "Lockdown Supersheroes",
+          "date": "Feb 25, 2021"
+        },
+        {
+          "title": "Stoned on the Runway",
+          "date": "Mar 4, 2021"
+        },
+        {
+          "title": "BeastEnders",
+          "date": "Mar 11, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 18, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "UK 3",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "The Return of Royalty",
+          "date": "Sep 23, 2021"
+        },
+        {
+          "title": "Dragoton",
+          "date": "Sep 30, 2021"
+        },
+        {
+          "title": "Great Outdoors",
+          "date": "Oct 7, 2021"
+        },
+        {
+          "title": "Big Drag Energy",
+          "date": "Oct 14, 2021"
+        },
+        {
+          "title": "Draglexa",
+          "date": "Oct 21, 2021"
+        },
+        {
+          "title": "The Snatch Game",
+          "date": "Oct 28, 2021"
+        },
+        {
+          "title": "Miss Fugly Beauty Pageant",
+          "date": "Nov 4, 2021"
+        },
+        {
+          "title": "Bra Wars",
+          "date": "Nov 11, 2021"
+        },
+        {
+          "title": "The Pearly Gates Roast",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 25, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "UK 4",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "ST4RT Your Engines",
+          "date": "Sep 22, 2022"
+        },
+        {
+          "title": "Yass-tonbury Festival",
+          "date": "Sep 29, 2022"
+        },
+        {
+          "title": "Bing-oh No She Better Do!",
+          "date": "Oct 6, 2022"
+        },
+        {
+          "title": "Catty Man",
+          "date": "Oct 13, 2022"
+        },
+        {
+          "title": "Lairy Poppins: The Rusical",
+          "date": "Oct 20, 2022"
+        },
+        {
+          "title": "Strictly Come Snatch Game",
+          "date": "Oct 27, 2022"
+        },
+        {
+          "title": "Makeover Challenge",
+          "date": "Nov 3, 2022"
+        },
+        {
+          "title": "The Squirrel Games",
+          "date": "Nov 10, 2022"
+        },
+        {
+          "title": "The General Erection Roast",
+          "date": "Nov 17, 2022"
+        },
+        {
+          "title": "Grande Finale",
+          "date": "Nov 24, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "UK 5",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Tickety-Boo",
+          "date": "Sep 28, 2023"
+        },
+        {
+          "title": "Pet Shop Girls",
+          "date": "Oct 5, 2023"
+        },
+        {
+          "title": "Club Bangers",
+          "date": "Oct 12, 2023"
+        },
+        {
+          "title": "DisasterClass",
+          "date": "Oct 19, 2023"
+        },
+        {
+          "title": "Panto Dames",
+          "date": "Oct 26, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 2, 2023"
+        },
+        {
+          "title": "Melodrama-Rama",
+          "date": "Nov 9, 2023"
+        },
+        {
+          "title": "Hotline Makeover",
+          "date": "Nov 16, 2023"
+        },
+        {
+          "title": "Dragiators' Roast",
+          "date": "Nov 23, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 30, 2023"
+        }
+      ]
+    }
+  ],
+  "Canada's Drag Race": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Can 1",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "Eh-Laganza Eh-Xtravaganza",
+          "date": "Jul 27, 2020"
+        },
+        {
+          "title": "Her-itage Moments",
+          "date": "Jul 9, 2020"
+        },
+        {
+          "title": "Not Sorry Aboot It",
+          "date": "Jul 16, 2020"
+        },
+        {
+          "title": "Single Use Queens",
+          "date": "Jul 23, 2020"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 30, 2020"
+        },
+        {
+          "title": "Star Sixty-Nine",
+          "date": "Aug 6, 2020"
+        },
+        {
+          "title": "Miss Loose Jaw",
+          "date": "Aug 13, 2020"
+        },
+        {
+          "title": "Welcome to the Family",
+          "date": "Aug 20, 2020"
+        },
+        {
+          "title": "The Snow Ball",
+          "date": "Aug 27, 2020"
+        },
+        {
+          "title": "U Wear It Well",
+          "date": "Sep 3, 2020"
+        },
+        {
+          "title": "Canada's Drag Race Anniversary Extravaganza",
+          "date": "Sep 6, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Can 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Lost and Fierce",
+          "date": "Oct 14, 2021"
+        },
+        {
+          "title": "Under the Big Top",
+          "date": "Oct 21, 2021"
+        },
+        {
+          "title": "Screech",
+          "date": "Oct 28, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 4, 2021"
+        },
+        {
+          "title": "Bye Flop",
+          "date": "Nov 11, 2021"
+        },
+        {
+          "title": "The Sinner's Ball",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "The Roast of Brooke Lynn Hytes",
+          "date": "Nov 25, 2021"
+        },
+        {
+          "title": "Prom",
+          "date": "Dec 2, 2021"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Dec 9, 2021"
+        },
+        {
+          "title": "Queen of the North",
+          "date": "Dec 16, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "Can 3",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Sidewalk to Catwalk",
+          "date": "Jul 14, 2022"
+        },
+        {
+          "title": "The Who-Knows",
+          "date": "Jul 21, 2022"
+        },
+        {
+          "title": "Ruets",
+          "date": "Jul 28, 2022"
+        },
+        {
+          "title": "Bitch Stole My Look",
+          "date": "Aug 4, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 11, 2022"
+        },
+        {
+          "title": "Cosmetic Queens",
+          "date": "Aug 18, 2022"
+        },
+        {
+          "title": "Squirrels Trip: The Rusical",
+          "date": "Aug 25, 2022"
+        },
+        {
+          "title": "Masquerade Ball",
+          "date": "Sep 1, 2022"
+        },
+        {
+          "title": "True North Strong (And Fierce)",
+          "date": "Sep 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "Can 4",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Premiere Ball",
+          "date": "Nov 16, 2023"
+        },
+        {
+          "title": "Qv-She",
+          "date": "Nov 23, 2023"
+        },
+        {
+          "title": "OH-SHE-GAGGIN",
+          "date": "Nov 30, 2023"
+        },
+        {
+          "title": "Out of the Closet",
+          "date": "Dec 7, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Dec 14, 2023"
+        },
+        {
+          "title": "Lip Sync Slay Offs",
+          "date": "Dec 21, 2023"
+        },
+        {
+          "title": "From Drags to Riches: The Rusical",
+          "date": "Dec 28, 2023"
+        },
+        {
+          "title": "A Star Is Born",
+          "date": "Jan 4, 2024"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jan 11, 2024"
+        }
+      ]
+    }
+  ],
+  "Drag Race Holland": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Ho 1",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "Land of the Queens",
+          "date": "Sep 18, 2020"
+        },
+        {
+          "title": "Give Face!",
+          "date": "Sep 25, 2020"
+        },
+        {
+          "title": "Drama Queens",
+          "date": "Oct 2, 2020"
+        },
+        {
+          "title": "Dancing Queens",
+          "date": "Oct 8, 2020"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 15, 2020"
+        },
+        {
+          "title": "It Takes Two",
+          "date": "Oct 22, 2020"
+        },
+        {
+          "title": "Maxima - The Rusical",
+          "date": "Oct 29, 2020"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Nov 5, 2020"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Ho 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Who's That Queen?",
+          "date": "Aug 6, 2021"
+        },
+        {
+          "title": "Ooh, I Got Sunburned!",
+          "date": "Aug 13, 2021"
+        },
+        {
+          "title": "Icons Only (Snatch Game)",
+          "date": "Aug 20, 2021"
+        },
+        {
+          "title": "Cinderella in Mokum",
+          "date": "Aug 27, 2021"
+        },
+        {
+          "title": "Dearly Beloved (Family Resemblance)",
+          "date": "Sep 3, 2021"
+        },
+        {
+          "title": "Spill the Coffee",
+          "date": "Sep 10, 2021"
+        },
+        {
+          "title": "Whodunnit",
+          "date": "Sep 17, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Sep 24, 2021"
+        }
+      ]
+    }
+  ],
+  "Drag Race España": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Es 1",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Bienvenidas Reinas",
+          "date": "May 30, 2021"
+        },
+        {
+          "title": "Divas",
+          "date": "Jun 6, 2021"
+        },
+        {
+          "title": "Mocatriz",
+          "date": "Jun 13, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jun 20, 2021"
+        },
+        {
+          "title": "Básica o cínica",
+          "date": "Jun 27, 2021"
+        },
+        {
+          "title": "Drags de la comedia",
+          "date": "Jul 4, 2021"
+        },
+        {
+          "title": "Titanes del drag",
+          "date": "Jul 11, 2021"
+        },
+        {
+          "title": "El Reencuentro",
+          "date": "Jul 18, 2021"
+        },
+        {
+          "title": "La gran final",
+          "date": "Jul 25, 2021"
+        },
+        {
+          "title": "La coronación",
+          "date": "Aug 1, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Es 2",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "La nueva promoción",
+          "date": "Mar 27, 2022"
+        },
+        {
+          "title": "Supremme Eleganza Talent Extravaganza",
+          "date": "Apr 3, 2022"
+        },
+        {
+          "title": "El diario de Putricia",
+          "date": "Apr 10, 2022"
+        },
+        {
+          "title": "La llamadrag",
+          "date": "Apr 17, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Apr 24, 2022"
+        },
+        {
+          "title": "Ball español, siglos X, XX y XXX",
+          "date": "May 1, 2022"
+        },
+        {
+          "title": "¡Vente a España!",
+          "date": "May 8, 2022"
+        },
+        {
+          "title": "Drags de la comedia",
+          "date": "May 15, 2022"
+        },
+        {
+          "title": "Makeover de los chicos de oro",
+          "date": "May 22, 2022"
+        },
+        {
+          "title": "El reencuentro",
+          "date": "May 29, 2022"
+        },
+        {
+          "title": "Llévame al cielo - La final",
+          "date": "Jun 5, 2022"
+        },
+        {
+          "title": "La coronación",
+          "date": "Jun 13, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "Es 3",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Supremme Eleganza Talent Extravaganza",
+          "date": "Apr 16, 2023"
+        },
+        {
+          "title": "Dragvisión",
+          "date": "Apr 23, 2023"
+        },
+        {
+          "title": "El gran Ball de las regiones",
+          "date": "Apr 30, 2023"
+        },
+        {
+          "title": "Secuelas de terror drag",
+          "date": "May 7, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 14, 2023"
+        },
+        {
+          "title": "El mago precoz",
+          "date": "May 21, 2023"
+        },
+        {
+          "title": "Segunda oportunidrag",
+          "date": "May 28, 2023"
+        },
+        {
+          "title": "¡Un, dos, drags!",
+          "date": "Jun 4, 2023"
+        },
+        {
+          "title": "Make Over: Barricientas",
+          "date": "Jun 11, 2023"
+        },
+        {
+          "title": "El Reencuentro",
+          "date": "Jun 18, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jun 25, 2023"
+        },
+        {
+          "title": "The Coronation",
+          "date": "Jul 1, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race Italia": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "It 1",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Ciao Italia",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "Divas",
+          "date": "Nov 25, 2021"
+        },
+        {
+          "title": "Night of a Thousand Raffaella Carràs",
+          "date": "Dec 2, 2021"
+        },
+        {
+          "title": "Snatch Game & Fab 80's",
+          "date": "Dec 7, 2021"
+        },
+        {
+          "title": "Long Live the Drag Bride",
+          "date": "Dec 16, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 23, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "It 2",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Little Italy",
+          "date": "Oct 20, 2022"
+        },
+        {
+          "title": "Colorful Drag, Lucky Drag",
+          "date": "Oct 27, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 3, 2022"
+        },
+        {
+          "title": "Daughters of the Stars",
+          "date": "Nov 10, 2022"
+        },
+        {
+          "title": "Festival Drag",
+          "date": "Nov 17, 2022"
+        },
+        {
+          "title": "Sporty Queens",
+          "date": "Nov 24, 2022"
+        },
+        {
+          "title": "A Walk in Time",
+          "date": "Dec 1, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "It 3",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Express Yourself",
+          "date": "Oct 12, 2023"
+        },
+        {
+          "title": "Walk of Fame",
+          "date": "Oct 20, 2023"
+        },
+        {
+          "title": "Night of a Thousand Paola and Chiaras",
+          "date": "Oct 27, 2023"
+        },
+        {
+          "title": "The Devil Wears Drag!",
+          "date": "Nov 3, 2023"
+        },
+        {
+          "title": "Back to School",
+          "date": "Nov 10, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 17, 2023"
+        },
+        {
+          "title": "A Rhythm of Drag",
+          "date": "Nov 24, 2023"
+        },
+        {
+          "title": "Death Drags You",
+          "date": "Dec 1, 2023"
+        },
+        {
+          "title": "Social Media Queens",
+          "date": "Dec 8, 2023"
+        },
+        {
+          "title": "Dragremo",
+          "date": "Dec 15, 2023"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Dec 22, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 29, 2023"
+        }
+      ]
+    }
+  ],
+  "RuPaul's Drag Race Down Under": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "DU 1",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "G'day G'day G'day",
+          "date": "May 1, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 8, 2021"
+        },
+        {
+          "title": "Queens Down Under",
+          "date": "May 15, 2021"
+        },
+        {
+          "title": "Rucycled",
+          "date": "May 22, 2021"
+        },
+        {
+          "title": "Marketing Hats",
+          "date": "May 29, 2021"
+        },
+        {
+          "title": "Family Resemblance",
+          "date": "Jun 5, 2021"
+        },
+        {
+          "title": "Down Under Talent Show Extravaganza",
+          "date": "Jun 12, 2021"
+        },
+        {
+          "title": "Down Under Grand Finale",
+          "date": "Jun 19, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "DU 2",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Grand Opening",
+          "date": "Jul 30, 2022"
+        },
+        {
+          "title": "Cagey Queens",
+          "date": "Aug 6, 2022"
+        },
+        {
+          "title": "A Bottomless Brunch",
+          "date": "Aug 13, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 20, 2022"
+        },
+        {
+          "title": "Bosom Buddies",
+          "date": "Aug 27, 2022"
+        },
+        {
+          "title": "Hometown Hunnies",
+          "date": "Sep 3, 2022"
+        },
+        {
+          "title": "Drag Family Makeover",
+          "date": "Sep 10, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Sep 17, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "DU 3",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Mardi Gras Pride",
+          "date": "Jul 28, 2023"
+        },
+        {
+          "title": "Muriel's Bedding",
+          "date": "Aug 4, 2023"
+        },
+        {
+          "title": "Fake Housewives of Down Under",
+          "date": "Aug 11, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 18, 2023"
+        },
+        {
+          "title": "BMX Bitches",
+          "date": "Aug 25, 2023"
+        },
+        {
+          "title": "Drag Brunch",
+          "date": "Sep 1, 2023"
+        },
+        {
+          "title": "Terriers in Tiaras",
+          "date": "Sep 8, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Sep 15, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race France": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Fr 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Bonjour, Bonjour, Bonjour",
+          "date": "Jun 25, 2022"
+        },
+        {
+          "title": "Queen Pour Cent",
+          "date": "Jun 30, 2022"
+        },
+        {
+          "title": "French Ball",
+          "date": "Jul 7, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 14, 2022"
+        },
+        {
+          "title": "Popstars",
+          "date": "Jul 21, 2022"
+        },
+        {
+          "title": "Un Parfum de Drag",
+          "date": "Jul 28, 2022"
+        },
+        {
+          "title": "Sororité",
+          "date": "Aug 4, 2022"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Aug 11, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Fr 2",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "A Lé-Gen-Daire Return",
+          "date": "Jun 30, 2023"
+        },
+        {
+          "title": "It's Show Night",
+          "date": "Jul 7, 2023"
+        },
+        {
+          "title": "Le Croissant Show",
+          "date": "Jul 14, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 21, 2023"
+        },
+        {
+          "title": "The Musidrag",
+          "date": "Jul 28, 2023"
+        },
+        {
+          "title": "The Time Ball",
+          "date": "Aug 4, 2023"
+        },
+        {
+          "title": "Showtime!",
+          "date": "Aug 11, 2023"
+        },
+        {
+          "title": "The Makeover Challenge",
+          "date": "Aug 18, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Aug 25, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race Philippines": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Ph 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Mabu-Heeey!",
+          "date": "Aug 17, 2022"
+        },
+        {
+          "title": "Sagalamazon",
+          "date": "Aug 17, 2022"
+        },
+        {
+          "title": "Pop Off Ate!",
+          "date": "Aug 24, 2022"
+        },
+        {
+          "title": "OPM Divas: The Rusical",
+          "date": "Aug 31, 2022"
+        },
+        {
+          "title": "Miss Shutacca",
+          "date": "Sep 7, 2022"
+        },
+        {
+          "title": "Snatch Game KNB",
+          "date": "Sep 14, 2022"
+        },
+        {
+          "title": "Shop Shop Ladies Ball",
+          "date": "Sep 21, 2022"
+        },
+        {
+          "title": "Twinning!",
+          "date": "Sep 28, 2022"
+        },
+        {
+          "title": "Charot of Fire",
+          "date": "Oct 5, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Oct 12, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Ph 2",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Grand Opening Part 1",
+          "date": "Aug 2, 2023"
+        },
+        {
+          "title": "Grand Opening Part 2",
+          "date": "Aug 9, 2023"
+        },
+        {
+          "title": "Who Wore It Bettah?",
+          "date": "Aug 16, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 23, 2023"
+        },
+        {
+          "title": "Sirena: The Rusical",
+          "date": "Aug 30, 2023"
+        },
+        {
+          "title": "Dramarama Mama!",
+          "date": "Sep 6, 2023"
+        },
+        {
+          "title": "Twinning: The Shequel",
+          "date": "Sep 13, 2023"
+        },
+        {
+          "title": "Branding-Ding-Ding!",
+          "date": "Sep 20, 2023"
+        },
+        {
+          "title": "The Main Event",
+          "date": "Sep 27, 2023"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Oct 4, 2023"
+        }
+      ]
+    }
+  ],
+  "RuPaul's Drag Race UK vs the World": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "UK vsTW 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Global Glamazons",
+          "date": "Feb 1, 2022"
+        },
+        {
+          "title": "RuPaul Ball",
+          "date": "Feb 8, 2022"
+        },
+        {
+          "title": "West End Wendys",
+          "date": "Feb 15, 2022"
+        },
+        {
+          "title": "Snatch Game: Family Edition",
+          "date": "Feb 22, 2022"
+        },
+        {
+          "title": "Semifinals",
+          "date": "Mar 1, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "UK vsTW 2",
+      "year": 2024,
+      "unfinished": true,
+      "xOffset": 3,
+      "episodes": [
+        {
+          "title": "Episode #2.1",
+          "date": "Feb 9, 2024"
+        }
+      ]
+    }
+  ],
+  "Canada's Drag Race: Canada vs the World": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Can vsTW 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Bonjour, Hi",
+          "date": "Nov 18, 2022"
+        },
+        {
+          "title": "Snatch Summit",
+          "date": "Nov 25, 2022"
+        },
+        {
+          "title": "The Weather Ball",
+          "date": "Dec 2, 2022"
+        },
+        {
+          "title": "Comedy Queens",
+          "date": "Dec 9, 2022"
+        },
+        {
+          "title": "Spy Queens",
+          "date": "Dec 16, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 23, 2022"
+        }
+      ]
+    }
+  ],
+  "Drag Race Belgique": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Be 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Bonjour Iedereen",
+          "date": "Feb 16, 2023"
+        },
+        {
+          "title": "Les incontournables",
+          "date": "Feb 23, 2023"
+        },
+        {
+          "title": "Festival Realness",
+          "date": "Mar 2, 2023"
+        },
+        {
+          "title": "L'émission qui vous déshabille",
+          "date": "Mar 9, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 16, 2023"
+        },
+        {
+          "title": "A deux c'est mieu!",
+          "date": "Mar 23, 2023"
+        },
+        {
+          "title": "Discour de reine",
+          "date": "Mar 30, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 6, 2023"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Be 2",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #2.1",
+          "date": "Feb 1, 2024"
+        }
+      ]
+    }
+  ],
+  "Drag Race Sverige": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Sv 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Start Your Engines!",
+          "date": "Mar 4, 2023"
+        },
+        {
+          "title": "MARATHON Talent Hunt",
+          "date": "Mar 11, 2023"
+        },
+        {
+          "title": "Drag-a'-mera!",
+          "date": "Mar 18, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 25, 2023"
+        },
+        {
+          "title": "The Dragodi Festival",
+          "date": "Apr 1, 2023"
+        },
+        {
+          "title": "Dream Sisters",
+          "date": "Apr 8, 2023"
+        },
+        {
+          "title": "Diva Assoluta",
+          "date": "Apr 15, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 22, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race México": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Mex 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Drag mi tierra México",
+          "date": "Jun 22, 2023"
+        },
+        {
+          "title": "Mi quinceañera drag",
+          "date": "Jun 29, 2023"
+        },
+        {
+          "title": "Noche de María Felix",
+          "date": "Jul 6, 2023"
+        },
+        {
+          "title": "Dragapulco Shore: El Rusical",
+          "date": "Jul 13, 2023"
+        },
+        {
+          "title": "Girl band mexicana",
+          "date": "Jul 20, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 27, 2023"
+        },
+        {
+          "title": "Terapia villanas de telenovela",
+          "date": "Aug 3, 2023"
+        },
+        {
+          "title": "Re-diseña con Levi's",
+          "date": "Aug 10, 2023"
+        },
+        {
+          "title": "Roast y Stand-up Comedy",
+          "date": "Aug 17, 2023"
+        },
+        {
+          "title": "Reinas de belleza latinas",
+          "date": "Aug 24, 2023"
+        },
+        {
+          "title": "Reunión",
+          "date": "Aug 31, 2023"
+        },
+        {
+          "title": "La gran final",
+          "date": "Sep 7, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race Brasil": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Br 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "What's Up, Lindas!",
+          "date": "Aug 30, 2023"
+        },
+        {
+          "title": "Frenemies",
+          "date": "Sep 6, 2023"
+        },
+        {
+          "title": "Tupiniqueens",
+          "date": "Sep 13, 2023"
+        },
+        {
+          "title": "Atlantic Mermaids",
+          "date": "Sep 20, 2023"
+        },
+        {
+          "title": "Glamazonia",
+          "date": "Sep 27, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 4, 2023"
+        },
+        {
+          "title": "Brazil Loves Puppets!",
+          "date": "Oct 11, 2023"
+        },
+        {
+          "title": "Brazilian Festivals Ball",
+          "date": "Oct 18, 2023"
+        },
+        {
+          "title": "Drag Shade Brasil!",
+          "date": "Oct 25, 2023"
+        },
+        {
+          "title": "Carnaval Makeover",
+          "date": "Nov 1, 2023"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Nov 8, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 15, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race Germany": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Deu 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Willkommen in Deutschland",
+          "date": "Sep 5, 2023"
+        },
+        {
+          "title": "Fetish",
+          "date": "Sep 12, 2023"
+        },
+        {
+          "title": "Dragort: The Rusical",
+          "date": "Sep 19, 2023"
+        },
+        {
+          "title": "Funny Shops",
+          "date": "Sep 26, 2023"
+        },
+        {
+          "title": "Barbie Salesh",
+          "date": "Oct 3, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 10, 2023"
+        },
+        {
+          "title": "Poor But Sexy",
+          "date": "Oct 17, 2023"
+        },
+        {
+          "title": "Comedy Roast",
+          "date": "Oct 24, 2023"
+        },
+        {
+          "title": "Web Show",
+          "date": "Oct 31, 2023"
+        },
+        {
+          "title": "Dirndl Makeover",
+          "date": "Nov 7, 2023"
+        },
+        {
+          "title": "Reunion",
+          "date": "Nov 14, 2023"
+        },
+        {
+          "title": "Finale",
+          "date": "Nov 21, 2023"
+        }
+      ]
+    }
+  ],
+  "Drag Race España All Stars": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Es AS 1",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #1.1",
+          "date": "Feb 4, 2024"
+        }
+      ]
+    }
+  ]
+}
