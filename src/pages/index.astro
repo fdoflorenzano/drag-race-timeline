@@ -39,7 +39,7 @@ for (
   for (let week = 1; week <= weeksInYear(year); week++) {
     weekIndex += 1;
     weeks[`${week}-${year}`] = { year, week, weekIndex };
-    console.log({ key: `${week}-${year}`, obj: { year, week, weekIndex } });
+    // console.log({ key: `${week}-${year}`, obj: { year, week, weekIndex } });
     const weekYear = getWeekNumber(endDate);
     if (year === weekYear[0] && week === weekYear[1]) {
       break;
@@ -60,7 +60,7 @@ for (let version in data) {
       const date = parseTime(episode.date) as Date;
       const weekYear = getWeekNumber(date);
       const weekObject = weeks[`${weekYear[1]}-${weekYear[0]}`];
-      console.log({ weekObject, weekYear, date });
+      // console.log({ weekObject, weekYear, date });
       const week = weekObject.weekIndex;
 
       const ep = { ...episode, date, week };
@@ -80,11 +80,9 @@ for (let version in processedData) {
     const premierDate = season.episodes[0].date;
     const premierWeek = getWeekNumber(premierDate);
     const weekStart = weeks[`${premierWeek[1]}-${premierWeek[0]}`].weekIndex;
-    console.log({ premierWeek, premierDate, weekStart });
     const finaleDate = season.episodes[season.episodes.length - 1].date;
     const finaleWeek = getWeekNumber(finaleDate);
     const weekEnd = weeks[`${finaleWeek[1]}-${finaleWeek[0]}`].weekIndex;
-    console.log({ finaleWeek, finaleDate, weekEnd });
 
     seasons.push({
       ...season,
@@ -139,8 +137,6 @@ for (let week of weeksArray) {
       updateOffset();
     }
   }
-
-  // console.log({ weekIndex, currentSeasons: [...currentSeasons] });
 }
 
 console.log("offset loaded");
@@ -150,7 +146,6 @@ let streaks: any[] = [];
 
 const usedWeeks: { [key: string]: any } = {};
 
-// console.log({ data });
 for (let season of seasons) {
   const seasonStreaks = [];
   let lastSeasonWeek = null;
@@ -161,7 +156,6 @@ for (let season of seasons) {
 
     const weekYear = getWeekNumber(episode.date);
     const week = weeks[`${weekYear[1]}-${weekYear[0]}`].weekIndex;
-    console.log({ weekYear, week, date: episode.date });
 
     usedWeeks[week] = true;
 
@@ -236,9 +230,6 @@ for (let streak of aux) {
 }
 
 console.log("general streaks loaded");
-
-// console.log({ data });
-// console.log({ streaks });
 
 const rectHeight = 20;
 const width = 420;
