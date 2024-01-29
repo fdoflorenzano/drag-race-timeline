@@ -45,6 +45,8 @@ for (
 }
 const weeksArray = Object.values(weeks);
 
+console.log("weeks loaded");
+
 const processedData: { [key: string]: any } = {};
 for (let version in data) {
   const versionData = (data as { [key: string]: any })[version];
@@ -55,6 +57,7 @@ for (let version in data) {
       const date = parseTime(episode.date) as Date;
       const weekYear = getWeekNumber(date);
       const weekObject = weeks[`${weekYear[1]}-${weekYear[0]}`];
+      console.log({ weekObject, weekYear, date });
       const week = weekObject.weekIndex;
 
       const ep = { ...episode, date, week };
@@ -65,6 +68,8 @@ for (let version in data) {
   processedData[version] = seasons;
 }
 
+console.log("processes data");
+
 const seasons = [];
 for (let version in processedData) {
   const versionData = processedData[version];
@@ -72,9 +77,12 @@ for (let version in processedData) {
     const premierDate = season.episodes[0].date;
     const premierWeek = getWeekNumber(premierDate);
     const weekStart = weeks[`${premierWeek[1]}-${premierWeek[0]}`].weekIndex;
+    console.log({ premierWeek, premierDate, weekStart });
     const finaleDate = season.episodes[season.episodes.length - 1].date;
     const finaleWeek = getWeekNumber(finaleDate);
     const weekEnd = weeks[`${finaleWeek[1]}-${finaleWeek[0]}`].weekIndex;
+    console.log({ finaleWeek, finaleDate, weekEnd });
+
     seasons.push({
       ...season,
       weekStart,
@@ -83,6 +91,8 @@ for (let version in processedData) {
     });
   }
 }
+
+console.log("seasons loaded");
 
 let currentSeasons: any[] = [];
 for (let week of weeksArray) {
@@ -130,6 +140,8 @@ for (let week of weeksArray) {
   // console.log({ weekIndex, currentSeasons: [...currentSeasons] });
 }
 
+console.log("offset loaded");
+
 const episodes = [];
 let streaks: any[] = [];
 
@@ -146,6 +158,7 @@ for (let season of seasons) {
 
     const weekYear = getWeekNumber(episode.date);
     const week = weeks[`${weekYear[1]}-${weekYear[0]}`].weekIndex;
+    console.log({ weekYear, week, date: episode.date });
 
     usedWeeks[week] = true;
 
@@ -177,6 +190,8 @@ for (let season of seasons) {
   }
   streaks = [...streaks, ...seasonStreaks];
 }
+
+console.log("streaks loaded");
 
 const usedWeeksArray = Object.keys(usedWeeks).map((k) => parseInt(k));
 usedWeeksArray.sort((a, b) => a - b);
@@ -216,6 +231,8 @@ for (let streak of aux) {
     }
   }
 }
+
+console.log("general streaks loaded");
 
 // console.log({ data });
 // console.log({ streaks });
