@@ -96,6 +96,7 @@ for (let version in processedData) {
 console.log("seasons loaded");
 
 let currentSeasons: any[] = [];
+let maxOffset = 0;
 for (let week of weeksArray) {
   const { weekIndex } = week;
 
@@ -134,12 +135,15 @@ for (let week of weeksArray) {
   for (let season of currentSeasons) {
     if (season.xOffset == null) {
       season.xOffset = nextOffSet;
+      if (maxOffset < nextOffSet) {
+        maxOffset = nextOffSet;
+      }
       updateOffset();
     }
   }
 }
 
-console.log("offset loaded");
+console.log("offset loaded", { maxOffset });
 
 const episodes = [];
 let streaks: any[] = [];
@@ -232,24 +236,18 @@ for (let streak of aux) {
 console.log("general streaks loaded");
 
 const rectHeight = 20;
-const width = 420;
-const marginTop = 20;
-const marginRight = 20;
-const marginBottom = 20;
-const marginLeft = 20;
-
-const height = rectHeight * weeksArray.length + marginTop + marginBottom;
 ---
 
 <Layout title="Drag Race Calendar">
   <main>
     <h1>Drag Race Calendar</h1>
 
-    <p>Last updated: 28/01/2024</p>
-
     <div
       class="calendar"
-      style={{ height: `${height}px`, width: `${width}px` }}
+      style={{
+        "--row-number": `${weeksArray.length}`,
+        "--track-number": `${maxOffset + 2}`,
+      }}
     >
       {
         weeksArray.map((d, i) => {
@@ -260,24 +258,25 @@ const height = rectHeight * weeksArray.length + marginTop + marginBottom;
             .isoWeekday(1);
           const last = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(7);
           return (
-            <div
-              style={{
-                position: "absolute",
-                left: `${marginLeft}px`,
-                top: `${height - marginBottom - rectHeight * (i + 1)}px`,
-                height: `${rectHeight}px`,
-                width: `${width - marginLeft - marginRight}px`,
-                color: "white",
-                borderStyle: "solid",
-                borderWidth: "1px 1px 0 1px",
-                borderColor: "rgba(255, 255, 255, 0.1)",
-                fontSize: "0.4em",
-              }}
-            >
-              <span>
-                {initial.format("DD MMM YY")} - {last.format("DD MMM YY")}
-              </span>
-            </div>
+            <>
+              <div
+                class="gridRow"
+                style={{
+                  gridColumn: `2 / span ${1 + maxOffset}`,
+                  gridRow: ` ${weeksArray.length - i} / span 1`,
+                }}
+              />
+              <div
+                style={{
+                  gridRow: ` ${weeksArray.length - i} / span 1`,
+                  alignSelf: "center",
+                  justifySelf: "end",
+                }}
+              >
+                <p class="gridLabel">{last.format("DD MMM YY")}</p>
+                <p class="gridLabel">{initial.format("DD MMM YY")}</p>
+              </div>
+            </>
           );
         })
       }
@@ -285,37 +284,22 @@ const height = rectHeight * weeksArray.length + marginTop + marginBottom;
       {
         streaks.map((d, i) => (
           <div
+            class="streak"
             style={{
-              position: "absolute",
-              left: `${150 + d.episodes[0].xOffset * 50}px`,
-              top: `${height - marginBottom - rectHeight * d.end + 2}px`,
+              gridColumn: `${2 + d.episodes[0].xOffset} / span 1`,
+              gridRow: `${weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
             }}
+            data-season={d.season}
           >
             <div
+              class="streakLine"
               style={{
-                height: `${rectHeight * (d.end - d.start + 1) - 4}px`,
-                width: `${rectHeight - 4}px`,
                 borderRadius: d.unfinished
-                  ? `0 0 ${rectHeight}px ${rectHeight}px`
-                  : `${rectHeight}px`,
-                background: "magenta",
-                borderColor: "white",
-                borderWidth: "1px",
-                borderStyle: "solid",
+                  ? `0 0 var(--col-width) var(--col-width)`
+                  : `var(--col-width)`,
               }}
             />
-            <p
-              style={{
-                position: "absolute",
-                left: 0,
-                top: 0,
-                margin: 0,
-                fontSize: "0.4em",
-                transformOrigin: "0 0",
-                transform: `translateX(${1.6 * rectHeight}px) translateY(3px) rotate(90deg)`,
-                minWidth: "50px",
-              }}
-            >
+            <p class="streakLabel" style={{}}>
               {d.season}
             </p>
           </div>
@@ -325,92 +309,111 @@ const height = rectHeight * weeksArray.length + marginTop + marginBottom;
       {
         generalStreaks.map((d, i) => (
           <div
+            class="streak generalStreak"
             style={{
-              position: "absolute",
-              right: `${-rectHeight}px`,
-              top: `${height - marginBottom - rectHeight * d.end + 2}px`,
+              gridColumn: `${maxOffset + 3} / span 1`,
+              gridRow: `${weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
             }}
           >
-            <div
-              style={{
-                height: `${rectHeight * (d.end - d.start + 1) - 4}px`,
-                width: `${rectHeight - 4}px`,
-                borderRadius: `${rectHeight}px`,
-                background: "orange",
-                borderColor: "white",
-                borderWidth: "1px",
-                borderStyle: "solid",
-              }}
-            />
-            <p
-              style={{
-                position: "absolute",
-                left: 0,
-                top: 0,
-                margin: 0,
-                fontSize: "0.4em",
-                transformOrigin: "0 0",
-                transform: `translateX(${1.6 * rectHeight}px) translateY(3px) rotate(90deg)`,
-                minWidth: "50px",
-              }}
-            >
-              {1 + d.end - d.start} weeks
-            </p>
+            <div class="streakLine" />
+            <p class="streakLabel">{1 + d.end - d.start} weeks</p>
           </div>
         ))
       }
-
-      <!-- const lines2 = root.append("g");
-lines2
-  .selectAll("line")
-  .data(generalStreaks)
-  .join("line")
-  .attr("stroke", "orange")
-  .attr("stroke-width", rectHeight / 2)
-  .attr("stroke-linecap", "round")
-  .attr("x1", width - marginRight - rectHeight / 2)
-  .attr("x2", width - marginRight - rectHeight / 2)
-  .attr(
-    "y1",
-    (d, i) =>
-      height - marginBottom - rectHeight * (d.start - 1) + rectHeight / 2,
-  )
-  .attr(
-    "y2",
-    (d, i) =>
-      height - marginBottom - rectHeight * (d.end - 1) + rectHeight / 2,
-  );
-
-const lines2labels = root.append("g");
-lines2labels
-  .selectAll("text")
-  .data(generalStreaks)
-  .join("text")
-  .attr("x", width - marginRight - rectHeight / 2)
-  .attr(
-    "y",
-    (d, i) =>
-      height - marginBottom - rectHeight * (d.end - 1) + rectHeight / 2,
-  )
-  .text((d) => 1 + d.end - d.start); -->
     </div>
 
-    <p>By <a href="https://github.com/fdoflorenzano">@fdoflorenzano</a></p>
+    <p class="paragraph">Last updated: 29/01/2024.</p>
+
+    <p class="paragraph">
+      By <a href="https://github.com/fdoflorenzano">@fdoflorenzano</a>.
+    </p>
   </main>
 </Layout>
 
 <style>
   main {
-    margin: auto;
-    padding: 1rem;
-    width: 500px;
-    max-width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+
+    padding: 50px 0;
     color: white;
-    font-size: 20px;
-    line-height: 1.6;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    align-self: stretch;
+  }
+
+  .paragraph > a,
+  .paragraph > a:visited {
+    color: var(--color-streak);
+  }
+
+  .paragraph > a:active {
+    color: var(--color-general-streak);
   }
 
   .calendar {
     position: relative;
+    display: grid;
+    grid-template-columns: [labels] 1fr repeat(
+        var(--track-number),
+        var(--col-width)
+      );
+    grid-template-rows: repeat(var(--row-number), var(--col-width));
+    gap: 0 calc(0.75 * var(--col-width));
+    margin-bottom: 3rem;
+  }
+
+  .gridRow {
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: var(--color-border);
+  }
+
+  .gridRow + .gridRow {
+    border-width: 1px 1px 0 1px;
+  }
+
+  .gridLabel {
+    margin: 0;
+    grid-column: labels / span 1;
+    font-size: 0.5rem;
+    text-align: end;
+  }
+
+  .streak {
+    position: relative;
+    overflow-x: visible;
+  }
+
+  .streakLine {
+    height: 100%;
+    background: var(--color-streak);
+  }
+
+  .generalStreak .streakLine {
+    background: var(--color-general-streak);
+    border-radius: var(--col-width);
+  }
+
+  .streakLabel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    font-size: 0.6rem;
+    transform-origin: 0 0;
+    width: max-content;
+    transform: rotate(90deg) translateX(0.3rem)
+      translateY(calc(-1 * (var(--col-width) + 0.8rem)));
   }
 </style>
