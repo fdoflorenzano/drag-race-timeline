@@ -53,14 +53,8 @@ for (let version in data) {
     const seas = { ...season, episodes: [] };
     for (let episode of season.episodes) {
       const date = parseTime(episode.date) as Date;
-
-      const weekObject =
-        weeks[`${getWeekNumber(date)[1]}-${date.getFullYear()}`];
-      // console.log({
-      //   weekObject,
-      //   key: `${getWeekNumber(date)[1]}-${date.getFullYear()}`,
-      //   date,
-      // });
+      const weekYear = getWeekNumber(date);
+      const weekObject = weeks[`${weekYear[1]}-${weekYear[0]}`];
       const week = weekObject.weekIndex;
 
       const ep = { ...episode, date, week };
@@ -76,13 +70,11 @@ for (let version in processedData) {
   const versionData = processedData[version];
   for (let season of versionData) {
     const premierDate = season.episodes[0].date;
-    const weekStart =
-      weeks[`${getWeekNumber(premierDate)[1]}-${premierDate.getFullYear()}`]
-        .weekIndex;
+    const premierWeek = getWeekNumber(premierDate);
+    const weekStart = weeks[`${premierWeek[1]}-${premierWeek[0]}`].weekIndex;
     const finaleDate = season.episodes[season.episodes.length - 1].date;
-    const weekEnd =
-      weeks[`${getWeekNumber(finaleDate)[1]}-${finaleDate.getFullYear()}`]
-        .weekIndex;
+    const finaleWeek = getWeekNumber(finaleDate);
+    const weekEnd = weeks[`${finaleWeek[1]}-${finaleWeek[0]}`].weekIndex;
     seasons.push({
       ...season,
       weekStart,
@@ -152,9 +144,8 @@ for (let season of seasons) {
     episode.xOffset = season.xOffset;
     episodes.push(episode);
 
-    const week =
-      weeks[`${getWeekNumber(episode.date)[1]}-${episode.date.getFullYear()}`]
-        .weekIndex;
+    const weekYear = getWeekNumber(episode.date);
+    const week = weeks[`${weekYear[1]}-${weekYear[0]}`].weekIndex;
 
     usedWeeks[week] = true;
 
