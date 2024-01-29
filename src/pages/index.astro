@@ -9,8 +9,11 @@ import data from "../../data.json";
 console.log({ loadedData: Object.keys(data).length });
 
 function getWeekNumber(d: string | Date) {
-  const date = moment(new Date(+d));
-  return [date.year(), date.isoWeek()];
+  const date = moment.utc(new Date(+d));
+  return [
+    date.isoWeek() === 53 ? date.year() - 1 : date.year(),
+    date.isoWeek(),
+  ];
 }
 
 function weeksInYear(year: number) {
@@ -259,8 +262,12 @@ const height = rectHeight * weeksArray.length + marginTop + marginBottom;
     >
       {
         weeksArray.map((d, i) => {
-          const initial = moment().year(d.year).isoWeek(d.week).isoWeekday(1);
-          const last = moment().year(d.year).isoWeek(d.week).isoWeekday(7);
+          const initial = moment
+            .utc()
+            .year(d.year)
+            .isoWeek(d.week)
+            .isoWeekday(1);
+          const last = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(7);
           return (
             <div
               style={{
