@@ -238,9 +238,9 @@ console.log("general streaks loaded");
 const rectHeight = 20;
 ---
 
-<Layout title="Drag Race Calendar">
+<Layout title="Drag Race Historical Calendar">
   <main>
-    <h1>Drag Race Calendar</h1>
+    <h1>Drag Race Historical Calendar</h1>
 
     <div
       class="calendar"
@@ -267,10 +267,9 @@ const rectHeight = 20;
                 }}
               />
               <div
+                class="gridLabelContainer"
                 style={{
                   gridRow: ` ${weeksArray.length - i} / span 1`,
-                  alignSelf: "center",
-                  justifySelf: "end",
                 }}
               >
                 <p class="gridLabel">{last.format("DD MMM YY")}</p>
@@ -342,9 +341,16 @@ const rectHeight = 20;
     color: white;
   }
 
-  h1 {
+  main h1 {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 500px) {
+    main h1 {
+      max-width: 12ch;
+    }
   }
 
   .paragraph {
@@ -381,6 +387,22 @@ const rectHeight = 20;
 
   .gridRow + .gridRow {
     border-width: 1px 1px 0 1px;
+  }
+
+  .gridLabelContainer {
+    align-self: center;
+    justify-delf: end;
+  }
+
+  @media (max-width: 500px) {
+    .gridLabelContainer {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .gridLabel + .gridLabel::after {
+      content: "-";
+    }
   }
 
   .gridLabel {
