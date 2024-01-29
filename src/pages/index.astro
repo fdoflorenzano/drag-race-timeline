@@ -9,8 +9,8 @@ import data from "../../data.json";
 console.log({ loadedData: Object.keys(data).length });
 
 function getWeekNumber(d: string | Date) {
-  const date = new Date(+d);
-  return [date.getFullYear(), moment(d).isoWeek()];
+  const date = moment(new Date(+d));
+  return [date.year(), date.isoWeek()];
 }
 
 function weeksInYear(year: number) {
@@ -22,7 +22,7 @@ function weeksInYear(year: number) {
 const parseTime = d3.utcParse("%b %e, %Y");
 
 const startDate = new Date(2009, 0, 1);
-const endDate = new Date(2024, 1, 16);
+const endDate = new Date(2024, 1, 11);
 
 const weeks: {
   [key: string]: { year: number; week: number; weekIndex: number };
@@ -36,14 +36,14 @@ for (
   for (let week = 1; week <= weeksInYear(year); week++) {
     weekIndex += 1;
     weeks[`${week}-${year}`] = { year, week, weekIndex };
-    if (year === endDate.getFullYear() && week === getWeekNumber(endDate)[1]) {
+    console.log({ key: `${week}-${year}`, obj: { year, week, weekIndex } });
+    const weekYear = getWeekNumber(endDate);
+    if (year === weekYear[0] && week === weekYear[1]) {
       break;
     }
   }
 }
 const weeksArray = Object.values(weeks);
-
-// console.log({ weeksArray });
 
 const processedData: { [key: string]: any } = {};
 for (let version in data) {
@@ -56,11 +56,11 @@ for (let version in data) {
 
       const weekObject =
         weeks[`${getWeekNumber(date)[1]}-${date.getFullYear()}`];
-      console.log({
-        weekObject,
-        key: `${getWeekNumber(date)[1]}-${date.getFullYear()}`,
-        date,
-      });
+      // console.log({
+      //   weekObject,
+      //   key: `${getWeekNumber(date)[1]}-${date.getFullYear()}`,
+      //   date,
+      // });
       const week = weekObject.weekIndex;
 
       const ep = { ...episode, date, week };
