@@ -248,9 +248,9 @@ for (let streak of aux) {
 console.log("general streaks loaded");
 ---
 
-<Layout title="Historical Drag Race Calendar">
+<Layout title="Historical Drag Race Timeline">
   <main>
-    <h1>Historical <span class="emphasis">Drag Race</span> Calendar</h1>
+    <h1>Historical <span class="emphasis">Drag Race</span> Timeline</h1>
 
     <p class="paragraph">
       This project attempts to show the historical weekly timeline of all {seasonCount} seasons of all {versionCount} Drag Race versions,
@@ -259,7 +259,7 @@ console.log("general streaks loaded");
     </p>
 
     <div
-      class="calendar"
+      class="timeline"
       style={{
         "--row-number": `${weeksArray.length + 1}`,
         "--track-number": `${maxOffset + 2}`,
@@ -442,7 +442,7 @@ console.log("general streaks loaded");
     color: var(--color-general-streak);
   }
 
-  .calendar {
+  .timeline {
     position: relative;
     display: grid;
     grid-template-columns: [labels] 1fr repeat(

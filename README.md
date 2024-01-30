@@ -1,6 +1,6 @@
-# Drag Race Calendar
+# Drag Race Timeline
 
-Check out [deploy](https://fdoflorenzano.github.io/drag-race-calendar/).
+Check out [deploy](https://fdoflorenzano.github.io/drag-race-timeline/).
 
 ## Commands
 
