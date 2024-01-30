@@ -5,16 +5,15 @@ import styles from "./Episode.module.css";
 
 export default function Episode({ style, episode }) {
   const [open, setOpen] = useState(false);
+
   return (
-    <Tooltip.Provider delayDuration={100}>
+    <Tooltip.Provider delayDuration={0}>
       <Tooltip.Root open={open === false ? undefined : open}>
         <Tooltip.Trigger asChild>
           <div
             className={styles.root}
             style={style}
-            onPointerDown={() => setOpen(true)}
-            onPointerMove={() => setOpen(false)}
-            onPointerUp={() => setOpen(false)}
+            onTouchStart={() => setOpen(true)}
           />
         </Tooltip.Trigger>
         <Tooltip.Portal>
@@ -22,6 +21,7 @@ export default function Episode({ style, episode }) {
             className={styles.TooltipContent}
             sideOffset={5}
             align="start"
+            onTouchStart={() => setOpen(false)}
           >
             <p>{episode.title}</p>
             <p>{episode.seasonName}</p>
