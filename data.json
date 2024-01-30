@@ -3,6 +3,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "US",
       "shortTitle": "US 1",
       "year": 2009,
       "episodes": [
@@ -47,6 +48,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "US",
       "shortTitle": "US 2",
       "year": 2010,
       "episodes": [
@@ -103,6 +105,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "US",
       "shortTitle": "US 3",
       "year": 2011,
       "episodes": [
@@ -175,6 +178,7 @@
     {
       "season": "Season 4",
       "shortSeason": "S4",
+      "country": "US",
       "shortTitle": "US 4",
       "year": 2012,
       "episodes": [
@@ -239,6 +243,7 @@
     {
       "season": "Season 5",
       "shortSeason": "S5",
+      "country": "US",
       "shortTitle": "US 5",
       "year": 2013,
       "episodes": [
@@ -303,6 +308,7 @@
     {
       "season": "Season 6",
       "shortSeason": "S6",
+      "country": "US",
       "shortTitle": "US 6",
       "year": 2014,
       "episodes": [
@@ -367,6 +373,7 @@
     {
       "season": "Season 7",
       "shortSeason": "S7",
+      "country": "US",
       "shortTitle": "US 7",
       "year": 2015,
       "episodes": [
@@ -431,6 +438,7 @@
     {
       "season": "Season 8",
       "shortSeason": "S8",
+      "country": "US",
       "shortTitle": "US 8",
       "year": 2016,
       "episodes": [
@@ -479,6 +487,7 @@
     {
       "season": "Season 9",
       "shortSeason": "S9",
+      "country": "US",
       "shortTitle": "US 9",
       "year": 2017,
       "episodes": [
@@ -543,6 +552,7 @@
     {
       "season": "Season 10",
       "shortSeason": "S10",
+      "country": "US",
       "shortTitle": "US 10",
       "year": 2018,
       "episodes": [
@@ -607,6 +617,7 @@
     {
       "season": "Season 11",
       "shortSeason": "S11",
+      "country": "US",
       "shortTitle": "US 11",
       "year": 2019,
       "episodes": [
@@ -671,6 +682,7 @@
     {
       "season": "Season 12",
       "shortSeason": "S12",
+      "country": "US",
       "shortTitle": "US 12",
       "year": 2020,
       "episodes": [
@@ -735,6 +747,7 @@
     {
       "season": "Season 13",
       "shortSeason": "S13",
+      "country": "US",
       "shortTitle": "US 13",
       "year": 2021,
       "episodes": [
@@ -811,6 +824,7 @@
     {
       "season": "Season 14",
       "shortSeason": "S14",
+      "country": "US",
       "shortTitle": "US 14",
       "year": 2022,
       "episodes": [
@@ -883,6 +897,7 @@
     {
       "season": "Season 15",
       "shortSeason": "S15",
+      "country": "US",
       "shortTitle": "US 15",
       "year": 2023,
       "episodes": [
@@ -955,6 +970,7 @@
     {
       "season": "Season 16",
       "shortSeason": "S16",
+      "country": "US",
       "shortTitle": "US 16",
       "year": 2024,
       "unfinished": true,
@@ -986,6 +1002,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "US",
       "shortTitle": "US AS 1",
       "year": 2012,
       "episodes": [
@@ -1018,6 +1035,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "US",
       "shortTitle": "US AS 2",
       "year": 2016,
       "episodes": [
@@ -1062,6 +1080,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "US",
       "shortTitle": "US AS 3",
       "year": 2017,
       "episodes": [
@@ -1102,6 +1121,7 @@
     {
       "season": "Season 4",
       "shortSeason": "S4",
+      "country": "US",
       "shortTitle": "US AS 4",
       "year": 2018,
       "episodes": [
@@ -1150,6 +1170,7 @@
     {
       "season": "Season 5",
       "shortSeason": "S5",
+      "country": "US",
       "shortTitle": "US AS 5",
       "year": 2020,
       "episodes": [
@@ -1190,6 +1211,7 @@
     {
       "season": "Season 6",
       "shortSeason": "S6",
+      "country": "US",
       "shortTitle": "US AS 6",
       "year": 2021,
       "episodes": [
@@ -1246,6 +1268,7 @@
     {
       "season": "Season 7",
       "shortSeason": "S7",
+      "country": "US",
       "shortTitle": "US AS 7",
       "year": 2022,
       "episodes": [
@@ -1302,6 +1325,7 @@
     {
       "season": "Season 8",
       "shortSeason": "S8",
+      "country": "US",
       "shortTitle": "US AS 8",
       "year": 2023,
       "episodes": [
@@ -1360,6 +1384,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Thailand",
       "shortTitle": "Th 1",
       "year": 2018,
       "episodes": [
@@ -1400,6 +1425,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Thailand",
       "shortTitle": "Th 2",
       "year": 2019,
       "episodes": [
@@ -1462,6 +1488,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "UK",
       "shortTitle": "UK 1",
       "year": 2019,
       "episodes": [
@@ -1506,6 +1533,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "UK",
       "shortTitle": "UK 2",
       "year": 2021,
       "episodes": [
@@ -1558,6 +1586,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "UK",
       "shortTitle": "UK 3",
       "year": 2021,
       "episodes": [
@@ -1606,6 +1635,7 @@
     {
       "season": "Season 4",
       "shortSeason": "S4",
+      "country": "UK",
       "shortTitle": "UK 4",
       "year": 2022,
       "episodes": [
@@ -1654,6 +1684,7 @@
     {
       "season": "Season 5",
       "shortSeason": "S5",
+      "country": "UK",
       "shortTitle": "UK 5",
       "year": 2023,
       "episodes": [
@@ -1704,6 +1735,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Canada",
       "shortTitle": "Can 1",
       "year": 2020,
       "episodes": [
@@ -1756,6 +1788,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Canada",
       "shortTitle": "Can 2",
       "year": 2021,
       "episodes": [
@@ -1804,6 +1837,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "Canada",
       "shortTitle": "Can 3",
       "year": 2022,
       "episodes": [
@@ -1848,6 +1882,7 @@
     {
       "season": "Season 4",
       "shortSeason": "S4",
+      "country": "Canada",
       "shortTitle": "Can 4",
       "year": 2023,
       "episodes": [
@@ -1894,6 +1929,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Holland",
       "shortTitle": "Ho 1",
       "year": 2020,
       "episodes": [
@@ -1934,6 +1970,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Holland",
       "shortTitle": "Ho 2",
       "year": 2021,
       "episodes": [
@@ -1976,6 +2013,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "España",
       "shortTitle": "Es 1",
       "year": 2021,
       "episodes": [
@@ -2024,6 +2062,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "España",
       "shortTitle": "Es 2",
       "year": 2022,
       "episodes": [
@@ -2080,6 +2119,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "España",
       "shortTitle": "Es 3",
       "year": 2023,
       "episodes": [
@@ -2138,6 +2178,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Italia",
       "shortTitle": "It 1",
       "year": 2021,
       "episodes": [
@@ -2170,6 +2211,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Italia",
       "shortTitle": "It 2",
       "year": 2022,
       "episodes": [
@@ -2210,6 +2252,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "Italia",
       "shortTitle": "It 3",
       "year": 2023,
       "episodes": [
@@ -2268,6 +2311,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Down Under",
       "shortTitle": "DU 1",
       "year": 2021,
       "episodes": [
@@ -2308,6 +2352,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Down Under",
       "shortTitle": "DU 2",
       "year": 2022,
       "episodes": [
@@ -2348,6 +2393,7 @@
     {
       "season": "Season 3",
       "shortSeason": "S3",
+      "country": "Down Under",
       "shortTitle": "DU 3",
       "year": 2023,
       "episodes": [
@@ -2390,6 +2436,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "France",
       "shortTitle": "Fr 1",
       "year": 2022,
       "episodes": [
@@ -2430,6 +2477,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "France",
       "shortTitle": "Fr 2",
       "year": 2023,
       "episodes": [
@@ -2476,6 +2524,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Phillipines",
       "shortTitle": "Ph 1",
       "year": 2022,
       "episodes": [
@@ -2524,6 +2573,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Phillipines",
       "shortTitle": "Ph 2",
       "year": 2023,
       "episodes": [
@@ -2574,6 +2624,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "UK",
       "shortTitle": "UK vsTW 1",
       "year": 2022,
       "episodes": [
@@ -2606,6 +2657,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "UK",
       "shortTitle": "UK vsTW 2",
       "year": 2024,
       "unfinished": true,
@@ -2622,6 +2674,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Canada",
       "shortTitle": "Can vsTW 1",
       "year": 2022,
       "episodes": [
@@ -2656,6 +2709,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Belgique",
       "shortTitle": "Be 1",
       "year": 2023,
       "episodes": [
@@ -2696,6 +2750,7 @@
     {
       "season": "Season 2",
       "shortSeason": "S2",
+      "country": "Belgique",
       "shortTitle": "Be 2",
       "year": 2024,
       "unfinished": true,
@@ -2711,6 +2766,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Sverige",
       "shortTitle": "Sv 1",
       "year": 2023,
       "episodes": [
@@ -2753,6 +2809,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "México",
       "shortTitle": "Mex 1",
       "year": 2023,
       "episodes": [
@@ -2811,6 +2868,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Brasil",
       "shortTitle": "Br 1",
       "year": 2023,
       "episodes": [
@@ -2869,6 +2927,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "Germany",
       "shortTitle": "Deu 1",
       "year": 2023,
       "episodes": [
@@ -2927,6 +2986,7 @@
     {
       "season": "Season 1",
       "shortSeason": "S1",
+      "country": "España",
       "shortTitle": "Es AS 1",
       "year": 2024,
       "unfinished": true,
