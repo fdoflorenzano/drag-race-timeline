@@ -3,6 +3,7 @@ import * as d3 from "d3";
 import moment from "moment";
 
 import Layout from "../layouts/Layout.astro";
+import Episode from "../components/Episode";
 
 import data from "../../data.json";
 
@@ -235,13 +236,18 @@ for (let streak of aux) {
 }
 
 console.log("general streaks loaded");
-
-console.log({ episodes });
 ---
 
 <Layout title="Historical Drag Race Calendar">
   <main>
     <h1>Historical <span class="emphasis">Drag Race</span> Calendar</h1>
+
+    <p class="paragraph">
+      Data taken from <a href="https://www.imdb.com/">IMDB</a> and <a
+        href="https://rupaulsdragrace.fandom.com/wiki/RuPaul%27s_Drag_Race_Wiki"
+        >Drag Race Wiki</a
+      >.
+    </p>
 
     <div
       class="calendar"
@@ -305,13 +311,13 @@ console.log({ episodes });
 
       {
         episodes.map((d, i) => (
-          <div
-            class="episode"
-            title={d.seasonName + " - " + d.title}
+          <Episode
+            client:visible
             style={{
               gridColumn: `${2 + d.xOffset} / span 1`,
               gridRow: `${2 + weeksArray.length - d.week} / span 1`,
             }}
+            episode={d}
           />
         ))
       }
@@ -404,7 +410,7 @@ console.log({ episodes });
   }
 
   .paragraph {
-    align-self: stretch;
+    align-self: start;
   }
 
   .paragraph > a,
@@ -461,20 +467,6 @@ console.log({ episodes });
     .gridLabel {
       font-size: 0.3rem;
     }
-  }
-
-  .episode {
-    background: transparent;
-    z-index: 1;
-    width: 80%;
-    height: 80%;
-    justify-self: center;
-    align-self: center;
-    border-radius: 50%;
-  }
-
-  .episode:hover {
-    border: 1px solid black;
   }
 
   .streak {
