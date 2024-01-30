@@ -1,13 +1,18 @@
 import React from "react";
+import * as d3 from "d3";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import * as Popover from "@radix-ui/react-popover";
+
+const formatTime = d3.utcFormat("%b %e, %Y");
 
 import styles from "./Episode.module.css";
 
 const Content = ({ episode }) => {
+  console.log({ episode });
   return (
     <div className={styles.content}>
       <h2>{episode.title}</h2>
+      <p>{formatTime(episode.date)}</p>
       <p>{episode.seasonName}</p>
     </div>
   );
