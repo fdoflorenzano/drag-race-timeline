@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Tooltip from "@radix-ui/react-tooltip";
 
 import styles from "./Episode.module.css";
 
 export default function Episode({ style, episode }) {
+  const [open, setOpen] = useState(false);
   return (
     <Tooltip.Provider delayDuration={100}>
-      <Tooltip.Root>
+      <Tooltip.Root open={open === false ? undefined : open}>
         <Tooltip.Trigger asChild>
-          <div className={styles.root} style={style} />
+          <div
+            className={styles.root}
+            style={style}
+            onPointerDown={() => setOpen(true)}
+            onPointerMove={() => setOpen(false)}
+            onPointerUp={() => setOpen(false)}
+          />
         </Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content
