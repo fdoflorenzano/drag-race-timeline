@@ -22,28 +22,16 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --col-width: 50px;
-    --font-size: 20px;
+    --font-size: clamp(1.2rem, 0.9109rem + 1.4457vi, 2.0313rem);
 
-    --color-background: #353238;
+    --col-width: clamp(1.5rem, 0.7174rem + 3.913vi, 3.75rem);
+    --gap: clamp(1rem, 0.4783rem + 2.6087vi, 2.5rem);
+
+    --color-background: #1f2232;
     --color-streak: #da4167;
     --color-general-streak: #fa9f42;
     --color-text: #f0eff4;
     --color-border: rgba(240, 239, 244, 0.1);
-  }
-
-  @media (max-width: 800px) {
-    :root {
-      --col-width: 25px;
-      --font-size: 16px;
-    }
-  }
-
-  @media (max-width: 500px) {
-    :root {
-      --col-width: 22px;
-      --font-size: 12px;
-    }
   }
 
   * {
@@ -80,6 +68,7 @@ const { title } = Astro.props;
     font-size: var(--font-size);
     color: var(--color-text);
     font-family: system-ui, sans-serif;
+    font-weight: lighter;
     background: var(--color-background);
   }
 </style>

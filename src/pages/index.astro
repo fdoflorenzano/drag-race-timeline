@@ -238,17 +238,39 @@ console.log("general streaks loaded");
 const rectHeight = 20;
 ---
 
-<Layout title="Drag Race Historical Calendar">
+<Layout title="Historical Drag Race Calendar">
   <main>
-    <h1>Drag Race Historical Calendar</h1>
+    <h1>Historical <span class="emphasis">Drag Race</span> Calendar</h1>
 
     <div
       class="calendar"
       style={{
-        "--row-number": `${weeksArray.length}`,
+        "--row-number": `${weeksArray.length + 1}`,
         "--track-number": `${maxOffset + 2}`,
       }}
     >
+      <p
+        class="legend"
+        style={{ gridRow: 1, gridColumn: 1, justifySelf: "end" }}
+      >
+        Week
+      </p>
+      <p
+        class="legend"
+        style={{
+          gridRow: 1,
+          gridColumn: `2 / span ${maxOffset + 1}`,
+          justifySelf: "center",
+        }}
+      >
+        Seasons
+      </p>
+      <p
+        class="legend"
+        style={{ gridRow: 1, gridColumn: maxOffset + 3, justifySelf: "start" }}
+      >
+        Streaks
+      </p>
       {
         weeksArray.map((d, i) => {
           const initial = moment
@@ -263,13 +285,13 @@ const rectHeight = 20;
                 class="gridRow"
                 style={{
                   gridColumn: `2 / span ${1 + maxOffset}`,
-                  gridRow: ` ${weeksArray.length - i} / span 1`,
+                  gridRow: ` ${1 + weeksArray.length - i} / span 1`,
                 }}
               />
               <div
                 class="gridLabelContainer"
                 style={{
-                  gridRow: ` ${weeksArray.length - i} / span 1`,
+                  gridRow: ` ${1 + weeksArray.length - i} / span 1`,
                 }}
               >
                 <p class="gridLabel">{last.format("DD MMM YY")}</p>
@@ -285,8 +307,9 @@ const rectHeight = 20;
           <div
             class="streak"
             style={{
+              "--label-offset": 0,
               gridColumn: `${2 + d.episodes[0].xOffset} / span 1`,
-              gridRow: `${weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
+              gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
             }}
             data-season={d.season}
           >
@@ -298,7 +321,14 @@ const rectHeight = 20;
                   : `var(--col-width)`,
               }}
             />
-            <p class="streakLabel" style={{}}>
+            <p
+              class="streakLabel"
+              style={{
+                "--label-offset": d.unfinished
+                  ? "0px"
+                  : "calc(var(--col-width) / 3)",
+              }}
+            >
               {d.season}
             </p>
           </div>
@@ -311,11 +341,18 @@ const rectHeight = 20;
             class="streak generalStreak"
             style={{
               gridColumn: `${maxOffset + 3} / span 1`,
-              gridRow: `${weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
+              gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
             }}
           >
             <div class="streakLine" />
-            <p class="streakLabel">{1 + d.end - d.start} weeks</p>
+            <p
+              class="streakLabel"
+              style={{
+                "--label-offset": "calc(var(--col-width) / 3)",
+              }}
+            >
+              {1 + d.end - d.start} weeks
+            </p>
           </div>
         ))
       }
@@ -337,7 +374,7 @@ const rectHeight = 20;
     width: fit-content;
     margin: 0 auto;
 
-    padding: 50px 0;
+    padding: 3rem 0;
     color: white;
   }
 
@@ -345,12 +382,11 @@ const rectHeight = 20;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
+    max-width: 10ch;
   }
 
-  @media (max-width: 500px) {
-    main h1 {
-      max-width: 12ch;
-    }
+  .emphasis {
+    font-weight: normal;
   }
 
   .paragraph {
@@ -374,8 +410,14 @@ const rectHeight = 20;
         var(--col-width)
       );
     grid-template-rows: repeat(var(--row-number), var(--col-width));
-    gap: 0 calc(0.75 * var(--col-width));
+    gap: 0 var(--gap);
     margin-bottom: 3rem;
+  }
+
+  .legend {
+    margin: 0 0 0.4rem 0;
+    font-size: 0.5rem;
+    align-self: end;
   }
 
   .gridRow {
@@ -394,22 +436,17 @@ const rectHeight = 20;
     justify-delf: end;
   }
 
-  @media (max-width: 500px) {
-    .gridLabelContainer {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    .gridLabel + .gridLabel::after {
-      content: "-";
-    }
-  }
-
   .gridLabel {
     margin: 0;
     grid-column: labels / span 1;
     font-size: 0.5rem;
     text-align: end;
+  }
+
+  @media (max-width: 500px) {
+    .gridLabel {
+      font-size: 0.3rem;
+    }
   }
 
   .streak {
@@ -435,7 +472,15 @@ const rectHeight = 20;
     font-size: 0.6rem;
     transform-origin: 0 0;
     width: max-content;
-    transform: rotate(90deg) translateX(0.3rem)
+    transform: rotate(90deg) translateX(calc(0.1rem + var(--label-offset)))
       translateY(calc(-1 * (var(--col-width) + 0.8rem)));
+  }
+
+  @media (max-width: 500px) {
+    .streakLabel {
+      transform: rotate(90deg) translateX(calc(0.1rem + var(--label-offset)))
+        translateY(calc(-1 * (var(--col-width) + 0.7rem)));
+      font-size: 0.5rem;
+    }
   }
 </style>
