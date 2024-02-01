@@ -8,7 +8,6 @@ const formatTime = d3.utcFormat("%b %e, %Y");
 import styles from "./Episode.module.css";
 
 const Content = ({ episode }) => {
-  console.log({ episode });
   return (
     <div className={styles.content}>
       <h2>{episode.title}</h2>

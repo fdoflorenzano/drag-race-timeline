@@ -51,7 +51,6 @@ const weeksArray = Object.values(weeks);
 
 console.log("weeks loaded");
 
-
 const versionCount = Object.keys(data).length;
 let seasonCount = 0;
 const countries: { [key: string]: boolean } = {};
@@ -62,8 +61,16 @@ for (let version in data) {
   const seasons = [];
   for (let season of versionData) {
     seasonCount += 1;
-    if (season.country)
-      countries[season.country] = true;
+    if (season.country != null) {
+      if (Array.isArray(season.country)) {
+        for (let c of season.country) {
+          countries[c] = true;
+        }
+      } else {
+        countries[season.country] = true;
+      }
+    }
+
     const seas = { ...season, name: version, episodes: [] };
     for (let episode of season.episodes) {
       const date = parseTime(episode.date) as Date;
@@ -253,9 +260,11 @@ console.log("general streaks loaded");
     <h1>Historical <span class="emphasis">Drag Race</span> Timeline</h1>
 
     <p class="paragraph">
-      This project attempts to show the historical weekly timeline of all {seasonCount} seasons of all {versionCount} Drag Race versions,
-      across {countryCount} countries. 
-      Displaying on the side the records for consecutive week streaks of on going weekly episodes.
+      This project attempts to show the historical weekly timeline of all {
+        seasonCount
+      } seasons of all {versionCount} Drag Race versions, across {countryCount} countries.
+      Displaying on the right are the records for consecutive week streaks of on
+      going weekly episodes.
     </p>
 
     <div
@@ -387,14 +396,14 @@ console.log("general streaks loaded");
       }
     </div>
 
-    <p class="paragraph">Data manually taken from <a href="https://www.imdb.com/">IMDB</a> and <a
-      href="https://rupaulsdragrace.fandom.com/wiki/RuPaul%27s_Drag_Race_Wiki"
-      >Drag Race Wiki</a
-    >. Last updated: 30/01/2024.
-
-      By <a href="https://github.com/fdoflorenzano">@fdoflorenzano</a>.
+    <p class="paragraph">
+      Data manually taken from <a href="https://www.imdb.com/">IMDB</a> and <a
+        href="https://rupaulsdragrace.fandom.com/wiki/RuPaul%27s_Drag_Race_Wiki"
+        >Drag Race Wiki</a
+      >. Last updated: 01/02/2024. By <a href="https://github.com/fdoflorenzano"
+        >@fdoflorenzano</a
+      >.
     </p>
-
   </main>
 </Layout>
 
@@ -417,7 +426,7 @@ console.log("general streaks loaded");
   }
 
   main h1 {
-    align-self: start;    
+    align-self: start;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     max-width: 10ch;
@@ -453,13 +462,13 @@ console.log("general streaks loaded");
     gap: 0 var(--gap);
     margin-bottom: 3rem;
 
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   .legend {
