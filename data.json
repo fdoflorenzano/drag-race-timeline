@@ -994,6 +994,10 @@
         {
           "title": "Girl Groups",
           "date": "Feb 2, 2024"
+        },
+        {
+          "title": "Episode #16.6",
+          "date": "Feb 9, 2024"
         }
       ]
     }
@@ -2661,7 +2665,6 @@
       "shortTitle": "UK vsTW 2",
       "year": 2024,
       "unfinished": true,
-      "xOffset": 3,
       "episodes": [
         {
           "title": "Episode #2.1",
@@ -2756,8 +2759,12 @@
       "unfinished": true,
       "episodes": [
         {
-          "title": "Episode #2.1",
+          "title": "De retour!",
           "date": "Feb 1, 2024"
+        },
+        {
+          "title": "Episode #2.2",
+          "date": "Feb 8, 2024"
         }
       ]
     }
@@ -2994,6 +3001,10 @@
         {
           "title": "Episode #1.1",
           "date": "Feb 4, 2024"
+        },
+        {
+          "title": "Episode #1.2",
+          "date": "Feb 11, 2024"
         }
       ]
     }
