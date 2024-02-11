@@ -996,8 +996,12 @@
           "date": "Feb 2, 2024"
         },
         {
-          "title": "Episode #16.6",
+          "title": "Welcome to the DollHouse",
           "date": "Feb 9, 2024"
+        },
+        {
+          "title": "Episode #16.7",
+          "date": "Feb 16, 2024"
         }
       ]
     }
@@ -2667,8 +2671,12 @@
       "unfinished": true,
       "episodes": [
         {
-          "title": "Episode #2.1",
+          "title": "The Queens' Variety Show",
           "date": "Feb 9, 2024"
+        },
+        {
+          "title": "Episode #2.2",
+          "date": "Feb 16, 2024"
         }
       ]
     }
@@ -2763,8 +2771,12 @@
           "date": "Feb 1, 2024"
         },
         {
-          "title": "Episode #2.2",
+          "title": "Drag-en-Ciel",
           "date": "Feb 8, 2024"
+        },
+        {
+          "title": "Episode #2.3",
+          "date": "Feb 15, 2024"
         }
       ]
     }
@@ -2999,12 +3011,16 @@
       "unfinished": true,
       "episodes": [
         {
-          "title": "Episode #1.1",
+          "title": "Supremme Eleganza Olé Stars Extravaganza",
           "date": "Feb 4, 2024"
         },
         {
           "title": "Episode #1.2",
           "date": "Feb 11, 2024"
+        },
+        {
+          "title": "Episode #1.3",
+          "date": "Feb 18, 2024"
         }
       ]
     }

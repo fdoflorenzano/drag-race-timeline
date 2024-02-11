@@ -17,13 +17,14 @@ const Content = ({ episode }) => {
   );
 };
 
-export default function Episode({ style, episode }) {
+export default function Episode({ style, episode, index = 0 }) {
   return (
     <>
       <Tooltip.Provider delayDuration={0}>
         <Tooltip.Root>
           <Tooltip.Trigger asChild>
-            <div
+            <button
+              aria-label={`Hover to learn about episode ${episode.title}`}
               className={`${styles.trigger} ${styles.desktopTrigger}`}
               style={style}
             />
@@ -42,7 +43,8 @@ export default function Episode({ style, episode }) {
       </Tooltip.Provider>
       <Popover.Root>
         <Popover.Trigger asChild>
-          <div
+          <button
+            aria-label={`Click to learn about episode ${episode.title}`}
             className={`${styles.trigger} ${styles.mobileTrigger}`}
             style={style}
           />
