@@ -1,0 +1,106 @@
+{
+  "title": "Drag Race Thailand",
+  "country": "Thailand",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Th 1",
+      "year": 2018,
+      "episodes": [
+        {
+          "title": "Contestant's Story",
+          "date": "Feb 15, 2018"
+        },
+        {
+          "title": "Power of Love",
+          "date": "Feb 22, 2018"
+        },
+        {
+          "title": "Curtain to Couture",
+          "date": "Mar 1, 2018"
+        },
+        {
+          "title": "Beloved Thai Movies",
+          "date": "Mar 8, 2018"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 15, 2018"
+        },
+        {
+          "title": "Commercial, Commercial",
+          "date": "Mar 22, 2018"
+        },
+        {
+          "title": "Twins",
+          "date": "Mar 29, 2018"
+        },
+        {
+          "title": "Final Runway",
+          "date": "Apr 5, 2018"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Th 2",
+      "year": 2019,
+      "episodes": [
+        {
+          "title": "Re-Born This Way",
+          "date": "Jan 11, 2019"
+        },
+        {
+          "title": "Under The Rainbow",
+          "date": "Jan 18, 2019"
+        },
+        {
+          "title": "Thai Beauty",
+          "date": "Jan 25, 2019"
+        },
+        {
+          "title": "Mother and Daughter",
+          "date": "Feb 1, 2019"
+        },
+        {
+          "title": "Hollywood Inspirations",
+          "date": "Feb 8, 2019"
+        },
+        {
+          "title": "Power of Speech",
+          "date": "Feb 15, 2019"
+        },
+        {
+          "title": "Food Lover",
+          "date": "Feb 22, 2019"
+        },
+        {
+          "title": "Heavenly Snatch",
+          "date": "Mar 1, 2019"
+        },
+        {
+          "title": "Thai Musical",
+          "date": "Mar 8, 2019"
+        },
+        {
+          "title": "Family Superheroes",
+          "date": "Mar 15, 2019"
+        },
+        {
+          "title": "White Elephant",
+          "date": "Mar 22, 2019"
+        },
+        {
+          "title": "Queen's Reunited",
+          "date": "Mar 29, 2019"
+        },
+        {
+          "title": "Final Runway",
+          "date": "Apr 5, 2019"
+        }
+      ]
+    }
+  ]
+}

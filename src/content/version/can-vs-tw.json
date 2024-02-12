@@ -1,0 +1,38 @@
+{
+  "title": "Canada's Drag Race: Canada vs the World",
+  "country": "Canada",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Can vsTW 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Bonjour, Hi",
+          "date": "Nov 18, 2022"
+        },
+        {
+          "title": "Snatch Summit",
+          "date": "Nov 25, 2022"
+        },
+        {
+          "title": "The Weather Ball",
+          "date": "Dec 2, 2022"
+        },
+        {
+          "title": "Comedy Queens",
+          "date": "Dec 9, 2022"
+        },
+        {
+          "title": "Spy Queens",
+          "date": "Dec 16, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 23, 2022"
+        }
+      ]
+    }
+  ]
+}

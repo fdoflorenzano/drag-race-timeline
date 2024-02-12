@@ -1,0 +1,166 @@
+{
+  "title": "Drag Race España",
+  "country": "España",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Es 1",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Bienvenidas Reinas",
+          "date": "May 30, 2021"
+        },
+        {
+          "title": "Divas",
+          "date": "Jun 6, 2021"
+        },
+        {
+          "title": "Mocatriz",
+          "date": "Jun 13, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jun 20, 2021"
+        },
+        {
+          "title": "Básica o cínica",
+          "date": "Jun 27, 2021"
+        },
+        {
+          "title": "Drags de la comedia",
+          "date": "Jul 4, 2021"
+        },
+        {
+          "title": "Titanes del drag",
+          "date": "Jul 11, 2021"
+        },
+        {
+          "title": "El Reencuentro",
+          "date": "Jul 18, 2021"
+        },
+        {
+          "title": "La gran final",
+          "date": "Jul 25, 2021"
+        },
+        {
+          "title": "La coronación",
+          "date": "Aug 1, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Es 2",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "La nueva promoción",
+          "date": "Mar 27, 2022"
+        },
+        {
+          "title": "Supremme Eleganza Talent Extravaganza",
+          "date": "Apr 3, 2022"
+        },
+        {
+          "title": "El diario de Putricia",
+          "date": "Apr 10, 2022"
+        },
+        {
+          "title": "La llamadrag",
+          "date": "Apr 17, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Apr 24, 2022"
+        },
+        {
+          "title": "Ball español, siglos X, XX y XXX",
+          "date": "May 1, 2022"
+        },
+        {
+          "title": "¡Vente a España!",
+          "date": "May 8, 2022"
+        },
+        {
+          "title": "Drags de la comedia",
+          "date": "May 15, 2022"
+        },
+        {
+          "title": "Makeover de los chicos de oro",
+          "date": "May 22, 2022"
+        },
+        {
+          "title": "El reencuentro",
+          "date": "May 29, 2022"
+        },
+        {
+          "title": "Llévame al cielo - La final",
+          "date": "Jun 5, 2022"
+        },
+        {
+          "title": "La coronación",
+          "date": "Jun 13, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "Es 3",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Supremme Eleganza Talent Extravaganza",
+          "date": "Apr 16, 2023"
+        },
+        {
+          "title": "Dragvisión",
+          "date": "Apr 23, 2023"
+        },
+        {
+          "title": "El gran Ball de las regiones",
+          "date": "Apr 30, 2023"
+        },
+        {
+          "title": "Secuelas de terror drag",
+          "date": "May 7, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 14, 2023"
+        },
+        {
+          "title": "El mago precoz",
+          "date": "May 21, 2023"
+        },
+        {
+          "title": "Segunda oportunidrag",
+          "date": "May 28, 2023"
+        },
+        {
+          "title": "¡Un, dos, drags!",
+          "date": "Jun 4, 2023"
+        },
+        {
+          "title": "Make Over: Barricientas",
+          "date": "Jun 11, 2023"
+        },
+        {
+          "title": "El Reencuentro",
+          "date": "Jun 18, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jun 25, 2023"
+        },
+        {
+          "title": "The Coronation",
+          "date": "Jul 1, 2023"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Drag Race Belgique",
+  "country": "Belgique",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Be 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Bonjour Iedereen",
+          "date": "Feb 16, 2023"
+        },
+        {
+          "title": "Les incontournables",
+          "date": "Feb 23, 2023"
+        },
+        {
+          "title": "Festival Realness",
+          "date": "Mar 2, 2023"
+        },
+        {
+          "title": "L'émission qui vous déshabille",
+          "date": "Mar 9, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 16, 2023"
+        },
+        {
+          "title": "A deux c'est mieu!",
+          "date": "Mar 23, 2023"
+        },
+        {
+          "title": "Discour de reine",
+          "date": "Mar 30, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 6, 2023"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Be 2",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "De retour!",
+          "date": "Feb 1, 2024"
+        },
+        {
+          "title": "Drag-en-Ciel",
+          "date": "Feb 8, 2024"
+        },
+        {
+          "title": "Episode #2.3",
+          "date": "Feb 15, 2024"
+        }
+      ]
+    }
+  ]
+}

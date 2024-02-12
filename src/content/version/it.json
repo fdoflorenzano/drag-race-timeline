@@ -1,0 +1,134 @@
+{
+  "title": "Drag Race Italia",
+  "country": "Italia",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "It 1",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Ciao Italia",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "Divas",
+          "date": "Nov 25, 2021"
+        },
+        {
+          "title": "Night of a Thousand Raffaella Carràs",
+          "date": "Dec 2, 2021"
+        },
+        {
+          "title": "Snatch Game & Fab 80's",
+          "date": "Dec 7, 2021"
+        },
+        {
+          "title": "Long Live the Drag Bride",
+          "date": "Dec 16, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 23, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "It 2",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Little Italy",
+          "date": "Oct 20, 2022"
+        },
+        {
+          "title": "Colorful Drag, Lucky Drag",
+          "date": "Oct 27, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 3, 2022"
+        },
+        {
+          "title": "Daughters of the Stars",
+          "date": "Nov 10, 2022"
+        },
+        {
+          "title": "Festival Drag",
+          "date": "Nov 17, 2022"
+        },
+        {
+          "title": "Sporty Queens",
+          "date": "Nov 24, 2022"
+        },
+        {
+          "title": "A Walk in Time",
+          "date": "Dec 1, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "It 3",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Express Yourself",
+          "date": "Oct 12, 2023"
+        },
+        {
+          "title": "Walk of Fame",
+          "date": "Oct 20, 2023"
+        },
+        {
+          "title": "Night of a Thousand Paola and Chiaras",
+          "date": "Oct 27, 2023"
+        },
+        {
+          "title": "The Devil Wears Drag!",
+          "date": "Nov 3, 2023"
+        },
+        {
+          "title": "Back to School",
+          "date": "Nov 10, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 17, 2023"
+        },
+        {
+          "title": "A Rhythm of Drag",
+          "date": "Nov 24, 2023"
+        },
+        {
+          "title": "Death Drags You",
+          "date": "Dec 1, 2023"
+        },
+        {
+          "title": "Social Media Queens",
+          "date": "Dec 8, 2023"
+        },
+        {
+          "title": "Dragremo",
+          "date": "Dec 15, 2023"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Dec 22, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Dec 29, 2023"
+        }
+      ]
+    }
+  ]
+}

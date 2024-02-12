@@ -1,0 +1,378 @@
+{
+  "title": "RuPaul's Drag Race All Stars",
+  "country": "United States of America",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "US AS 1",
+      "year": 2012,
+      "episodes": [
+        {
+          "title": "It Takes Two",
+          "date": "Oct 22, 2012"
+        },
+        {
+          "title": "RuPaul's Gaff-In",
+          "date": "Oct 29, 2012"
+        },
+        {
+          "title": "Queens Behaving Badly",
+          "date": "Nov 5, 2012"
+        },
+        {
+          "title": "All Star Girl Groups",
+          "date": "Nov 12, 2012"
+        },
+        {
+          "title": "Dynamic Drag Duos",
+          "date": "Nov 19, 2012"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Nov 26, 2012"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "US AS 2",
+      "year": 2016,
+      "episodes": [
+        {
+          "title": "All Star Talent Show Extravaganza",
+          "date": "Aug 25, 2016"
+        },
+        {
+          "title": "All Stars Snatch Game",
+          "date": "Sep 1, 2016"
+        },
+        {
+          "title": "HERstory of the World",
+          "date": "Sep 8, 2016"
+        },
+        {
+          "title": "Drag Movie Shequels",
+          "date": "Sep 15, 2016"
+        },
+        {
+          "title": "Revenge of the Queens",
+          "date": "Sep 22, 2016"
+        },
+        {
+          "title": "Drag Fish Tank",
+          "date": "Sep 29, 2016"
+        },
+        {
+          "title": "Family That Drags Together",
+          "date": "Oct 6, 2016"
+        },
+        {
+          "title": "All Stars Supergroup",
+          "date": "Oct 13, 2016"
+        },
+        {
+          "title": "Reunited!",
+          "date": "Oct 27, 2016"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "US AS 3",
+      "year": 2017,
+      "episodes": [
+        {
+          "title": "All Star Variety Show",
+          "date": "Jan 25, 2018"
+        },
+        {
+          "title": "Drag Divas Live",
+          "date": "Feb 1, 2018"
+        },
+        {
+          "title": "The Bitchelor",
+          "date": "Feb 8, 2018"
+        },
+        {
+          "title": "Snatch Game: All Stars Edition",
+          "date": "Feb 15, 2018"
+        },
+        {
+          "title": "Pop Art Ball",
+          "date": "Feb 22, 2018"
+        },
+        {
+          "title": "Handmaids to Kitty Girls",
+          "date": "Mar 1, 2018"
+        },
+        {
+          "title": "My Best Squirrelfriend's Dragsmaids Wedding Trip",
+          "date": "Mar 8, 2018"
+        },
+        {
+          "title": "A Jury of Their Queers",
+          "date": "Mar 15, 2018"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "US AS 4",
+      "year": 2018,
+      "episodes": [
+        {
+          "title": "All Star Super Queen Variety Show",
+          "date": "Dec 14, 2018"
+        },
+        {
+          "title": "Super Girl Groups, Henny",
+          "date": "Dec 21, 2018"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Dec 28, 2018"
+        },
+        {
+          "title": "Jersey Justice",
+          "date": "Jan 4, 2019"
+        },
+        {
+          "title": "Roast in Peace",
+          "date": "Jan 11, 2019"
+        },
+        {
+          "title": "LaLaPaRUza",
+          "date": "Jan 18, 2019"
+        },
+        {
+          "title": "Queens of Clubs",
+          "date": "Jan 25, 2019"
+        },
+        {
+          "title": "RuPaul's Best Judy's Race",
+          "date": "Feb 1, 2019"
+        },
+        {
+          "title": "Sex and the Kitty Girl",
+          "date": "Feb 8, 2019"
+        },
+        {
+          "title": "Super Queen Grand Finale",
+          "date": "Feb 15, 2019"
+        }
+      ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "US AS 5",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "All Star Variety Extravaganza",
+          "date": "Jun 5, 2020"
+        },
+        {
+          "title": "I'm in Love!",
+          "date": "Jun 12, 2020"
+        },
+        {
+          "title": "Get a Room!",
+          "date": "Jun 19, 2020"
+        },
+        {
+          "title": "She-MZ",
+          "date": "Jun 26, 2020"
+        },
+        {
+          "title": "Snatch Game of Love (2020)",
+          "date": "Jul 3, 2020"
+        },
+        {
+          "title": "The Charles Family Backyard Ball",
+          "date": "Jul 10, 2020"
+        },
+        {
+          "title": "Stand-Up Smackdown",
+          "date": "Jul 17, 2020"
+        },
+        {
+          "title": "Clap Back!",
+          "date": "Jul 24, 2020"
+        }
+      ]
+    },
+    {
+      "season": "Season 6",
+      "shortSeason": "S6",
+      "shortTitle": "US AS 6",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "All Star Variety Extravaganza",
+          "date": "Jun 24, 2021"
+        },
+        {
+          "title": "The Blue Ball",
+          "date": "Jun 24, 2021"
+        },
+        {
+          "title": "Side Hustles",
+          "date": "Jul 1, 2021"
+        },
+        {
+          "title": "Halftime Headliners",
+          "date": "Jul 8, 2021"
+        },
+        {
+          "title": "Pink Table Talk",
+          "date": "Jul 15, 2021"
+        },
+        {
+          "title": "Rumerican Horror Story: Coven Girls",
+          "date": "Jul 22, 2021"
+        },
+        {
+          "title": "Show Up Queen",
+          "date": "Jul 29, 2021"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Aug 5, 2021"
+        },
+        {
+          "title": "Drag Tots",
+          "date": "Aug 12, 2021"
+        },
+        {
+          "title": "Rudemption Lip-Sync Smackdown",
+          "date": "Aug 19, 2021"
+        },
+        {
+          "title": "The Charisma, Uniqueness, Nerve and Talent Monologues",
+          "date": "Aug 26, 2021"
+        },
+        {
+          "title": "This Is Our Country",
+          "date": "Sep 2, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 7",
+      "shortSeason": "S7",
+      "shortTitle": "US AS 7",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Legends",
+          "date": "May 20, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "May 20, 2022"
+        },
+        {
+          "title": "The Realness of Fortune Ball",
+          "date": "May 27, 2022"
+        },
+        {
+          "title": "Fairytale Justice",
+          "date": "Jun 3, 2022"
+        },
+        {
+          "title": "Draguation Speeches",
+          "date": "Jun 10, 2022"
+        },
+        {
+          "title": "Total Ru-quest Live",
+          "date": "Jun 17, 2022"
+        },
+        {
+          "title": "Legendary Legend Looks",
+          "date": "Jun 24, 2022"
+        },
+        {
+          "title": "Santa's School for Girls",
+          "date": "Jul 1, 2022"
+        },
+        {
+          "title": "Dance Like Drag Queen",
+          "date": "Jul 8, 2022"
+        },
+        {
+          "title": "The Kennedy Davenport Center Honors Hall of Shade",
+          "date": "Jul 15, 2022"
+        },
+        {
+          "title": "Drag Race Gives Back Variety Extravaganza",
+          "date": "Jul 22, 2022"
+        },
+        {
+          "title": "Lip Sync LaLaPaRuza Smackdown",
+          "date": "Jul 29, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 8",
+      "shortSeason": "S8",
+      "shortTitle": "US AS 8",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "The Fame Games",
+          "date": "May 12, 2023"
+        },
+        {
+          "title": "'It's RDR Live!'",
+          "date": "May 12, 2023"
+        },
+        {
+          "title": "The Supermarket Ball",
+          "date": "May 19, 2023"
+        },
+        {
+          "title": "Screen Queens",
+          "date": "May 26, 2023"
+        },
+        {
+          "title": "Snatch Game of Love",
+          "date": "Jun 2, 2023"
+        },
+        {
+          "title": "JOAN: The Unauthorized Rusical!",
+          "date": "Jun 9, 2023"
+        },
+        {
+          "title": "Forensic Queens",
+          "date": "Jun 16, 2023"
+        },
+        {
+          "title": "You're a Winner Baby!",
+          "date": "Jun 23, 2023"
+        },
+        {
+          "title": "Carson Kressley, This Is Your Gay Life",
+          "date": "Jun 30, 2023"
+        },
+        {
+          "title": "The Letter \"L\"",
+          "date": "Jul 7, 2023"
+        },
+        {
+          "title": "The Fame Games Variety Extravaganza",
+          "date": "Jul 14, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jul 21, 2023"
+        }
+      ]
+    }
+  ]
+}

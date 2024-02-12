@@ -1,0 +1,246 @@
+{
+  "title": "RuPaul's Drag Race UK",
+  "country": "United Kingdom",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "UK 1",
+      "year": 2019,
+      "episodes": [
+        {
+          "title": "The Royal Queens",
+          "date": "Oct 3, 2019"
+        },
+        {
+          "title": "Downton Draggy",
+          "date": "Oct 10, 2019"
+        },
+        {
+          "title": "Posh on a Penny",
+          "date": "Oct 17, 2019"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 24, 2019"
+        },
+        {
+          "title": "Girl Group Battle Royale",
+          "date": "Oct 31, 2019"
+        },
+        {
+          "title": "Thirsty Werk",
+          "date": "Nov 7, 2019"
+        },
+        {
+          "title": "Family That Drags Together",
+          "date": "Nov 14, 2019"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 21, 2019"
+        },
+        {
+          "title": "It's a Wrap!",
+          "date": "Nov 29, 2019"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "UK 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Bring Back My Queens",
+          "date": "Jan 14, 2021"
+        },
+        {
+          "title": "Rats: The Rusical",
+          "date": "Jan 21, 2021"
+        },
+        {
+          "title": "Who Wore It Best?",
+          "date": "Jan 28, 2021"
+        },
+        {
+          "title": "Morning Glory",
+          "date": "Feb 4, 2021"
+        },
+        {
+          "title": "The RuRuvision Song Contest",
+          "date": "Feb 11, 2021"
+        },
+        {
+          "title": "Queens on Lockdown",
+          "date": "Feb 12, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Feb 18, 2021"
+        },
+        {
+          "title": "Lockdown Supersheroes",
+          "date": "Feb 25, 2021"
+        },
+        {
+          "title": "Stoned on the Runway",
+          "date": "Mar 4, 2021"
+        },
+        {
+          "title": "BeastEnders",
+          "date": "Mar 11, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 18, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "UK 3",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "The Return of Royalty",
+          "date": "Sep 23, 2021"
+        },
+        {
+          "title": "Dragoton",
+          "date": "Sep 30, 2021"
+        },
+        {
+          "title": "Great Outdoors",
+          "date": "Oct 7, 2021"
+        },
+        {
+          "title": "Big Drag Energy",
+          "date": "Oct 14, 2021"
+        },
+        {
+          "title": "Draglexa",
+          "date": "Oct 21, 2021"
+        },
+        {
+          "title": "The Snatch Game",
+          "date": "Oct 28, 2021"
+        },
+        {
+          "title": "Miss Fugly Beauty Pageant",
+          "date": "Nov 4, 2021"
+        },
+        {
+          "title": "Bra Wars",
+          "date": "Nov 11, 2021"
+        },
+        {
+          "title": "The Pearly Gates Roast",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 25, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "UK 4",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "ST4RT Your Engines",
+          "date": "Sep 22, 2022"
+        },
+        {
+          "title": "Yass-tonbury Festival",
+          "date": "Sep 29, 2022"
+        },
+        {
+          "title": "Bing-oh No She Better Do!",
+          "date": "Oct 6, 2022"
+        },
+        {
+          "title": "Catty Man",
+          "date": "Oct 13, 2022"
+        },
+        {
+          "title": "Lairy Poppins: The Rusical",
+          "date": "Oct 20, 2022"
+        },
+        {
+          "title": "Strictly Come Snatch Game",
+          "date": "Oct 27, 2022"
+        },
+        {
+          "title": "Makeover Challenge",
+          "date": "Nov 3, 2022"
+        },
+        {
+          "title": "The Squirrel Games",
+          "date": "Nov 10, 2022"
+        },
+        {
+          "title": "The General Erection Roast",
+          "date": "Nov 17, 2022"
+        },
+        {
+          "title": "Grande Finale",
+          "date": "Nov 24, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "UK 5",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Tickety-Boo",
+          "date": "Sep 28, 2023"
+        },
+        {
+          "title": "Pet Shop Girls",
+          "date": "Oct 5, 2023"
+        },
+        {
+          "title": "Club Bangers",
+          "date": "Oct 12, 2023"
+        },
+        {
+          "title": "DisasterClass",
+          "date": "Oct 19, 2023"
+        },
+        {
+          "title": "Panto Dames",
+          "date": "Oct 26, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 2, 2023"
+        },
+        {
+          "title": "Melodrama-Rama",
+          "date": "Nov 9, 2023"
+        },
+        {
+          "title": "Hotline Makeover",
+          "date": "Nov 16, 2023"
+        },
+        {
+          "title": "Dragiators' Roast",
+          "date": "Nov 23, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 30, 2023"
+        }
+      ]
+    }
+  ]
+}

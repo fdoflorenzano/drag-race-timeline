@@ -1,0 +1,55 @@
+{
+  "title": "RuPaul's Drag Race UK vs the World",
+  "country": "United Kingdom",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "UK vsTW 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Global Glamazons",
+          "date": "Feb 1, 2022"
+        },
+        {
+          "title": "RuPaul Ball",
+          "date": "Feb 8, 2022"
+        },
+        {
+          "title": "West End Wendys",
+          "date": "Feb 15, 2022"
+        },
+        {
+          "title": "Snatch Game: Family Edition",
+          "date": "Feb 22, 2022"
+        },
+        {
+          "title": "Semifinals",
+          "date": "Mar 1, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "UK vsTW 2",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "The Queens' Variety Show",
+          "date": "Feb 9, 2024"
+        },
+        {
+          "title": "Episode #2.2",
+          "date": "Feb 16, 2024"
+        }
+      ]
+    }
+  ]
+}

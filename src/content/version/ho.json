@@ -1,0 +1,86 @@
+{
+  "title": "Drag Race Holland",
+  "country": "Nederland",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Ho 1",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "Land of the Queens",
+          "date": "Sep 18, 2020"
+        },
+        {
+          "title": "Give Face!",
+          "date": "Sep 25, 2020"
+        },
+        {
+          "title": "Drama Queens",
+          "date": "Oct 2, 2020"
+        },
+        {
+          "title": "Dancing Queens",
+          "date": "Oct 8, 2020"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 15, 2020"
+        },
+        {
+          "title": "It Takes Two",
+          "date": "Oct 22, 2020"
+        },
+        {
+          "title": "Maxima - The Rusical",
+          "date": "Oct 29, 2020"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Nov 5, 2020"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Ho 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Who's That Queen?",
+          "date": "Aug 6, 2021"
+        },
+        {
+          "title": "Ooh, I Got Sunburned!",
+          "date": "Aug 13, 2021"
+        },
+        {
+          "title": "Icons Only (Snatch Game)",
+          "date": "Aug 20, 2021"
+        },
+        {
+          "title": "Cinderella in Mokum",
+          "date": "Aug 27, 2021"
+        },
+        {
+          "title": "Dearly Beloved (Family Resemblance)",
+          "date": "Sep 3, 2021"
+        },
+        {
+          "title": "Spill the Coffee",
+          "date": "Sep 10, 2021"
+        },
+        {
+          "title": "Whodunnit",
+          "date": "Sep 17, 2021"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Sep 24, 2021"
+        }
+      ]
+    }
+  ]
+}

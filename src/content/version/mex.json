@@ -1,0 +1,62 @@
+{
+  "title": "Drag Race México",
+  "country": "México",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Mex 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Drag mi tierra México",
+          "date": "Jun 22, 2023"
+        },
+        {
+          "title": "Mi quinceañera drag",
+          "date": "Jun 29, 2023"
+        },
+        {
+          "title": "Noche de María Felix",
+          "date": "Jul 6, 2023"
+        },
+        {
+          "title": "Dragapulco Shore: El Rusical",
+          "date": "Jul 13, 2023"
+        },
+        {
+          "title": "Girl band mexicana",
+          "date": "Jul 20, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 27, 2023"
+        },
+        {
+          "title": "Terapia villanas de telenovela",
+          "date": "Aug 3, 2023"
+        },
+        {
+          "title": "Re-diseña con Levi's",
+          "date": "Aug 10, 2023"
+        },
+        {
+          "title": "Roast y Stand-up Comedy",
+          "date": "Aug 17, 2023"
+        },
+        {
+          "title": "Reinas de belleza latinas",
+          "date": "Aug 24, 2023"
+        },
+        {
+          "title": "Reunión",
+          "date": "Aug 31, 2023"
+        },
+        {
+          "title": "La gran final",
+          "date": "Sep 7, 2023"
+        }
+      ]
+    }
+  ]
+}

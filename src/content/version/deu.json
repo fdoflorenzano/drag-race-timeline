@@ -1,0 +1,62 @@
+{
+  "title": "Drag Race Germany",
+  "country": "Germany",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Deu 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Willkommen in Deutschland",
+          "date": "Sep 5, 2023"
+        },
+        {
+          "title": "Fetish",
+          "date": "Sep 12, 2023"
+        },
+        {
+          "title": "Dragort: The Rusical",
+          "date": "Sep 19, 2023"
+        },
+        {
+          "title": "Funny Shops",
+          "date": "Sep 26, 2023"
+        },
+        {
+          "title": "Barbie Salesh",
+          "date": "Oct 3, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 10, 2023"
+        },
+        {
+          "title": "Poor But Sexy",
+          "date": "Oct 17, 2023"
+        },
+        {
+          "title": "Comedy Roast",
+          "date": "Oct 24, 2023"
+        },
+        {
+          "title": "Web Show",
+          "date": "Oct 31, 2023"
+        },
+        {
+          "title": "Dirndl Makeover",
+          "date": "Nov 7, 2023"
+        },
+        {
+          "title": "Reunion",
+          "date": "Nov 14, 2023"
+        },
+        {
+          "title": "Finale",
+          "date": "Nov 21, 2023"
+        }
+      ]
+    }
+  ]
+}

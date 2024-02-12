@@ -1,0 +1,194 @@
+{
+  "title": "Canada's Drag Race",
+  "country": "Canada",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Can 1",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "Eh-Laganza Eh-Xtravaganza",
+          "date": "Jul 2, 2020"
+        },
+        {
+          "title": "Her-itage Moments",
+          "date": "Jul 9, 2020"
+        },
+        {
+          "title": "Not Sorry Aboot It",
+          "date": "Jul 16, 2020"
+        },
+        {
+          "title": "Single Use Queens",
+          "date": "Jul 23, 2020"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 30, 2020"
+        },
+        {
+          "title": "Star Sixty-Nine",
+          "date": "Aug 6, 2020"
+        },
+        {
+          "title": "Miss Loose Jaw",
+          "date": "Aug 13, 2020"
+        },
+        {
+          "title": "Welcome to the Family",
+          "date": "Aug 20, 2020"
+        },
+        {
+          "title": "The Snow Ball",
+          "date": "Aug 27, 2020"
+        },
+        {
+          "title": "U Wear It Well",
+          "date": "Sep 3, 2020"
+        },
+        {
+          "title": "Canada's Drag Race Anniversary Extravaganza",
+          "date": "Sep 6, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Can 2",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "Lost and Fierce",
+          "date": "Oct 14, 2021"
+        },
+        {
+          "title": "Under the Big Top",
+          "date": "Oct 21, 2021"
+        },
+        {
+          "title": "Screech",
+          "date": "Oct 28, 2021"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Nov 4, 2021"
+        },
+        {
+          "title": "Bye Flop",
+          "date": "Nov 11, 2021"
+        },
+        {
+          "title": "The Sinner's Ball",
+          "date": "Nov 18, 2021"
+        },
+        {
+          "title": "The Roast of Brooke Lynn Hytes",
+          "date": "Nov 25, 2021"
+        },
+        {
+          "title": "Prom",
+          "date": "Dec 2, 2021"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Dec 9, 2021"
+        },
+        {
+          "title": "Queen of the North",
+          "date": "Dec 16, 2021"
+        }
+      ]
+    },
+    {
+      "season": "Season 3",
+      "shortSeason": "S3",
+      "shortTitle": "Can 3",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Sidewalk to Catwalk",
+          "date": "Jul 14, 2022"
+        },
+        {
+          "title": "The Who-Knows",
+          "date": "Jul 21, 2022"
+        },
+        {
+          "title": "Ruets",
+          "date": "Jul 28, 2022"
+        },
+        {
+          "title": "Bitch Stole My Look",
+          "date": "Aug 4, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 11, 2022"
+        },
+        {
+          "title": "Cosmetic Queens",
+          "date": "Aug 18, 2022"
+        },
+        {
+          "title": "Squirrels Trip: The Rusical",
+          "date": "Aug 25, 2022"
+        },
+        {
+          "title": "Masquerade Ball",
+          "date": "Sep 1, 2022"
+        },
+        {
+          "title": "True North Strong (And Fierce)",
+          "date": "Sep 8, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "Can 4",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Premiere Ball",
+          "date": "Nov 16, 2023"
+        },
+        {
+          "title": "Qv-She",
+          "date": "Nov 23, 2023"
+        },
+        {
+          "title": "OH-SHE-GAGGIN",
+          "date": "Nov 30, 2023"
+        },
+        {
+          "title": "Out of the Closet",
+          "date": "Dec 7, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Dec 14, 2023"
+        },
+        {
+          "title": "Lip Sync Slay Offs",
+          "date": "Dec 21, 2023"
+        },
+        {
+          "title": "From Drags to Riches: The Rusical",
+          "date": "Dec 28, 2023"
+        },
+        {
+          "title": "A Star Is Born",
+          "date": "Jan 4, 2024"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Jan 11, 2024"
+        }
+      ]
+    }
+  ]
+}

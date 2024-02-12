@@ -1,0 +1,102 @@
+{
+  "title": "Drag Race Philippines",
+  "country": "Pilipinas",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Ph 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Mabu-Heeey!",
+          "date": "Aug 17, 2022"
+        },
+        {
+          "title": "Sagalamazon",
+          "date": "Aug 17, 2022"
+        },
+        {
+          "title": "Pop Off Ate!",
+          "date": "Aug 24, 2022"
+        },
+        {
+          "title": "OPM Divas: The Rusical",
+          "date": "Aug 31, 2022"
+        },
+        {
+          "title": "Miss Shutacca",
+          "date": "Sep 7, 2022"
+        },
+        {
+          "title": "Snatch Game KNB",
+          "date": "Sep 14, 2022"
+        },
+        {
+          "title": "Shop Shop Ladies Ball",
+          "date": "Sep 21, 2022"
+        },
+        {
+          "title": "Twinning!",
+          "date": "Sep 28, 2022"
+        },
+        {
+          "title": "Charot of Fire",
+          "date": "Oct 5, 2022"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Oct 12, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Ph 2",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Grand Opening Part 1",
+          "date": "Aug 2, 2023"
+        },
+        {
+          "title": "Grand Opening Part 2",
+          "date": "Aug 9, 2023"
+        },
+        {
+          "title": "Who Wore It Bettah?",
+          "date": "Aug 16, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Aug 23, 2023"
+        },
+        {
+          "title": "Sirena: The Rusical",
+          "date": "Aug 30, 2023"
+        },
+        {
+          "title": "Dramarama Mama!",
+          "date": "Sep 6, 2023"
+        },
+        {
+          "title": "Twinning: The Shequel",
+          "date": "Sep 13, 2023"
+        },
+        {
+          "title": "Branding-Ding-Ding!",
+          "date": "Sep 20, 2023"
+        },
+        {
+          "title": "The Main Event",
+          "date": "Sep 27, 2023"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Oct 4, 2023"
+        }
+      ]
+    }
+  ]
+}

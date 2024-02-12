@@ -1,0 +1,90 @@
+{
+  "title": "Drag Race France",
+  "country": "France",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Fr 1",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "Bonjour, Bonjour, Bonjour",
+          "date": "Jun 25, 2022"
+        },
+        {
+          "title": "Queen Pour Cent",
+          "date": "Jun 30, 2022"
+        },
+        {
+          "title": "French Ball",
+          "date": "Jul 7, 2022"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 14, 2022"
+        },
+        {
+          "title": "Popstars",
+          "date": "Jul 21, 2022"
+        },
+        {
+          "title": "Un Parfum de Drag",
+          "date": "Jul 28, 2022"
+        },
+        {
+          "title": "Sororité",
+          "date": "Aug 4, 2022"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Aug 11, 2022"
+        }
+      ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Fr 2",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "A Lé-Gen-Daire Return",
+          "date": "Jun 30, 2023"
+        },
+        {
+          "title": "It's Show Night",
+          "date": "Jul 7, 2023"
+        },
+        {
+          "title": "Le Croissant Show",
+          "date": "Jul 14, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Jul 21, 2023"
+        },
+        {
+          "title": "The Musidrag",
+          "date": "Jul 28, 2023"
+        },
+        {
+          "title": "The Time Ball",
+          "date": "Aug 4, 2023"
+        },
+        {
+          "title": "Showtime!",
+          "date": "Aug 11, 2023"
+        },
+        {
+          "title": "The Makeover Challenge",
+          "date": "Aug 18, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Aug 25, 2023"
+        }
+      ]
+    }
+  ]
+}

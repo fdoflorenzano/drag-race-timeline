@@ -1,0 +1,46 @@
+{
+  "title": "Drag Race Sverige",
+  "country": "Sverige",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Sv 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "Start Your Engines!",
+          "date": "Mar 4, 2023"
+        },
+        {
+          "title": "MARATHON Talent Hunt",
+          "date": "Mar 11, 2023"
+        },
+        {
+          "title": "Drag-a'-mera!",
+          "date": "Mar 18, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Mar 25, 2023"
+        },
+        {
+          "title": "The Dragodi Festival",
+          "date": "Apr 1, 2023"
+        },
+        {
+          "title": "Dream Sisters",
+          "date": "Apr 8, 2023"
+        },
+        {
+          "title": "Diva Assoluta",
+          "date": "Apr 15, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 22, 2023"
+        }
+      ]
+    }
+  ]
+}

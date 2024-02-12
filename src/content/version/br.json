@@ -1,0 +1,62 @@
+{
+  "title": "Drag Race Brasil",
+  "country": "Brasil",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "Br 1",
+      "year": 2023,
+      "episodes": [
+        {
+          "title": "What's Up, Lindas!",
+          "date": "Aug 30, 2023"
+        },
+        {
+          "title": "Frenemies",
+          "date": "Sep 6, 2023"
+        },
+        {
+          "title": "Tupiniqueens",
+          "date": "Sep 13, 2023"
+        },
+        {
+          "title": "Atlantic Mermaids",
+          "date": "Sep 20, 2023"
+        },
+        {
+          "title": "Glamazonia",
+          "date": "Sep 27, 2023"
+        },
+        {
+          "title": "Snatch Game",
+          "date": "Oct 4, 2023"
+        },
+        {
+          "title": "Brazil Loves Puppets!",
+          "date": "Oct 11, 2023"
+        },
+        {
+          "title": "Brazilian Festivals Ball",
+          "date": "Oct 18, 2023"
+        },
+        {
+          "title": "Drag Shade Brasil!",
+          "date": "Oct 25, 2023"
+        },
+        {
+          "title": "Carnaval Makeover",
+          "date": "Nov 1, 2023"
+        },
+        {
+          "title": "The Reunion",
+          "date": "Nov 8, 2023"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Nov 15, 2023"
+        }
+      ]
+    }
+  ]
+}
