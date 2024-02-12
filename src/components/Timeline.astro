@@ -1,0 +1,244 @@
+---
+import moment from "moment";
+
+import Episode from "./Episode";
+
+import type { ExtendedEpisode, Streak } from "../lib/data";
+import { weeksArray } from "../lib/weeks";
+
+interface Props {
+  rows: number;
+  tracks: number;
+  episodes: ExtendedEpisode[];
+  streaks: Streak[];
+  generalStreaks: {
+    start: number;
+    end: number;
+  }[];
+}
+
+const {rows,
+  tracks,
+  episodes,
+  streaks,
+  generalStreaks} = Astro.props;
+
+---
+
+    <div
+      class="timeline"
+      style={{
+        // @ts-ignore
+        "--row-number": `${rows}`,
+        "--track-number": `${tracks}`,
+      }}
+    >
+      <p
+        class="legend"
+        style={{ gridRow: 1, gridColumn: 1, justifySelf: "end" }}
+      >
+        Week
+      </p>
+      <p
+        class="legend"
+        style={{
+          gridRow: 1,
+          gridColumn: `2 / span ${tracks - 1}`,
+          justifySelf: "center",
+        }}
+      >
+        Seasons
+      </p>
+      <p
+        class="legend"
+        style={{ gridRow: 1, gridColumn: tracks + 1, justifySelf: "start" }}
+      >
+        Streaks
+      </p>
+      {weeksArray.map((d, i) => {
+        const initial = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(1);
+        const last = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(7);
+        return (
+          <>
+            <div
+              class="gridRow"
+              style={{
+                gridColumn: `2 / span ${tracks - 1}`,
+                gridRow: ` ${1 + weeksArray.length - i} / span 1`,
+              }}
+            />
+            <div
+              class="gridLabelContainer"
+              style={{
+                gridRow: ` ${1 + weeksArray.length - i} / span 1`,
+              }}
+            >
+              <p class="gridLabel">{last.format("DD MMM YY")}</p>
+              <p class="gridLabel">{initial.format("DD MMM YY")}</p>
+            </div>
+          </>
+        );
+      })}
+
+      {episodes.map((d) => (
+        <Episode
+          client:visible
+          style={{
+            gridColumn: `${2 + d.xOffset} / span 1`,
+            gridRow: `${2 + weeksArray.length - d.week} / span 1`,
+          }}
+          episode={d}
+        />
+      ))}
+
+      {streaks.map((d) => (
+        <div
+          class="streak"
+          style={{
+            "--label-offset": 0,
+            gridColumn: `${2 + d.episodes[0].xOffset} / span 1`,
+            gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
+          }}
+          data-season={d.season}
+        >
+          <div
+            class="streakLine"
+            style={{
+              borderRadius: d.unfinished
+                ? `0 0 var(--col-width) var(--col-width)`
+                : `var(--col-width)`,
+            }}
+          />
+          <p
+            class="streakLabel"
+            style={{
+              "--label-offset": d.unfinished
+                ? "0px"
+                : "calc(var(--col-width) / 3)",
+            }}
+          >
+            {d.season}
+          </p>
+        </div>
+      ))}
+
+      {generalStreaks.map((d) => (
+        <div
+          class="streak generalStreak"
+          style={{
+            gridColumn: `${tracks + 1} / span 1`,
+            gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
+          }}
+        >
+          <div class="streakLine" />
+          <p
+            class="streakLabel"
+            style={{
+              "--label-offset": "calc(var(--col-width) / 3)",
+            }}
+          >
+            {1 + d.end - d.start} weeks
+          </p>
+        </div>
+      ))}
+    </div>
+
+<style>
+  .timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: [labels] 1fr repeat(
+      var(--track-number),
+      var(--col-width)
+    );
+  grid-template-rows: repeat(var(--row-number), var(--col-width));
+  gap: 0 var(--gap);
+  margin-bottom: 3rem;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.legend {
+  user-select: none;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.5rem;
+  align-self: end;
+}
+
+.gridRow {
+  user-select: none;
+  border-style: solid;
+  border-width: 1px;
+
+  border-color: var(--color-border);
+}
+
+.gridRow + .gridRow {
+  border-width: 1px 1px 0 1px;
+}
+
+.gridLabelContainer {
+  user-select: none;
+  align-self: center;
+  justify-self: end;
+}
+
+.gridLabel {
+  user-select: none;
+  margin: 0;
+  grid-column: labels / span 1;
+  font-size: 0.5rem;
+  text-align: end;
+}
+
+@media (max-width: 500px) {
+  .gridLabel {
+    font-size: 0.3rem;
+  }
+}
+
+.streak {
+  user-select: none;
+  position: relative;
+  overflow-x: visible;
+}
+
+.streakLine {
+  user-select: none;
+  height: 100%;
+  background: var(--color-streak);
+}
+
+.generalStreak .streakLine {
+  background: var(--color-general-streak);
+  border-radius: var(--col-width);
+}
+
+.streakLabel {
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  font-size: 0.6rem;
+  transform-origin: 0 0;
+  width: max-content;
+  transform: rotate(90deg) translateX(calc(0.1rem + var(--label-offset)))
+    translateY(calc(-1 * (var(--col-width) + 0.8rem)));
+}
+
+@media (max-width: 500px) {
+  .streakLabel {
+    transform: rotate(90deg) translateX(calc(0.1rem + var(--label-offset)))
+      translateY(calc(-1 * (var(--col-width) + 0.7rem)));
+    font-size: 0.5rem;
+  }
+}
+
+</style>

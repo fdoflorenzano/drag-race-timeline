@@ -29,12 +29,13 @@ type ExtendedSeason = Season & {
 
 type GraphicableSeason = ExtendedSeason & { xOffset: number };
 
-type ExtendedEpisode = Episode & {
+export type ExtendedEpisode = Episode & {
   season: string;
+  seasonName: string;
   xOffset: number;
 };
 
-interface Streak {
+export interface Streak {
   start: number;
   end: number;
   episodes: ExtendedEpisode[];
@@ -198,6 +199,7 @@ export const calculateBaseStreaks = (seasons: GraphicableSeason[]) => {
       const extEpisode: ExtendedEpisode = {
         ...episode,
         season: season.shortTitle,
+        seasonName: season.versionTitle + " " + season.shortSeason,
         xOffset: season.xOffset,
       };
       episodes.push(extEpisode);

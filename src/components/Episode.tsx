@@ -3,11 +3,13 @@ import * as d3 from "d3";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import * as Popover from "@radix-ui/react-popover";
 
+import type { ExtendedEpisode } from "../lib/data";
+
 const formatTime = d3.utcFormat("%b %e, %Y");
 
 import styles from "./Episode.module.css";
 
-const Content = ({ episode }) => {
+const Content = ({ episode }: { episode: ExtendedEpisode }) => {
   return (
     <div className={styles.content}>
       <h2>{episode.title}</h2>
@@ -17,7 +19,13 @@ const Content = ({ episode }) => {
   );
 };
 
-export default function Episode({ style, episode, index = 0 }) {
+export default function Episode({
+  style,
+  episode,
+}: {
+  style: React.CSSProperties;
+  episode: ExtendedEpisode;
+}) {
   return (
     <>
       <Tooltip.Provider delayDuration={0}>
