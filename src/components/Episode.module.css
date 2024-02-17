@@ -17,8 +17,8 @@
 .trigger {
   background: transparent;
   z-index: 1;
-  width: 80%;
   height: 80%;
+  aspect-ratio: 1;
   justify-self: center;
   align-self: center;
   border-radius: 50%;
