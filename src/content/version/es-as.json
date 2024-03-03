@@ -7,7 +7,6 @@
       "shortSeason": "S1",
       "shortTitle": "Es AS 1",
       "year": 2024,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Supremme Eleganza Olé Stars Extravaganza",
@@ -26,8 +25,12 @@
           "date": "Feb 25, 2024"
         },
         {
-          "title": "Episode #1.5",
+          "title": "The Hairdresser's Salon",
           "date": "Mar 3, 2024"
+        },
+        {
+          "title": "Episode #1.6",
+          "date": "Mar 10, 2024"
         }
       ]
     }
