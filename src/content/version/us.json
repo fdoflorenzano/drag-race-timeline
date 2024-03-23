@@ -959,7 +959,6 @@
       "shortSeason": "S16",
       "shortTitle": "US 16",
       "year": 2024,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Rate-a-Queen",
@@ -1006,8 +1005,24 @@
           "date": "Mar 15, 2024"
         },
         {
-          "title": "Episode #16.12",
+          "title": "Bathroom Hunties",
           "date": "Mar 22, 2024"
+        },
+        {
+          "title": "Episode #16.13",
+          "date": "Mar 29, 2024"
+        },
+        {
+          "title": "Episode #16.14",
+          "date": "Apr 5, 2024"
+        },
+        {
+          "title": "Episode #16.15",
+          "date": "Apr 12, 2024"
+        },
+        {
+          "title": "Episode #16.16",
+          "date": "Apr 19, 2024"
         }
       ]
     }

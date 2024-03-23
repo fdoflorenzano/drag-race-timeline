@@ -39,7 +39,6 @@
       "shortSeason": "S2",
       "shortTitle": "UK vsTW 2",
       "year": 2024,
-      "unfinished": true,
       "episodes": [
         {
           "title": "The Queens' Variety Show",
@@ -66,8 +65,12 @@
           "date": "Mar 15, 2024"
         },
         {
-          "title": "Episode #2.7",
+          "title": "Haters Wedding Roast",
           "date": "Mar 22, 2024"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Mar 29, 2024"
         }
       ]
     }
