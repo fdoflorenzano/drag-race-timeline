@@ -373,6 +373,19 @@
           "date": "Jul 21, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 9",
+      "shortSeason": "S9",
+      "shortTitle": "US AS 9",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #9.1",
+          "date": "May 17, 2024"
+        }
+      ]
     }
   ]
 }
