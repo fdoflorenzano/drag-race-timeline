@@ -57,6 +57,19 @@
           "date": "Sep 7, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Mex 2",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #2.1",
+          "date": "Jun 20, 2024"
+        }
+      ]
     }
   ]
 }
