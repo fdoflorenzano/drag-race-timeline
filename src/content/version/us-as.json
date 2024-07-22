@@ -379,7 +379,6 @@
       "shortSeason": "S9",
       "shortTitle": "US AS 9",
       "year": 2024,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Drag Queens Save the World",
@@ -422,8 +421,12 @@
           "date": "Jul 12, 2024"
         },
         {
-          "title": "Episode #9.11",
+          "title": "Grand Finale Variety Extravaganza: Part 1",
           "date": "Jul 19, 2024"
+        },
+        {
+          "title": "Grand Finale Variety Extravaganza: Part 2",
+          "date": "Jul 26, 2024"
         }
       ]
     }
