@@ -90,7 +90,9 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
   }
 
   // Finish pending count
-  const countryCount = Object.keys(countries).length;
+  const countryCount = Object.keys(countries).filter(
+    (c) => c !== "World",
+  ).length;
 
   return {
     seasons,

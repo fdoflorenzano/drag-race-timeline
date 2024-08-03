@@ -1,0 +1,19 @@
+{
+  "title": "RuPaul's Drag Race Global All Stars",
+  "country": "World",
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "GAS 1",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #1.1",
+          "date": "Aug 16, 2024"
+        }
+      ]
+    }
+  ]
+}
