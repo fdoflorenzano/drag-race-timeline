@@ -6,6 +6,8 @@ interface Episode {
   date: Date;
   week: number;
   title: string;
+  isDouble: boolean;
+  isSecond: boolean;
   image?: string | undefined;
 }
 
@@ -73,15 +75,28 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
         versionTitle: version.data.title,
         episodes: [],
       };
+
       // Extend episode
-      for (let episode of rawSeason.episodes) {
+      let lastDate = null;
+      for (let index = 0; index < rawSeason.episodes.length; index++) {
+        const episode = rawSeason.episodes[index];
         const date = parseTime(episode.date) as Date;
         const weekYear = getWeekNumber(date);
         const weekObject = weeks[`${weekYear[1]}-${weekYear[0]}`];
         // console.log({ weekObject, weekYear, date });
         const week = weekObject.weekIndex;
 
-        const ep = { ...episode, date, week };
+        let isDouble = false;
+        let isSecond = false;
+        if (lastDate != null && date.toISOString() === lastDate.toISOString()) {
+          isDouble = true;
+          isSecond = true;
+
+          season.episodes[index - 1].isDouble = true;
+        }
+        lastDate = date;
+
+        const ep = { ...episode, date, week, isDouble, isSecond };
         season.episodes.push(ep);
       }
       processedSeasons.push(season);

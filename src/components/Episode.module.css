@@ -17,14 +17,27 @@
 .trigger {
   background: transparent;
   z-index: 1;
-  height: 80%;
-  width: 80%;
+  height: calc(0.8 * var(--col-width));
+  width: calc(0.8 * var(--col-width));
   padding: 0;
   margin: 0;
   justify-self: center;
   align-self: center;
-  border-radius: 50%;
+  border-radius: calc(0.4 * var(--col-width));
   border: 1px solid #b12d4e;
+}
+
+.trigger[data-is-double="true"][data-is-second="false"] {
+  justify-self: start;
+  margin-left: calc(0.1 * var(--col-width));
+  width: calc(0.4 * var(--col-width) + 1px);
+  border-radius: calc(0.4 * var(--col-width)) 0 0 calc(0.4 * var(--col-width));
+}
+.trigger[data-is-double="true"][data-is-second="true"] {
+  justify-self: end;
+  margin-right: calc(0.1 * var(--col-width));
+  width: calc(0.4 * var(--col-width));
+  border-radius: 0 calc(0.4 * var(--col-width)) calc(0.4 * var(--col-width)) 0;
 }
 
 .trigger:hover {

@@ -35,6 +35,8 @@ export default function Episode({
               aria-label={`Hover to learn about episode ${episode.title}`}
               className={`${styles.trigger} ${styles.desktopTrigger}`}
               style={style}
+              data-is-double={episode.isDouble}
+              data-is-second={episode.isSecond}
             />
           </Tooltip.Trigger>
           <Tooltip.Portal>
