@@ -161,6 +161,23 @@
           "date": "Jul 1, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "Es 4",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #4.1",
+          "date": "Sep 22, 2024"
+        },
+        {
+          "title": "Episode #4.2",
+          "date": "Sep 29, 2024"
+        }
+      ]
     }
   ]
 }

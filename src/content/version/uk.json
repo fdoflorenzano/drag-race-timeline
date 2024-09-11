@@ -241,6 +241,19 @@
           "date": "Nov 30, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 6",
+      "shortSeason": "S6",
+      "shortTitle": "UK 6",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #6.1",
+          "date": "Sep 26, 2024"
+        }
+      ]
     }
   ]
 }
