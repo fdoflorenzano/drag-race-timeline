@@ -103,7 +103,6 @@
       "shortSeason": "S3",
       "shortTitle": "Ph 3",
       "year": 2024,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Viral Queens",
@@ -138,8 +137,12 @@
           "date": "Sep 25, 2024"
         },
         {
-          "title": "Episode #3.9",
+          "title": "Slay Accla, Slay!",
           "date": "Oct 2, 2024"
+        },
+        {
+          "title": "The Grand Finale",
+          "date": "Oct 9, 2024"
         }
       ]
     }
