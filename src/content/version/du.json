@@ -123,6 +123,24 @@
           "date": "Sep 15, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "country": ["Australia", "New Zeland"],
+      "shortTitle": "DU 4",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Double Dipping",
+          "date": "Nov 1, 2024"
+        },
+        {
+          "title": "Episode #4.2",
+          "date": "Nov 8, 2024"
+        }
+      ]
     }
   ]
 }
