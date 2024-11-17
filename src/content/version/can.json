@@ -189,6 +189,19 @@
           "date": "Jan 11, 2024"
         }
       ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "Can 5",
+      "year": 2024,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #5.1",
+          "date": "Nov 21, 2024"
+        }
+      ]
     }
   ]
 }
