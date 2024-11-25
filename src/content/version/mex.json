@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Mex 1",
       "year": 2023,
+      "contestants": 11,
+      "newContestants": 11,
       "episodes": [
         {
           "title": "Drag mi tierra México",
@@ -63,6 +65,8 @@
       "shortSeason": "S2",
       "shortTitle": "Mex 2",
       "year": 2024,
+      "contestants": 13,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "Drag mi tierra México",

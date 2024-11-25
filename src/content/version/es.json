@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Es 1",
       "year": 2021,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Bienvenidas Reinas",
@@ -55,6 +57,8 @@
       "shortSeason": "S2",
       "shortTitle": "Es 2",
       "year": 2022,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "La nueva promoción",
@@ -111,6 +115,8 @@
       "shortSeason": "S3",
       "shortTitle": "Es 3",
       "year": 2023,
+      "contestants": 13,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Supremme Eleganza Talent Extravaganza",
@@ -167,6 +173,8 @@
       "shortSeason": "S4",
       "shortTitle": "Es 4",
       "year": 2024,
+      "contestants": 12,
+      "newContestants": 12,
       "unfinished": false,
       "episodes": [
         {

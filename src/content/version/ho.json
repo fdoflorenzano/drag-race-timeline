@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Ho 1",
       "year": 2020,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Land of the Queens",
@@ -47,6 +49,8 @@
       "shortSeason": "S2",
       "shortTitle": "Ho 2",
       "year": 2021,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Who's That Queen?",

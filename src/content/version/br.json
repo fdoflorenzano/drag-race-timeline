@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Br 1",
       "year": 2023,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "What's Up, Lindas!",

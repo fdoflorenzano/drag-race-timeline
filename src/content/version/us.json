@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "US 1",
       "year": 2009,
+      "contestants": 9,
+      "newContestants": 9,
       "episodes": [
         {
           "title": "Drag on a Dime",
@@ -51,6 +53,8 @@
       "shortSeason": "S2",
       "shortTitle": "US 2",
       "year": 2010,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Gone with the Window",
@@ -107,6 +111,8 @@
       "shortSeason": "S3",
       "shortTitle": "US 3",
       "year": 2011,
+      "contestants": 13,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Casting Extravaganza",
@@ -179,6 +185,8 @@
       "shortSeason": "S4",
       "shortTitle": "US 4",
       "year": 2012,
+      "contestants": 13,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "RuPocalypse Now!",
@@ -243,6 +251,8 @@
       "shortSeason": "S5",
       "shortTitle": "US 5",
       "year": 2013,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "RuPaullywood or Bust",
@@ -307,6 +317,8 @@
       "shortSeason": "S6",
       "shortTitle": "US 6",
       "year": 2014,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "RuPaul's Big Opening: Part 1",
@@ -371,6 +383,8 @@
       "shortSeason": "S7",
       "shortTitle": "US 7",
       "year": 2015,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "Born Naked",
@@ -435,6 +449,8 @@
       "shortSeason": "S8",
       "shortTitle": "US 8",
       "year": 2016,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Keeping It 100",
@@ -483,6 +499,8 @@
       "shortSeason": "S9",
       "shortTitle": "US 9",
       "year": 2017,
+      "contestants": 14,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "Oh. My. Gaga!",
@@ -547,6 +565,8 @@
       "shortSeason": "S10",
       "shortTitle": "US 10",
       "year": 2018,
+      "contestants": 14,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "10s Across the Board",
@@ -611,6 +631,8 @@
       "shortSeason": "S11",
       "shortTitle": "US 11",
       "year": 2019,
+      "contestants": 15,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "Whatcha Unpackin?",
@@ -675,6 +697,8 @@
       "shortSeason": "S12",
       "shortTitle": "US 12",
       "year": 2020,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "I'm That Bitch",
@@ -739,6 +763,8 @@
       "shortSeason": "S13",
       "shortTitle": "US 13",
       "year": 2021,
+      "contestants": 13,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "The Pork Chop",
@@ -815,6 +841,8 @@
       "shortSeason": "S14",
       "shortTitle": "US 14",
       "year": 2022,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "Big Opening No. 1",
@@ -887,6 +915,8 @@
       "shortSeason": "S15",
       "shortTitle": "US 15",
       "year": 2023,
+      "contestants": 16,
+      "newContestants": 16,
       "episodes": [
         {
           "title": "One Night Only, Pt. 1",
@@ -959,6 +989,8 @@
       "shortSeason": "S16",
       "shortTitle": "US 16",
       "year": 2024,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "Rate-a-Queen",

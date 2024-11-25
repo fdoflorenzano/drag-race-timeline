@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Sv 1",
       "year": 2023,
+      "contestants": 9,
+      "newContestants": 9,
       "episodes": [
         {
           "title": "Start Your Engines!",

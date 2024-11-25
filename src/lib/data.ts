@@ -49,6 +49,7 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
   const versionCount = versions.length;
   let seasonCount = 0;
   let episodeCount = 0;
+  let contestantsCount = 0;
   const countries: { [key: string]: true } = {};
 
   const seasons: SeasonDict = {};
@@ -60,6 +61,7 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
     for (let rawSeason of versionData.seasons) {
       // Count
       seasonCount += 1;
+      contestantsCount += rawSeason.newContestants ?? 0;
       if (versionData.country != null) {
         if (Array.isArray(versionData.country)) {
           for (let c of versionData.country) {
@@ -118,6 +120,7 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
       countries: countryCount,
       seasons: seasonCount,
       episodes: episodeCount,
+      contestants: contestantsCount,
     },
   };
 };

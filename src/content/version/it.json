@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "It 1",
       "year": 2021,
+      "contestants": 8,
+      "newContestants": 8,
       "episodes": [
         {
           "title": "Ciao Italia",
@@ -39,6 +41,8 @@
       "shortSeason": "S2",
       "shortTitle": "It 2",
       "year": 2022,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Little Italy",
@@ -79,6 +83,8 @@
       "shortSeason": "S3",
       "shortTitle": "It 3",
       "year": 2023,
+      "contestants": 13,
+      "newContestants": 13,
       "episodes": [
         {
           "title": "Express Yourself",

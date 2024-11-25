@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Ph 1",
       "year": 2022,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Mabu-Heeey!",
@@ -55,6 +57,8 @@
       "shortSeason": "S2",
       "shortTitle": "Ph 2",
       "year": 2023,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Grand Opening Part 1",
@@ -103,6 +107,8 @@
       "shortSeason": "S3",
       "shortTitle": "Ph 3",
       "year": 2024,
+      "contestants": 11,
+      "newContestants": 11,
       "episodes": [
         {
           "title": "Viral Queens",

@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "UK 1",
       "year": 2019,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "The Royal Queens",
@@ -51,6 +53,8 @@
       "shortSeason": "S2",
       "shortTitle": "UK 2",
       "year": 2021,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Bring Back My Queens",
@@ -103,6 +107,8 @@
       "shortSeason": "S3",
       "shortTitle": "UK 3",
       "year": 2021,
+      "contestants": 12,
+      "newContestants": 11,
       "episodes": [
         {
           "title": "The Return of Royalty",
@@ -151,6 +157,8 @@
       "shortSeason": "S4",
       "shortTitle": "UK 4",
       "year": 2022,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "ST4RT Your Engines",
@@ -199,6 +207,8 @@
       "shortSeason": "S5",
       "shortTitle": "UK 5",
       "year": 2023,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Tickety-Boo",
@@ -248,6 +258,8 @@
       "shortTitle": "UK 6",
       "year": 2024,
       "unfinished": true,
+      "contestants": 12,
+      "newContestants": 12,
       "episodes": [
         {
           "title": "Tickety-Boo Cabaret",

@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Can vsTW 1",
       "year": 2022,
+      "contestants": 9,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "Bonjour, Hi",
@@ -39,6 +41,8 @@
       "shortSeason": "S2",
       "shortTitle": "Can vsTW 2",
       "year": 2024,
+      "contestants": 9,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "Drag Pop",

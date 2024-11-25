@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Be 1",
       "year": 2023,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Bonjour Iedereen",
@@ -47,6 +49,8 @@
       "shortSeason": "S2",
       "shortTitle": "Be 2",
       "year": 2024,
+      "contestants": 9,
+      "newContestants": 9,
       "episodes": [
         {
           "title": "De retour!",

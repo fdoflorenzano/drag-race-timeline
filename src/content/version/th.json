@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "Th 1",
       "year": 2018,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Contestant's Story",
@@ -47,6 +49,8 @@
       "shortSeason": "S2",
       "shortTitle": "Th 2",
       "year": 2019,
+      "contestants": 14,
+      "newContestants": 14,
       "episodes": [
         {
           "title": "Re-Born This Way",
@@ -107,6 +111,8 @@
       "shortSeason": "S3",
       "shortTitle": "Th 3",
       "year": 2024,
+      "contestants": 11,
+      "newContestants": 11,
       "unfinished": true,
       "episodes": [
         {

@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "DU 1",
       "year": 2021,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "G'day G'day G'day",
@@ -48,6 +50,8 @@
       "country": ["Australia", "New Zeland"],
       "shortTitle": "DU 2",
       "year": 2022,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Grand Opening",
@@ -89,6 +93,8 @@
       "country": ["Australia", "New Zeland"],
       "shortTitle": "DU 3",
       "year": 2023,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Mardi Gras Pride",
@@ -131,6 +137,8 @@
       "shortTitle": "DU 4",
       "year": 2024,
       "unfinished": true,
+      "contestants": 10,
+      "newContestants": 10,
       "episodes": [
         {
           "title": "Double Dipping",

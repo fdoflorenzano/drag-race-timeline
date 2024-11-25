@@ -11,6 +11,8 @@ const version = defineCollection({
         shortSeason: z.string(),
         shortTitle: z.string(),
         year: z.number(),
+        contestants: z.number().optional(),
+        newContestants: z.number().optional(),
         unfinished: z.boolean().optional(),
         xOffset: z.number().optional(),
         episodes: z.array(

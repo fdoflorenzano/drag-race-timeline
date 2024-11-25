@@ -7,6 +7,8 @@
       "shortSeason": "S1",
       "shortTitle": "US AS 1",
       "year": 2012,
+      "contestants": 12,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "It Takes Two",
@@ -39,6 +41,8 @@
       "shortSeason": "S2",
       "shortTitle": "US AS 2",
       "year": 2016,
+      "contestants": 10,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "All Star Talent Show Extravaganza",
@@ -83,6 +87,8 @@
       "shortSeason": "S3",
       "shortTitle": "US AS 3",
       "year": 2017,
+      "contestants": 10,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "All Star Variety Show",
@@ -123,6 +129,8 @@
       "shortSeason": "S4",
       "shortTitle": "US AS 4",
       "year": 2018,
+      "contestants": 10,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "All Star Super Queen Variety Show",
@@ -171,6 +179,8 @@
       "shortSeason": "S5",
       "shortTitle": "US AS 5",
       "year": 2020,
+      "contestants": 10,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "All Star Variety Extravaganza",
@@ -211,6 +221,8 @@
       "shortSeason": "S6",
       "shortTitle": "US AS 6",
       "year": 2021,
+      "contestants": 13,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "All Star Variety Extravaganza",
@@ -267,6 +279,8 @@
       "shortSeason": "S7",
       "shortTitle": "US AS 7",
       "year": 2022,
+      "contestants": 8,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "Legends",
@@ -323,6 +337,8 @@
       "shortSeason": "S8",
       "shortTitle": "US AS 8",
       "year": 2023,
+      "contestants": 12,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "The Fame Games",
@@ -379,6 +395,8 @@
       "shortSeason": "S9",
       "shortTitle": "US AS 9",
       "year": 2024,
+      "contestants": 8,
+      "newContestants": 0,
       "episodes": [
         {
           "title": "Drag Queens Save the World",
