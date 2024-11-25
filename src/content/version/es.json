@@ -167,7 +167,7 @@
       "shortSeason": "S4",
       "shortTitle": "Es 4",
       "year": 2024,
-      "unfinished": true,
+      "unfinished": false,
       "episodes": [
         {
           "title": "Travel In Time",
@@ -206,8 +206,12 @@
           "date": "Nov 17, 2024"
         },
         {
-          "title": "Episode #4.10",
+          "title": "The Reunion",
           "date": "Nov 24, 2024"
+        },
+        {
+          "title": "Episode #4.11",
+          "date": "Dec 1, 2024"
         }
       ]
     }

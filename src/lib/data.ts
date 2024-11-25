@@ -48,6 +48,7 @@ export interface Streak {
 export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
   const versionCount = versions.length;
   let seasonCount = 0;
+  let episodeCount = 0;
   const countries: { [key: string]: true } = {};
 
   const seasons: SeasonDict = {};
@@ -79,11 +80,12 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
       // Extend episode
       let lastDate = null;
       for (let index = 0; index < rawSeason.episodes.length; index++) {
+        episodeCount += 1;
         const episode = rawSeason.episodes[index];
         const date = parseTime(episode.date) as Date;
         const weekYear = getWeekNumber(date);
         const weekObject = weeks[`${weekYear[1]}-${weekYear[0]}`];
-        // console.log({ weekObject, weekYear, date });
+        // console.log({ episode, weekObject, weekYear, date });
         const week = weekObject.weekIndex;
 
         let isDouble = false;
@@ -115,6 +117,7 @@ export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
       versions: versionCount,
       countries: countryCount,
       seasons: seasonCount,
+      episodes: episodeCount,
     },
   };
 };
