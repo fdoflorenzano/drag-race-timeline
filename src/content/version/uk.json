@@ -257,7 +257,6 @@
       "shortSeason": "S6",
       "shortTitle": "UK 6",
       "year": 2024,
-      "unfinished": true,
       "contestants": 12,
       "newContestants": 12,
       "episodes": [
@@ -298,7 +297,7 @@
           "date": "Nov 21, 2024"
         },
         {
-          "title": "Episode #6.10",
+          "title": "Grand Finale",
           "date": "Nov 28, 2024"
         }
       ]
