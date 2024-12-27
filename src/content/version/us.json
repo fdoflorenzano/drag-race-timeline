@@ -1057,6 +1057,21 @@
           "date": "Apr 19, 2024"
         }
       ]
+    },
+    {
+      "season": "Season 17",
+      "shortSeason": "S17",
+      "shortTitle": "US 17",
+      "year": 2025,
+      "contestants": 14,
+      "newContestants": 14,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #17.1",
+          "date": "Jan 3, 2025"
+        }
+      ]
     }
   ]
 }
