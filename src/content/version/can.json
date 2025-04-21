@@ -203,7 +203,6 @@
       "shortSeason": "S5",
       "shortTitle": "Can 5",
       "year": 2024,
-      "unfinished": true,
       "contestants": 11,
       "newContestants": 11,
       "episodes": [
@@ -240,7 +239,7 @@
           "date": "Jan 9, 2025"
         },
         {
-          "title": "Episode #5.9",
+          "title": "Grand Finale",
           "date": "Jan 16, 2025"
         }
       ]

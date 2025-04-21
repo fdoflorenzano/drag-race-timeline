@@ -1065,7 +1065,6 @@
       "year": 2025,
       "contestants": 14,
       "newContestants": 14,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Squirrel Games",
@@ -1108,8 +1107,28 @@
           "date": "Mar 7, 2025"
         },
         {
-          "title": "Episode #17.11",
+          "title": "Ross Mathews vs. The Ducks",
           "date": "Mar 14, 2025"
+        },
+        {
+          "title": "Charisma, Uniqueness, Nerve & Talent Monologues",
+          "date": "Mar 21, 2025"
+        },
+        {
+          "title": "Drag Baby Mamas",
+          "date": "Mar 28, 2025"
+        },
+        {
+          "title": "How's Your Headliner?",
+          "date": "Apr 4, 2025"
+        },
+        {
+          "title": "LalapaRuza Smackdown Reunited",
+          "date": "Apr 11, 2025"
+        },
+        {
+          "title": "Grand Finale",
+          "date": "Apr 18, 2025"
         }
       ]
     }
