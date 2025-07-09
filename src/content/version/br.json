@@ -59,6 +59,33 @@
           "date": "Nov 15, 2023"
         }
       ]
+    },
+    {
+      "season": "Season 2",
+      "shortSeason": "S2",
+      "shortTitle": "Br 2",
+      "year": 2025,
+      "contestants": 10,
+      "newContestants": 10,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #2.1",
+          "date": "Jul 10, 2025"
+        },
+        {
+          "title": "Episode #2.2",
+          "date": "Jul 17, 2025"
+        },
+        {
+          "title": "Episode #2.3",
+          "date": "Jul 24, 2025"
+        },
+        {
+          "title": "Episode #2.4",
+          "date": "Jul 31, 2025"
+        }
+      ]
     }
   ]
 }
