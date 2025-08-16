@@ -9,7 +9,7 @@
       "year": 2025,
       "contestants": 10,
       "newContestants": 0,
-      "unfinished": true,
+      "unfinished": false,
       "episodes": [
         {
           "title": "Abracada-Drag",
@@ -28,11 +28,11 @@
           "date": "Jul 31, 2025"
         },
         {
-          "title": "Episode #1.5",
+          "title": "VIP Makeover",
           "date": "Aug 7, 2025"
         },
         {
-          "title": "Episode #1.6",
+          "title": "Queenovision",
           "date": "Aug 14, 2025"
         },
         {
