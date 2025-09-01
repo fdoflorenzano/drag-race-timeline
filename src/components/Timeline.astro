@@ -65,8 +65,8 @@ const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
               gridRow: ` ${1 + weeksArray.length - i} / span 1`,
             }}
           >
-            <p class="gridLabel">{last.format("DD MMM YY")}</p>
-            <p class="gridLabel">{initial.format("DD MMM YY")}</p>
+            <p class="gridLabel">{last.format("’YY MMM DD")}</p>
+            <p class="gridLabel">{initial.format("’YY MMM DD")}</p>
           </div>
         </>
       );
