@@ -301,6 +301,21 @@
           "date": "Nov 28, 2024"
         }
       ]
+    },
+    {
+      "season": "Season 7",
+      "shortSeason": "S7",
+      "shortTitle": "UK 7",
+      "year": 2025,
+      "contestants": 12,
+      "newContestants": 12,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #7.1",
+          "date": "Sep 25, 2025"
+        }
+      ]
     }
   ]
 }

@@ -67,7 +67,6 @@
       "year": 2025,
       "contestants": 10,
       "newContestants": 10,
-      "unfinished": true,
       "episodes": [
         {
           "title": "The Birds of Paradise Take Flight",
@@ -94,12 +93,20 @@
           "date": "Aug 14, 2025"
         },
         {
-          "title": "Episode #2.7",
+          "title": "Lalaparuza Brasil - Rinha de Picumãs",
           "date": "Aug 21, 2025"
         },
         {
-          "title": "Episode #2.8",
+          "title": "Read Bruna to Filth!",
           "date": "Aug 28, 2025"
+        },
+        {
+          "title": "Episode #2.9",
+          "date": "Sep 4, 2025"
+        },
+        {
+          "title": "Episode #2.10",
+          "date": "Sep 11, 2025"
         }
       ]
     }

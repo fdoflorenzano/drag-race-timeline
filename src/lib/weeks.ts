@@ -1,7 +1,7 @@
 import { getWeekNumber, weeksInYear } from "./dates";
 
 const START_DATE = new Date(2009, 0, 1);
-const END_DATE = new Date(2025, 7, 30);
+const END_DATE = new Date(2025, 8, 28);
 
 export const weeks: {
   [key: string]: { year: number; week: number; weekIndex: number };
