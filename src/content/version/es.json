@@ -226,6 +226,41 @@
           "date": "Dec 15, 2024"
         }
       ]
+    },
+    {
+      "season": "Season 5",
+      "shortSeason": "S5",
+      "shortTitle": "Es 5",
+      "year": 2025,
+      "contestants": 12,
+      "newContestants": 12,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "My Heart Is Rejoicing",
+          "date": "Sep 28, 2025"
+        },
+        {
+          "title": "Episode #5.2",
+          "date": "Oct 5, 2025"
+        },
+        {
+          "title": "Episode #5.3",
+          "date": "Oct 12, 2025"
+        },
+        {
+          "title": "Episode #5.4",
+          "date": "Oct 19, 2025"
+        },
+        {
+          "title": "Episode #5.5",
+          "date": "Oct 26, 2025"
+        },
+        {
+          "title": "Episode #5.6",
+          "date": "Nov 2, 2025"
+        }
+      ]
     }
   ]
 }

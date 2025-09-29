@@ -312,8 +312,28 @@
       "unfinished": true,
       "episodes": [
         {
-          "title": "Episode #7.1",
+          "title": "Queens of the Brit Gala",
           "date": "Sep 25, 2025"
+        },
+        {
+          "title": "Episode #7.2",
+          "date": "Oct 2, 2025"
+        },
+        {
+          "title": "Episode #7.3",
+          "date": "Oct 9, 2025"
+        },
+        {
+          "title": "Episode #7.4",
+          "date": "Oct 16, 2025"
+        },
+        {
+          "title": "Episode #7.5",
+          "date": "Oct 23, 2025"
+        },
+        {
+          "title": "Episode #7.6",
+          "date": "Oct 30, 2025"
         }
       ]
     }

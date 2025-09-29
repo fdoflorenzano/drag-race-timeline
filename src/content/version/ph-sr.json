@@ -9,7 +9,6 @@
       "year": 2025,
       "contestants": 12,
       "newContestants": 0,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Miss Shutacca: Slaysian Edition",
@@ -24,20 +23,32 @@
           "date": "Aug 27, 2025"
         },
         {
-          "title": "Episode #1.4",
+          "title": "Crazy Bitch Slaysians: The Musical",
           "date": "Sep 3, 2025"
         },
         {
-          "title": "Episode #1.5",
+          "title": "Homecoming Queens",
           "date": "Sep 10, 2025"
         },
         {
-          "title": "Episode #1.6",
+          "title": "Snatch Election",
           "date": "Sep 17, 2025"
         },
         {
-          "title": "Episode #1.7",
+          "title": "Lip Sync Lalaparuza Smackdown",
           "date": "Sep 24, 2025"
+        },
+        {
+          "title": "Episode #1.8",
+          "date": "Oct 1, 2025"
+        },
+        {
+          "title": "Episode #1.9",
+          "date": "Oct 8, 2025"
+        },
+        {
+          "title": "Episode #1.10",
+          "date": "Oct 15, 2025"
         }
       ]
     }
