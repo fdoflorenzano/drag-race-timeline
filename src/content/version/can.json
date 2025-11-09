@@ -243,6 +243,25 @@
           "date": "Jan 16, 2025"
         }
       ]
+    },
+    {
+      "season": "Season 6",
+      "shortSeason": "S6",
+      "shortTitle": "Can 6",
+      "year": 2025,
+      "contestants": 12,
+      "newContestants": 12,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #6.1",
+          "date": "Nov 20, 2025"
+        },
+        {
+          "title": "Episode #6.2",
+          "date": "Nov 27, 2025"
+        }
+      ]
     }
   ]
 }
