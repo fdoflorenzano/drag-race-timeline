@@ -309,7 +309,6 @@
       "year": 2025,
       "contestants": 12,
       "newContestants": 12,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Queens of the Brit Gala",
@@ -340,15 +339,15 @@
           "date": "Nov 06, 2025"
         },
         {
-          "title": "Episode #7.8",
+          "title": "The Hun Makeover",
           "date": "Nov 13, 2025"
         },
         {
-          "title": "Episode #7.9",
+          "title": "Karma is a Bitch Comedy Roast",
           "date": "Nov 20, 2025"
         },
         {
-          "title": "Episode #7.10",
+          "title": "Money Shot Grand Finale",
           "date": "Nov 27, 2025"
         }
       ]

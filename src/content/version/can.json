@@ -254,12 +254,28 @@
       "unfinished": true,
       "episodes": [
         {
-          "title": "Episode #6.1",
+          "title": "Not Sorry Aboot It",
           "date": "Nov 20, 2025"
         },
         {
-          "title": "Episode #6.2",
+          "title": "Yachty Girls",
           "date": "Nov 27, 2025"
+        },
+        {
+          "title": "Episode #6.3",
+          "date": "Dec 4, 2025"
+        },
+        {
+          "title": "Episode #6.4",
+          "date": "Dec 11, 2025"
+        },
+        {
+          "title": "Episode #6.5",
+          "date": "Dec 18, 2025"
+        },
+        {
+          "title": "Episode #6.6",
+          "date": "Dec 25, 2025"
         }
       ]
     }

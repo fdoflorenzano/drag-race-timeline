@@ -222,6 +222,10 @@
           "date": "Dec 1, 2024"
         },
         {
+          "title": "Special Best Moments",
+          "date": "Dec 8, 2024"
+        },
+        {
           "title": "The Final Battle",
           "date": "Dec 15, 2024"
         }
@@ -234,7 +238,6 @@
       "year": 2025,
       "contestants": 12,
       "newContestants": 12,
-      "unfinished": true,
       "episodes": [
         {
           "title": "My Heart Is Rejoicing",
@@ -265,16 +268,24 @@
           "date": "Nov 9, 2025"
         },
         {
-          "title": "Episode #5.8",
+          "title": "The Notary Yasstaría",
           "date": "Nov 16, 2025"
         },
         {
-          "title": "Episode #5.9",
+          "title": "Makeover: Queens of My Hometown",
           "date": "Nov 23, 2025"
         },
         {
           "title": "Episode #5.10",
           "date": "Nov 30, 2025"
+        },
+        {
+          "title": "Episode #5.11",
+          "date": "Dec 7, 2025"
+        },
+        {
+          "title": "Episode #5.12",
+          "date": "Dec 14, 2025"
         }
       ]
     }
