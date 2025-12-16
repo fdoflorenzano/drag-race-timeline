@@ -1131,6 +1131,29 @@
           "date": "Apr 18, 2025"
         }
       ]
+    },
+    {
+      "season": "Season 18",
+      "shortSeason": "S18",
+      "shortTitle": "US 18",
+      "year": 2026,
+      "contestants": 14,
+      "newContestants": 14,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #18.1",
+          "date": "Jan 2, 2026"
+        },
+        {
+          "title": "Episode #18.2",
+          "date": "Jan 9, 2026"
+        },
+        {
+          "title": "Episode #18.3",
+          "date": "Jan 16, 2026"
+        }
+      ]
     }
   ]
 }
