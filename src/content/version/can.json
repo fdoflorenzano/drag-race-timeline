@@ -251,7 +251,6 @@
       "year": 2025,
       "contestants": 12,
       "newContestants": 12,
-      "unfinished": true,
       "episodes": [
         {
           "title": "Not Sorry Aboot It",
@@ -270,23 +269,23 @@
           "date": "Dec 11, 2025"
         },
         {
-          "title": "Episode #6.5",
+          "title": "The Shade",
           "date": "Dec 18, 2025"
         },
         {
-          "title": "Episode #6.6",
+          "title": "Slayoffs",
           "date": "Dec 25, 2025"
         },
         {
-          "title": "Episode #6.7",
+          "title": "Paris (Ontario) Fashion Week",
           "date": "Jan 01, 2026"
         },
         {
-          "title": "Episode #6.8",
+          "title": "Charisma, Uniqueness, Nerve, and Talent",
           "date": "Jan 08, 2026"
         },
         {
-          "title": "Episode #6.9",
+          "title": "Pop Queens of the North",
           "date": "Jan 15, 2026"
         }
       ]
