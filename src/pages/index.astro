@@ -10,9 +10,21 @@ import {
   calculateXOffSet,
   calculateBaseStreaks,
 } from "../lib/data";
-import { weeksArray } from "../lib/weeks";
+import { buildWeeks, weeksArray } from "../lib/weeks";
+import { parseTime } from "../lib/dates";
 
 const allVersions = await getCollection("version");
+
+let latestDate = new Date(2009, 0, 1);
+for (const version of allVersions) {
+  for (const season of version.data.seasons) {
+    for (const episode of season.episodes) {
+      const date = parseTime(episode.date);
+      if (date && date > latestDate) latestDate = date;
+    }
+  }
+}
+buildWeeks(latestDate);
 
 console.log("Processes data");
 
