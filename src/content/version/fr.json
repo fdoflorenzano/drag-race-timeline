@@ -131,6 +131,41 @@
           "date": "Jul 19, 2024"
         }
       ]
+    },
+    {
+      "season": "Season 4",
+      "shortSeason": "S4",
+      "shortTitle": "Fr 4",
+      "year": 2026,
+      "contestants": 10,
+      "newContestants": 10,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #4.1",
+          "date": "Jul 8, 2026"
+        },
+        {
+          "title": "Episode #4.2",
+          "date": "Jul 15, 2026"
+        },
+        {
+          "title": "Episode #4.3",
+          "date": "Jul 22, 2026"
+        },
+        {
+          "title": "Episode #4.4",
+          "date": "Jul 29, 2026"
+        },
+        {
+          "title": "Episode #4.5",
+          "date": "Aug 5, 2026"
+        },
+        {
+          "title": "Episode #4.6",
+          "date": "Aug 12, 2026"
+        }
+      ]
     }
   ]
 }
