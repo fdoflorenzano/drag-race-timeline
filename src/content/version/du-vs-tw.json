@@ -1,0 +1,33 @@
+{
+  "title": "RuPaul's Drag Race Down Under vs the World",
+  "country": ["Australia", "New Zealand"],
+  "seasons": [
+    {
+      "season": "Season 1",
+      "shortSeason": "S1",
+      "shortTitle": "DU vsTW 1",
+      "year": 2026,
+      "contestants": 11,
+      "newContestants": 0,
+      "unfinished": true,
+      "episodes": [
+        {
+          "title": "Episode #1.1",
+          "date": "Jul 24, 2026"
+        },
+        {
+          "title": "Episode #1.2",
+          "date": "Jul 31, 2026"
+        },
+        {
+          "title": "Episode #1.3",
+          "date": "Aug 7, 2026"
+        },
+        {
+          "title": "Episode #1.4",
+          "date": "Aug 14, 2026"
+        }
+      ]
+    }
+  ]
+}
