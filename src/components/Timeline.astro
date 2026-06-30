@@ -1,199 +1,145 @@
 ---
-import moment from "moment";
-
 import Episode from "./Episode";
 
 import type { ExtendedEpisode, GeneralStreak, Streak } from "../lib/data";
-import { weeksArray } from "../lib/weeks";
+import { buildSections, type SectionStreak } from "../lib/sections";
 
 interface Props {
-  rows: number;
   tracks: number;
   episodes: ExtendedEpisode[];
   streaks: Streak[];
   generalStreaks: GeneralStreak[];
 }
 
-const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
+const { tracks, episodes, streaks, generalStreaks } = Astro.props;
 
-const weekCount = weeksArray.length;
+const sections = buildSections(episodes, streaks, generalStreaks);
 
-// One entry per week row, with the Monday that anchors it. weeksArray is
-// chronological (index 0 = oldest); the grid stacks newest at the top.
-const axisRows = weeksArray.map((d, i) => {
-  const monday = moment.utc().isoWeekYear(d.year).isoWeek(d.week).isoWeekday(1);
-  // Band by ISO week-year (the grid's native unit) to avoid an orphan band at
-  // the boundary; month names still come from the Monday.
-  return { i, monday, year: d.year, month: monday.month() };
-});
-
-// Map a chronological index to its subgrid row (row 1 = newest, at the top).
-const subRow = (i: number) => weekCount - i;
-
-// Month ticks: the first (oldest) week of each month, so the label sits where
-// the month begins; its bottom border doubles as the boundary with the month
-// below (older) it.
-const axisMonths = axisRows.filter(
-  (r, idx) => idx === 0 || r.month !== axisRows[idx - 1].month,
-);
-const monthStartRows = new Set(axisMonths.map((r) => r.i));
-
-// Year bands: consecutive runs of the same calendar year, each spanning its rows.
-const axisYears: { year: number; startI: number; endI: number }[] = [];
-for (const r of axisRows) {
-  const last = axisYears[axisYears.length - 1];
-  if (last && last.year === r.year) last.endI = r.i;
-  else axisYears.push({ year: r.year, startI: r.i, endI: r.i });
-}
+// Square off the cut edges of a streak segment so cross-year segments join up.
+const streakRadius = (s: SectionStreak) => {
+  const top = s.topRounded ? "var(--col-width)" : "0";
+  const bottom = s.bottomRounded ? "var(--col-width)" : "0";
+  return `${top} ${top} ${bottom} ${bottom}`;
+};
 ---
 
-<div
-  class="timeline"
-  style={{
-    "--row-number": `${rows}`,
-    "--track-number": `${tracks}`,
-  }}
->
-  <p class="legend" style={{ gridRow: 1, gridColumn: 1, justifySelf: "end" }}>
-    Date
-  </p>
-  <p
-    class="legend"
-    style={{
-      gridRow: 1,
-      gridColumn: `2 / span ${tracks - 1}`,
-      justifySelf: "center",
-    }}
-  >
-    Seasons
-  </p>
-  <p
-    class="legend"
-    style={{ gridRow: 1, gridColumn: tracks + 1, justifySelf: "center" }}
-  >
-    Streaks
-  </p>
-  {
-    weeksArray.map((_d, i) => (
-      <div
-        class={"gridRow" + (monthStartRows.has(i) ? " monthStart" : "")}
-        style={{
-          gridColumn: `2 / span ${tracks - 1}`,
-          gridRow: `${1 + weekCount - i} / span 1`,
-        }}
-      />
-    ))
-  }
-
-  <div class="axis" style={{ gridRow: `2 / span ${weekCount}` }}>
-    {
-      axisYears.map((y) => (
-        <div
-          class="yearBlock"
-          style={{
-            gridColumn: 1,
-            gridRow: `${subRow(y.endI)} / span ${y.endI - y.startI + 1}`,
-          }}
-        >
-          <span class="axisYear">{y.year}</span>
-        </div>
-      ))
-    }
-    {
-      axisMonths.map((m) => (
-        <p
-          class="axisMonth"
-          style={{ gridColumn: 2, gridRow: `${subRow(m.i)} / span 1` }}
-        >
-          {m.monday.format("MMM")}
-        </p>
-      ))
-    }
+<div class="timeline" style={{ "--track-number": `${tracks}` }}>
+  <div class="legendRow">
+    <p class="legend legendDate">Date</p>
+    <p
+      class="legend"
+      style={{ gridColumn: `2 / span ${tracks - 1}`, justifySelf: "center" }}
+    >
+      Seasons
+    </p>
+    <p
+      class="legend"
+      style={{ gridColumn: tracks + 1, justifySelf: "center" }}
+    >
+      Streaks
+    </p>
   </div>
 
   {
-    episodes.map((d) => (
-      <Episode
-        client:visible
-        style={{
-          gridColumn: `${2 + d.xOffset} / span 1`,
-          gridRow: `${2 + weeksArray.length - d.week} / span 1`,
-        }}
-        episode={d}
-      />
-    ))
-  }
-
-  {
-    streaks.map((d) => (
-      <div
-        class="streak"
-        style={{
-          "--label-offset": 0,
-          gridColumn: `${2 + d.episodes[0].xOffset} / span 1`,
-          gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
-        }}
-        data-season={d.season}
+    sections.map((section) => (
+      <section
+        class="yearSection"
+        style={{ "--row-count": `${section.rowCount}` }}
       >
-        <div
-          class="streakLine"
-          style={{
-            borderRadius: d.unfinished
-              ? `0 0 var(--col-width) var(--col-width)`
-              : `var(--col-width)`,
-          }}
-        />
-        <p
-          class="streakLabel"
-          style={{
-            "--label-offset": d.unfinished
-              ? "0px"
-              : "calc(var(--col-width) / 3)",
-          }}
-        >
-          {d.season}
-        </p>
-      </div>
-    ))
-  }
+        {Array.from({ length: section.rowCount }, (_, idx) => idx + 1).map(
+          (r) => (
+            <div
+              class={
+                "gridRow" + (section.monthStartRows.includes(r) ? " monthStart" : "")
+              }
+              style={{
+                gridColumn: `2 / span ${tracks - 1}`,
+                gridRow: `${r} / span 1`,
+              }}
+            />
+          ),
+        )}
 
-  {
-    generalStreaks.map((d) => (
-      <div
-        class={
-          "streak generalStreak" +
-          (d.isCurrent ? " currentStreak" : "") +
-          (d.isLongest ? " longestStreak" : "")
-        }
-        style={{
-          gridColumn: `${tracks + 1} / span 1`,
-          gridRow: `${1 + weeksArray.length - d.end + 1} / span ${d.end - d.start + 1}`,
-        }}
-      >
-        <div class="streakLine" />
-        <p
-          class="streakLabel"
-          style={{
-            "--label-offset": "calc(var(--col-width) / 3)",
-          }}
-        >
-          {1 + d.end - d.start} weeks
-        </p>
-      </div>
+        <div class="axis">
+          <span class="axisYear">{section.year}</span>
+          {section.monthLabels.map((m) => (
+            <p class="axisMonth" style={{ gridRow: `${m.row} / span 1` }}>
+              {m.label}
+            </p>
+          ))}
+        </div>
+
+        {section.episodes.map(({ episode, row }) => (
+          <Episode
+            client:visible
+            style={{
+              gridColumn: `${2 + episode.xOffset} / span 1`,
+              gridRow: `${row} / span 1`,
+            }}
+            episode={episode}
+          />
+        ))}
+
+        {section.streaks.map((s) => (
+          <div
+            class="streak"
+            style={{
+              gridColumn: `${2 + s.xOffset} / span 1`,
+              gridRow: `${s.topRow} / span ${s.span}`,
+            }}
+            data-season={s.season}
+          >
+            <div class="streakLine" style={{ borderRadius: streakRadius(s) }} />
+            {s.showLabel && (
+              <p
+                class="streakLabel"
+                style={{
+                  "--label-offset": s.unfinished
+                    ? "0px"
+                    : "calc(var(--col-width) / 3)",
+                }}
+              >
+                {s.season}
+              </p>
+            )}
+          </div>
+        ))}
+
+        {section.generalStreaks.map((s) => (
+          <div
+            class={
+              "streak generalStreak" +
+              (s.isCurrent ? " currentStreak" : "") +
+              (s.isLongest ? " longestStreak" : "")
+            }
+            style={{
+              gridColumn: `${tracks + 1} / span 1`,
+              gridRow: `${s.topRow} / span ${s.span}`,
+            }}
+          >
+            <div class="streakLine" style={{ borderRadius: streakRadius(s) }} />
+            {s.showLabel && (
+              <p
+                class="streakLabel"
+                style={{ "--label-offset": "calc(var(--col-width) / 3)" }}
+              >
+                {s.weeks} weeks
+              </p>
+            )}
+          </div>
+        ))}
+      </section>
     ))
   }
 </div>
 
 <style>
   .timeline {
+    --label-width: 3rem;
     position: relative;
-    display: grid;
-    grid-template-columns: [labels] 1fr repeat(
-        var(--track-number),
-        var(--col-width)
-      );
-    grid-template-rows: repeat(var(--row-number), var(--col-width));
-    gap: 0 var(--gap);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
     margin-bottom: 3rem;
 
     -webkit-touch-callout: none;
@@ -205,6 +151,24 @@ for (const r of axisRows) {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
+  .legendRow,
+  .yearSection {
+    display: grid;
+    grid-template-columns: [labels] var(--label-width) repeat(
+        var(--track-number),
+        var(--col-width)
+      );
+    gap: 0 var(--gap);
+  }
+
+  .yearSection {
+    grid-template-rows: repeat(var(--row-count), var(--col-width));
+    /* Skip layout/paint for years scrolled off-screen; reserve their height so
+       the scrollbar stays accurate. */
+    content-visibility: auto;
+    contain-intrinsic-block-size: calc(var(--row-count) * var(--col-width));
+  }
+
   .legend {
     user-select: none;
     margin: 0 0 0.4rem 0;
@@ -212,11 +176,15 @@ for (const r of axisRows) {
     align-self: end;
   }
 
+  .legendDate {
+    grid-column: labels;
+    justify-self: end;
+  }
+
   .gridRow {
     user-select: none;
     border-style: solid;
     border-width: 1px;
-
     border-color: var(--color-border);
   }
 
@@ -232,6 +200,7 @@ for (const r of axisRows) {
   .axis {
     user-select: none;
     grid-column: labels;
+    grid-row: 1 / -1;
     justify-self: end;
     display: grid;
     grid-template-columns: auto auto;
@@ -239,16 +208,14 @@ for (const r of axisRows) {
     column-gap: 0.5rem;
   }
 
-  .yearBlock {
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   .axisYear {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    align-self: start;
+    justify-self: center;
     position: sticky;
     top: 0.5rem;
+    height: max-content;
     margin: 0;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -291,7 +258,6 @@ for (const r of axisRows) {
 
   .generalStreak .streakLine {
     background: var(--color-general-streak);
-    border-radius: var(--col-width);
   }
 
   .generalStreak.longestStreak .streakLine {

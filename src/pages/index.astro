@@ -10,7 +10,7 @@ import {
   calculateXOffSet,
   calculateBaseStreaks,
 } from "../lib/data";
-import { buildWeeks, weeksArray } from "../lib/weeks";
+import { buildWeeks } from "../lib/weeks";
 import { parseTime } from "../lib/dates";
 
 const allVersions = await getCollection("version");
@@ -74,7 +74,6 @@ console.log("streaks loaded");
     </p>
 
     <Timeline
-      rows={weeksArray.length + 1}
       tracks={maxOffset + 2}
       episodes={episodes}
       streaks={streaks}
