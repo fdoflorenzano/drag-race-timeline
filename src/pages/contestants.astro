@@ -92,6 +92,12 @@ const recordPoints = points
     pct,
   }));
 
+const currentPct = last.contestants
+  ? (last.returned / last.contestants) * 100
+  : 0;
+// recordPoints is chronological, so the last record is the all-time peak.
+const peakRecord = recordPoints[recordPoints.length - 1];
+
 // Pixel positions (in inner-chart coordinates) for the client-side tooltip.
 const tooltipData = {
   margin,
@@ -120,7 +126,11 @@ const tooltipData = {
       against the cumulative number of <em>returning</em> contestants — queens who
       came back for another season. As of {last.date.getFullYear()}, {
         last.contestants
-      } contestants have competed, {last.returned} of those returning.
+      } contestants have competed, {last.returned} of those returning ({
+        currentPct.toFixed(1)
+      }%). That share peaked at {peakRecord.pct.toFixed(1)}% in {
+        peakRecord.label
+      }.
     </p>
 
     <figure class="chart">
