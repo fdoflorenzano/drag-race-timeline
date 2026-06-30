@@ -4,17 +4,24 @@ const links = [
   { href: "/contestants", label: "Contestants" },
 ];
 
-// Normalize the current path so "/contestants/" matches "/contestants".
-const current = Astro.url.pathname.replace(/\/$/, "") || "/";
+// Prefix internal links with the deploy base path (e.g. "/drag-race-timeline/"
+// on GitHub Pages, "/" locally) so routing works under a subpath.
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const withBase = (path: string) => `${base}${path}` || "/";
+const normalize = (path: string) => path.replace(/\/$/, "") || "/";
+
+const current = normalize(Astro.url.pathname);
 ---
 
 <nav class="nav" aria-label="Primary">
   {
     links.map((link) => (
       <a
-        href={link.href}
+        href={withBase(link.href)}
         class="navLink"
-        aria-current={current === link.href ? "page" : undefined}
+        aria-current={
+          current === normalize(withBase(link.href)) ? "page" : undefined
+        }
       >
         {link.label}
       </a>
