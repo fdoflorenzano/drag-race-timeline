@@ -45,6 +45,13 @@ export interface Streak {
   season: string;
 }
 
+export interface GeneralStreak {
+  start: number;
+  end: number;
+  isLongest: boolean;
+  isCurrent: boolean;
+}
+
 export const processRawSeasons = (versions: CollectionEntry<"version">[]) => {
   const versionCount = versions.length;
   let seasonCount = 0;
@@ -292,8 +299,10 @@ export const calculateBaseStreaks = (seasons: GraphicableSeason[]) => {
 
   const aux = [...generalStreaks];
   generalStreaks = [];
-  for (let streak of aux) {
-    if (generalStreaks.length === 0 || streak.end - streak.start > 30)
+  for (let i = 0; i < aux.length; i++) {
+    const streak = aux[i];
+    const isLast = i === aux.length - 1;
+    if (generalStreaks.length === 0 || streak.end - streak.start > 30 || isLast)
       generalStreaks.push(streak);
     else {
       const lastStreak = generalStreaks[generalStreaks.length - 1];
@@ -303,5 +312,16 @@ export const calculateBaseStreaks = (seasons: GraphicableSeason[]) => {
     }
   }
 
-  return { episodes, streaks, generalStreaks };
+  const longestLength = generalStreaks.reduce(
+    (max, s) => Math.max(max, s.end - s.start),
+    -Infinity,
+  );
+  const finalGeneralStreaks: GeneralStreak[] = generalStreaks.map((s, i) => ({
+    start: s.start,
+    end: s.end,
+    isLongest: s.end - s.start === longestLength,
+    isCurrent: i === generalStreaks.length - 1,
+  }));
+
+  return { episodes, streaks, generalStreaks: finalGeneralStreaks };
 };
