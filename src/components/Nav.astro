@@ -1,0 +1,58 @@
+---
+const links = [
+  { href: "/", label: "Timeline" },
+  { href: "/contestants", label: "Contestants" },
+];
+
+// Normalize the current path so "/contestants/" matches "/contestants".
+const current = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<nav class="nav" aria-label="Primary">
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        class="navLink"
+        aria-current={current === link.href ? "page" : undefined}
+      >
+        {link.label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .nav {
+    align-self: start;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.4rem;
+  }
+
+  .navLink,
+  .navLink:visited {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.1rem 0.4rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    opacity: 0.7;
+    transition:
+      opacity 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .navLink:hover {
+    opacity: 1;
+    border-color: var(--color-streak);
+  }
+
+  .navLink[aria-current="page"] {
+    opacity: 1;
+    color: var(--color-streak);
+    border-color: var(--color-streak);
+    font-weight: bold;
+  }
+</style>

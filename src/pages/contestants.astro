@@ -1,0 +1,540 @@
+---
+import * as d3 from "d3";
+
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import data from "../content/datasets/cumulative-contestants.json";
+
+type Row = {
+  month: string;
+  cumulativeContestants: number;
+  cumulativeReturnedContestants: number;
+};
+
+const rows = data as Row[];
+
+// Parse "YYYY-MM" into a Date at the first of the month.
+const parseMonth = d3.timeParse("%Y-%m");
+const points = rows
+  .map((r) => ({
+    date: parseMonth(r.month) as Date,
+    contestants: r.cumulativeContestants,
+    returned: r.cumulativeReturnedContestants,
+  }))
+  .filter((p) => p.date);
+
+// SVG geometry.
+const width = 900;
+const height = 460;
+const margin = { top: 24, right: 24, bottom: 40, left: 48 };
+const innerWidth = width - margin.left - margin.right;
+const innerHeight = height - margin.top - margin.bottom;
+
+const x = d3
+  .scaleTime()
+  .domain(d3.extent(points, (p) => p.date) as [Date, Date])
+  .range([0, innerWidth]);
+
+const y = d3
+  .scaleLinear()
+  .domain([0, d3.max(points, (p) => p.contestants) ?? 0])
+  .nice()
+  .range([innerHeight, 0]);
+
+const area = (key: "contestants" | "returned") =>
+  d3
+    .area<(typeof points)[number]>()
+    .x((p) => x(p.date))
+    .y0(innerHeight)
+    .y1((p) => y(p[key]))
+    .curve(d3.curveMonotoneX)(points) ?? "";
+
+const line = (key: "contestants" | "returned") =>
+  d3
+    .line<(typeof points)[number]>()
+    .x((p) => x(p.date))
+    .y((p) => y(p[key]))
+    .curve(d3.curveMonotoneX)(points) ?? "";
+
+const contestantsArea = area("contestants");
+const returnedArea = area("returned");
+const contestantsLine = line("contestants");
+const returnedLine = line("returned");
+
+const xTicks = x.ticks(d3.timeYear.every(2)!).map((t) => ({
+  x: x(t),
+  label: d3.timeFormat("%Y")(t),
+}));
+const yTicks = y.ticks(6).map((t) => ({ y: y(t), label: `${t}` }));
+
+const last = points[points.length - 1];
+
+const monthLabel = d3.timeFormat("%B %Y");
+
+// Months where the returning percentage reaches a new all-time high.
+let maxPct = 0;
+const recordPoints = points
+  .map((p) => {
+    const pct = p.contestants ? (p.returned / p.contestants) * 100 : 0;
+    return { p, pct };
+  })
+  .filter(({ pct }) => {
+    if (pct > maxPct) {
+      maxPct = pct;
+      return true;
+    }
+    return false;
+  })
+  .map(({ p, pct }) => ({
+    cx: x(p.date),
+    cy: y(p.returned),
+    label: monthLabel(p.date),
+    pct,
+  }));
+
+// Pixel positions (in inner-chart coordinates) for the client-side tooltip.
+const tooltipData = {
+  margin,
+  innerWidth,
+  innerHeight,
+  points: points.map((p) => ({
+    px: x(p.date),
+    pyContestants: y(p.contestants),
+    pyReturned: y(p.returned),
+    label: monthLabel(p.date),
+    contestants: p.contestants,
+    returned: p.returned,
+  })),
+};
+---
+
+<Layout title="Cumulative Contestants — Drag Race Timeline">
+  <main>
+    <Nav />
+    <header>
+      <h1>Cumulative <span class="emphasis">Contestants</span></h1>
+    </header>
+
+    <p class="paragraph">
+      Total drag artists to have ever appeared on a Drag Race stage, compared
+      against the cumulative number of <em>returning</em> contestants — queens who
+      came back for another season. As of {last.date.getFullYear()}, {
+        last.contestants
+      } contestants have competed, {last.returned} of those returning.
+    </p>
+
+    <figure class="chart">
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        role="img"
+        aria-label="Area chart of cumulative contestants over time"
+      >
+        <defs>
+          <linearGradient id="fillContestants" x1="0" x2="0" y1="0" y2="1">
+            <stop
+              offset="0%"
+              stop-color="var(--color-longest-streak)"
+              stop-opacity="0.6"></stop>
+            <stop
+              offset="100%"
+              stop-color="var(--color-longest-streak)"
+              stop-opacity="0.05"></stop>
+          </linearGradient>
+          <linearGradient id="fillReturned" x1="0" x2="0" y1="0" y2="1">
+            <stop
+              offset="0%"
+              stop-color="var(--color-streak)"
+              stop-opacity="0.75"></stop>
+            <stop
+              offset="100%"
+              stop-color="var(--color-streak)"
+              stop-opacity="0.1"></stop>
+          </linearGradient>
+        </defs>
+
+        <g transform={`translate(${margin.left}, ${margin.top})`}>
+          {
+            yTicks.map((t) => (
+              <g class="gridline" transform={`translate(0, ${t.y})`}>
+                <line x1="0" x2={innerWidth} />
+                <text x="-10" dy="0.32em" text-anchor="end">
+                  {t.label}
+                </text>
+              </g>
+            ))
+          }
+
+          {
+            xTicks.map((t) => (
+              <text
+                class="axisLabel"
+                x={t.x}
+                y={innerHeight + 24}
+                text-anchor="middle"
+              >
+                {t.label}
+              </text>
+            ))
+          }
+
+          <path d={contestantsArea} fill="url(#fillContestants)"></path>
+          <path
+            d={contestantsLine}
+            fill="none"
+            stroke="var(--color-longest-streak)"
+            stroke-width="2"></path>
+
+          <path d={returnedArea} fill="url(#fillReturned)"></path>
+          <path
+            d={returnedLine}
+            fill="none"
+            stroke="var(--color-streak)"
+            stroke-width="2"></path>
+
+          {
+            recordPoints.map((r) => (
+              <circle class="recordDot" cx={r.cx} cy={r.cy} r="4">
+                <title>
+                  {r.label}: new high of {r.pct.toFixed(1)}% returning
+                </title>
+              </circle>
+            ))
+          }
+
+          <g class="focus">
+            <line class="focusLine" y1="0" y2={innerHeight}></line>
+            <circle class="focusDot focusDotContestants" r="4"></circle>
+            <circle class="focusDot focusDotReturned" r="4"></circle>
+          </g>
+
+          <rect
+            class="overlay"
+            width={innerWidth}
+            height={innerHeight}
+            fill="transparent"></rect>
+        </g>
+      </svg>
+
+      <div class="tooltip" hidden role="status">
+        <p class="tooltipDate"></p>
+        <p class="tooltipRow">
+          <span
+            class="swatch"
+            style={{ background: "var(--color-longest-streak)" }}></span>
+          <span class="tooltipLabel">Total</span>
+          <span class="tooltipValue tooltipTotal"></span>
+        </p>
+        <p class="tooltipRow">
+          <span class="swatch" style={{ background: "var(--color-streak)" }}
+          ></span>
+          <span class="tooltipLabel">Returning</span>
+          <span class="tooltipValue tooltipReturned"></span>
+        </p>
+        <p class="tooltipPct"></p>
+      </div>
+
+      <script
+        type="application/json"
+        id="chartData"
+        set:html={JSON.stringify(tooltipData)}
+      />
+      <script>
+        type TooltipPoint = {
+          px: number;
+          pyContestants: number;
+          pyReturned: number;
+          label: string;
+          contestants: number;
+          returned: number;
+        };
+        type ChartData = {
+          margin: { top: number; right: number; bottom: number; left: number };
+          innerWidth: number;
+          innerHeight: number;
+          points: TooltipPoint[];
+        };
+
+        const dataEl = document.getElementById("chartData");
+        const figure = document.querySelector<HTMLElement>(".chart");
+        const svg = figure?.querySelector("svg");
+        const overlay = svg?.querySelector<SVGRectElement>(".overlay");
+        const focus = svg?.querySelector<SVGGElement>(".focus");
+        const focusLine = svg?.querySelector<SVGLineElement>(".focusLine");
+        const dotTotal = svg?.querySelector<SVGCircleElement>(
+          ".focusDotContestants",
+        );
+        const dotReturned =
+          svg?.querySelector<SVGCircleElement>(".focusDotReturned");
+        const tooltip = figure?.querySelector<HTMLElement>(".tooltip");
+
+        if (
+          dataEl &&
+          figure &&
+          svg &&
+          overlay &&
+          focus &&
+          focusLine &&
+          dotTotal &&
+          dotReturned &&
+          tooltip
+        ) {
+          const { margin, points } = JSON.parse(
+            dataEl.textContent || "{}",
+          ) as ChartData;
+
+          const tDate = tooltip.querySelector<HTMLElement>(".tooltipDate")!;
+          const tTotal = tooltip.querySelector<HTMLElement>(".tooltipTotal")!;
+          const tReturned =
+            tooltip.querySelector<HTMLElement>(".tooltipReturned")!;
+          const tPct = tooltip.querySelector<HTMLElement>(".tooltipPct")!;
+
+          // Find the point whose pixel-x is nearest the cursor's inner-x.
+          const nearest = (innerX: number) => {
+            let lo = 0;
+            let hi = points.length - 1;
+            while (lo < hi) {
+              const mid = (lo + hi) >> 1;
+              if (points[mid].px < innerX) lo = mid + 1;
+              else hi = mid;
+            }
+            const prev = points[Math.max(0, lo - 1)];
+            const curr = points[lo];
+            return innerX - prev.px < curr.px - innerX ? prev : curr;
+          };
+
+          const move = (clientX: number) => {
+            const rect = svg.getBoundingClientRect();
+            // Map screen px -> SVG viewBox px (viewBox width is fixed at build).
+            const vb = svg.viewBox.baseVal;
+            const scale = vb.width / rect.width;
+            const svgX = (clientX - rect.left) * scale;
+            const innerX = svgX - margin.left;
+
+            const p = nearest(innerX);
+
+            focus.classList.add("visible");
+            focusLine.setAttribute("x1", `${p.px}`);
+            focusLine.setAttribute("x2", `${p.px}`);
+            dotTotal.setAttribute("cx", `${p.px}`);
+            dotTotal.setAttribute("cy", `${p.pyContestants}`);
+            dotReturned.setAttribute("cx", `${p.px}`);
+            dotReturned.setAttribute("cy", `${p.pyReturned}`);
+
+            const pct = p.contestants ? (p.returned / p.contestants) * 100 : 0;
+            tDate.textContent = p.label;
+            tTotal.textContent = `${p.contestants}`;
+            tReturned.textContent = `${p.returned}`;
+            tPct.textContent = `${pct.toFixed(1)}% returning`;
+
+            // Position tooltip near the point, flipping to stay in view.
+            tooltip.removeAttribute("hidden");
+            const dotScreenX = rect.left + (margin.left + p.px) / scale;
+            const relX = dotScreenX - rect.left;
+            const flip = relX > rect.width / 2;
+            tooltip.classList.toggle("flip", flip);
+            tooltip.style.left = `${relX}px`;
+          };
+
+          const onMove = (e: PointerEvent) => move(e.clientX);
+          overlay.addEventListener("pointermove", onMove);
+          overlay.addEventListener("pointerdown", onMove);
+          overlay.addEventListener("pointerleave", () => {
+            focus.classList.remove("visible");
+            tooltip.setAttribute("hidden", "");
+          });
+        }
+      </script>
+
+      <figcaption class="legend">
+        <span class="key">
+          <span
+            class="swatch"
+            style={{ background: "var(--color-longest-streak)" }}></span>
+          Cumulative contestants
+        </span>
+        <span class="key">
+          <span class="swatch" style={{ background: "var(--color-streak)" }}
+          ></span>
+          Cumulative returning contestants
+        </span>
+        <span class="key">
+          <span
+            class="swatch swatchDot"
+            style={{ background: "var(--color-current-streak)" }}></span>
+          New high in % returning
+        </span>
+      </figcaption>
+    </figure>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(960px, 100%);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: white;
+  }
+
+  main header {
+    align-self: start;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 10ch;
+  }
+
+  .emphasis {
+    font-weight: normal;
+  }
+
+  .paragraph {
+    align-self: start;
+    max-width: 40ch;
+    font-size: 0.8rem;
+  }
+
+  .paragraph a,
+  .paragraph a:visited {
+    color: var(--color-streak);
+    font-weight: bold;
+  }
+
+  .chart {
+    position: relative;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .chart svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .overlay {
+    cursor: crosshair;
+  }
+
+  .focus {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+  }
+
+  .focus.visible {
+    opacity: 1;
+  }
+
+  .focusLine {
+    stroke: var(--color-text);
+    stroke-width: 1;
+    stroke-dasharray: 3 3;
+    opacity: 0.5;
+  }
+
+  .focusDot {
+    stroke: var(--color-background);
+    stroke-width: 2;
+  }
+
+  .focusDotContestants {
+    fill: var(--color-longest-streak);
+  }
+
+  .focusDotReturned {
+    fill: var(--color-streak);
+  }
+
+  .recordDot {
+    fill: var(--color-current-streak);
+    stroke: var(--color-background);
+    stroke-width: 1.5;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 0;
+    transform: translateX(12px);
+    pointer-events: none;
+    background: rgba(31, 34, 50, 0.95);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  }
+
+  .tooltip.flip {
+    transform: translateX(-100%) translateX(-12px);
+  }
+
+  .tooltipDate {
+    margin: 0 0 0.35rem;
+    font-weight: bold;
+  }
+
+  .tooltipRow {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0;
+  }
+
+  .tooltipLabel {
+    opacity: 0.7;
+  }
+
+  .tooltipValue {
+    margin-left: auto;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tooltipPct {
+    margin: 0.35rem 0 0;
+    color: var(--color-current-streak);
+    font-weight: bold;
+  }
+
+  .gridline line {
+    stroke: var(--color-border);
+    stroke-width: 1;
+  }
+
+  .gridline text,
+  .axisLabel {
+    fill: var(--color-text);
+    font-size: 11px;
+    opacity: 0.6;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+  }
+
+  .key {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .swatch {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  .swatchDot {
+    border-radius: 50%;
+  }
+</style>

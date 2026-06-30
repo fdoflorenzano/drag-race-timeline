@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 
 import Layout from "../layouts/Layout.astro";
 import Timeline from "../components/Timeline.astro";
+import Nav from "../components/Nav.astro";
 
 import {
   processRawSeasons,
@@ -48,6 +49,7 @@ console.log("streaks loaded");
 
 <Layout title="Historical Drag Race Timeline">
   <main>
+    <Nav />
     <header>
       <h1>Historical <span class="emphasis">Drag Race</span> Timeline</h1>
     </header>
@@ -80,6 +82,25 @@ console.log("streaks loaded");
       generalStreaks={generalStreaks}
     />
   </main>
+
+  <button id="scrollTop" class="scrollTop" aria-label="Scroll to top" hidden>
+    ↑
+  </button>
+
+  <script>
+    const btn = document.getElementById("scrollTop");
+    if (btn) {
+      const toggle = () => {
+        if (window.scrollY > 400) btn.removeAttribute("hidden");
+        else btn.setAttribute("hidden", "");
+      };
+      toggle();
+      window.addEventListener("scroll", toggle, { passive: true });
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  </script>
 </Layout>
 
 <style>
@@ -115,6 +136,37 @@ console.log("streaks loaded");
     align-self: start;
     max-width: 40ch;
     font-size: 0.8rem;
+  }
+
+  .scrollTop {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background: var(--color-streak);
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+    z-index: 10;
+  }
+
+  .scrollTop[hidden] {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0.5rem);
+  }
+
+  .scrollTop:hover {
+    transform: translateY(-2px);
   }
 
   .paragraph > a,
