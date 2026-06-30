@@ -15,6 +15,36 @@ interface Props {
 }
 
 const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
+
+const weekCount = weeksArray.length;
+
+// One entry per week row, with the Monday that anchors it. weeksArray is
+// chronological (index 0 = oldest); the grid stacks newest at the top.
+const axisRows = weeksArray.map((d, i) => {
+  const monday = moment.utc().isoWeekYear(d.year).isoWeek(d.week).isoWeekday(1);
+  // Band by ISO week-year (the grid's native unit) to avoid an orphan band at
+  // the boundary; month names still come from the Monday.
+  return { i, monday, year: d.year, month: monday.month() };
+});
+
+// Map a chronological index to its subgrid row (row 1 = newest, at the top).
+const subRow = (i: number) => weekCount - i;
+
+// Month ticks: the first (oldest) week of each month, so the label sits where
+// the month begins; its bottom border doubles as the boundary with the month
+// below (older) it.
+const axisMonths = axisRows.filter(
+  (r, idx) => idx === 0 || r.month !== axisRows[idx - 1].month,
+);
+const monthStartRows = new Set(axisMonths.map((r) => r.i));
+
+// Year bands: consecutive runs of the same calendar year, each spanning its rows.
+const axisYears: { year: number; startI: number; endI: number }[] = [];
+for (const r of axisRows) {
+  const last = axisYears[axisYears.length - 1];
+  if (last && last.year === r.year) last.endI = r.i;
+  else axisYears.push({ year: r.year, startI: r.i, endI: r.i });
+}
 ---
 
 <div
@@ -25,7 +55,7 @@ const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
   }}
 >
   <p class="legend" style={{ gridRow: 1, gridColumn: 1, justifySelf: "end" }}>
-    Week
+    Date
   </p>
   <p
     class="legend"
@@ -44,39 +74,42 @@ const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
     Streaks
   </p>
   {
-    weeksArray.map((d, i) => {
-      const initial = moment
-        .utc()
-        .isoWeekYear(d.year)
-        .isoWeek(d.week)
-        .isoWeekday(1);
-      const last = moment
-        .utc()
-        .isoWeekYear(d.year)
-        .isoWeek(d.week)
-        .isoWeekday(7);
-      return (
-        <>
-          <div
-            class="gridRow"
-            style={{
-              gridColumn: `2 / span ${tracks - 1}`,
-              gridRow: ` ${1 + weeksArray.length - i} / span 1`,
-            }}
-          />
-          <div
-            class="gridLabelContainer"
-            style={{
-              gridRow: ` ${1 + weeksArray.length - i} / span 1`,
-            }}
-          >
-            <p class="gridLabel">{last.format("’YY MMM DD")}</p>
-            <p class="gridLabel">{initial.format("’YY MMM DD")}</p>
-          </div>
-        </>
-      );
-    })
+    weeksArray.map((_d, i) => (
+      <div
+        class={"gridRow" + (monthStartRows.has(i) ? " monthStart" : "")}
+        style={{
+          gridColumn: `2 / span ${tracks - 1}`,
+          gridRow: `${1 + weekCount - i} / span 1`,
+        }}
+      />
+    ))
   }
+
+  <div class="axis" style={{ gridRow: `2 / span ${weekCount}` }}>
+    {
+      axisYears.map((y) => (
+        <div
+          class="yearBlock"
+          style={{
+            gridColumn: 1,
+            gridRow: `${subRow(y.endI)} / span ${y.endI - y.startI + 1}`,
+          }}
+        >
+          <span class="axisYear">{y.year}</span>
+        </div>
+      ))
+    }
+    {
+      axisMonths.map((m) => (
+        <p
+          class="axisMonth"
+          style={{ gridColumn: 2, gridRow: `${subRow(m.i)} / span 1` }}
+        >
+          {m.monday.format("MMM")}
+        </p>
+      ))
+    }
+  </div>
 
   {
     episodes.map((d) => (
@@ -191,23 +224,56 @@ const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
     border-width: 1px 1px 0 1px;
   }
 
-  .gridLabelContainer {
-    user-select: none;
-    align-self: center;
-    justify-self: end;
+  .gridRow.monthStart {
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(240, 239, 244, 0.22);
   }
 
-  .gridLabel {
+  .axis {
     user-select: none;
+    grid-column: labels;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: subgrid;
+    column-gap: 0.5rem;
+  }
+
+  .yearBlock {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .axisYear {
+    position: sticky;
+    top: 0.5rem;
     margin: 0;
-    grid-column: labels / span 1;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--color-text);
+  }
+
+  .axisMonth {
+    grid-column: 2;
+    margin: 0;
+    align-self: center;
+    justify-self: end;
     font-size: 0.5rem;
     text-align: end;
+    opacity: 0.55;
   }
 
   @media (max-width: 500px) {
-    .gridLabel {
-      font-size: 0.3rem;
+    .axisYear {
+      font-size: 0.55rem;
+    }
+
+    .axisMonth {
+      font-size: 0.4rem;
     }
   }
 
