@@ -13,18 +13,15 @@ export function buildWeeks(endDate: Date) {
   for (const key in weeks) delete weeks[key];
   weeksArray.length = 0;
 
+  const [endYear, endWeek] = getWeekNumber(endDate);
+
   let weekIndex = 0;
-  for (
-    let year = START_DATE.getFullYear();
-    year <= endDate.getFullYear();
-    year++
-  ) {
+  outer: for (let year = START_DATE.getFullYear(); year <= endYear; year++) {
     for (let week = 1; week <= weeksInYear(year); week++) {
       weekIndex += 1;
       weeks[`${week}-${year}`] = { year, week, weekIndex };
-      const weekYear = getWeekNumber(endDate);
-      if (year === weekYear[0] && week === weekYear[1]) {
-        break;
+      if (year === endYear && week === endWeek) {
+        break outer;
       }
     }
   }

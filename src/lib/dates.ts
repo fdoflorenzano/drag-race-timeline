@@ -3,10 +3,7 @@ import moment from "moment";
 
 export function getWeekNumber(d: string | Date) {
   const date = moment.utc(new Date(+d));
-  return [
-    date.isoWeek() === 53 ? date.year() - 1 : date.year(),
-    date.isoWeek(),
-  ];
+  return [date.isoWeekYear(), date.isoWeek()];
 }
 
 export function weeksInYear(year: number) {

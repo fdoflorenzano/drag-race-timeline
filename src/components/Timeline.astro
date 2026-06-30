@@ -39,14 +39,22 @@ const { rows, tracks, episodes, streaks, generalStreaks } = Astro.props;
   </p>
   <p
     class="legend"
-    style={{ gridRow: 1, gridColumn: tracks + 1, justifySelf: "start" }}
+    style={{ gridRow: 1, gridColumn: tracks + 1, justifySelf: "center" }}
   >
     Streaks
   </p>
   {
     weeksArray.map((d, i) => {
-      const initial = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(1);
-      const last = moment.utc().year(d.year).isoWeek(d.week).isoWeekday(7);
+      const initial = moment
+        .utc()
+        .isoWeekYear(d.year)
+        .isoWeek(d.week)
+        .isoWeekday(1);
+      const last = moment
+        .utc()
+        .isoWeekYear(d.year)
+        .isoWeek(d.week)
+        .isoWeekday(7);
       return (
         <>
           <div
